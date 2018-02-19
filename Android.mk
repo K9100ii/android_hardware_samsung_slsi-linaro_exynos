@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 
+ifeq ($(TARGET_SLSI_VARIANT),linaro)
 ifneq ($(filter exynos, $(TARGET_SOC_NAME)),)
 common_exynos_dirs := \
 	libexynosutils \
@@ -134,5 +135,6 @@ endif
 endif
 
 include $(call all-named-subdir-makefiles,$(common_exynos_dirs))
+endif
 endif
 endif

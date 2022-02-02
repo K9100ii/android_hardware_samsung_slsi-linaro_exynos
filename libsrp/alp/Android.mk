@@ -1,0 +1,21 @@
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+
+LOCAL_SRC_FILES := \
+	dec/srp_api.c
+
+LOCAL_C_INCLUDES := \
+	$(LOCAL_PATH)/include
+
+LOCAL_MODULE := libsrpapi
+
+LOCAL_MODULE_TAGS := optional
+
+LOCAL_ARM_MODE := arm
+
+LOCAL_STATIC_LIBRARIES :=
+
+LOCAL_SHARED_LIBRARIES :=
+LOCAL_PROPRIETARY_MODULE := true
+
+include $(BUILD_STATIC_LIBRARY)

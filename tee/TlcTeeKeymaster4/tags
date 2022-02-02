@@ -1,0 +1,973 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADD_BLOB_TO_SGLIST	test/test_km_util.h	118;"	d
+ADD_TO_SGLIST	test/test_km_util.h	115;"	d
+AES_MAX_KEY_SIZE	src/tlcTeeKeymaster_if.cpp	53;"	d	file:
+ALL_SRC_FILES	Android.mk	/^ALL_SRC_FILES := $(wildcard ${LOCAL_PATH}\/src\/*.cpp)$/;"	m
+ALL_TST_FILES	Android.mk	/^ALL_TST_FILES := $(wildcard ${LOCAL_PATH}\/test\/*.cpp)$/;"	m
+ANDROID	test/test_km_util.h	38;"	d
+AUTH_TAGS	src/tlcTeeKeymaster_if.cpp	267;"	d	file:
+BITS_TO_BYTES	include/km_shared_util.h	90;"	d
+BYTES_PER_BITS	test/test_km_util.h	41;"	d
+CERT_DIR	test/test_km_attestation.cpp	46;"	d	file:
+CHECK_NOT_NULL	include/km_shared_util.h	76;"	d
+CHECK_RESULT	test/test_km_util.h	43;"	d
+CHECK_RESULT_OK	include/km_shared_util.h	58;"	d
+CHECK_RESULT_OK	test/test_km_util.h	59;"	d
+CHECK_SESSION	src/TrustonicKeymaster4DeviceImpl.cpp	199;"	d	file:
+CHECK_TLAPI_OK	include/km_shared_util.h	79;"	d
+CHECK_TRUE	include/km_shared_util.h	67;"	d
+CHECK_TRUE	test/test_km_util.h	68;"	d
+CHK	src/authlist.cpp	37;"	d	file:
+CHK	src/km_shared_util.cpp	225;"	d	file:
+CMD_ID_TEE_ABORT	include/tlTeeKeymaster_Api.h	72;"	d
+CMD_ID_TEE_ADD_RNG_ENTROPY	include/tlTeeKeymaster_Api.h	64;"	d
+CMD_ID_TEE_ATTEST_KEY	include/tlTeeKeymaster_Api.h	75;"	d
+CMD_ID_TEE_BEGIN	include/tlTeeKeymaster_Api.h	69;"	d
+CMD_ID_TEE_CONFIGURE	include/tlTeeKeymaster_Api.h	73;"	d
+CMD_ID_TEE_DESTROY_ATTESTATION_IDS	include/tlTeeKeymaster_Api.h	77;"	d
+CMD_ID_TEE_EXPORT_KEY	include/tlTeeKeymaster_Api.h	68;"	d
+CMD_ID_TEE_FINISH	include/tlTeeKeymaster_Api.h	71;"	d
+CMD_ID_TEE_GENERATE_KEY	include/tlTeeKeymaster_Api.h	65;"	d
+CMD_ID_TEE_GET_HARDWARE_FEATURES	include/tlTeeKeymaster_Api.h	76;"	d
+CMD_ID_TEE_GET_KEY_CHARACTERISTICS	include/tlTeeKeymaster_Api.h	66;"	d
+CMD_ID_TEE_GET_KEY_INFO	include/tlTeeKeymaster_Api.h	81;"	d
+CMD_ID_TEE_GET_OPERATION_INFO	include/tlTeeKeymaster_Api.h	82;"	d
+CMD_ID_TEE_GET_VERSION	include/tlTeeKeymaster_Api.h	83;"	d
+CMD_ID_TEE_IMPORT_KEY	include/tlTeeKeymaster_Api.h	67;"	d
+CMD_ID_TEE_IMPORT_WRAPPED_KEY	include/tlTeeKeymaster_Api.h	78;"	d
+CMD_ID_TEE_LOAD_ATTESTATION_DATA	include/tlTeeKeymaster_Api.h	88;"	d
+CMD_ID_TEE_SET_ATTESTATION_DATA	include/tlTeeKeymaster_Api.h	87;"	d
+CMD_ID_TEE_SET_DEBUG_LIES	include/tlTeeKeymaster_Api.h	84;"	d
+CMD_ID_TEE_UPDATE	include/tlTeeKeymaster_Api.h	70;"	d
+CMD_ID_TEE_UPGRADE_KEY	include/tlTeeKeymaster_Api.h	74;"	d
+CMD_MASK_ID	include/tlTeeKeymaster_Api.h	42;"	d
+CMD_MASK_RESERVED	include/tlTeeKeymaster_Api.h	45;"	d
+CMD_MASK_VERSION	include/tlTeeKeymaster_Api.h	43;"	d
+CMD_SHIFT_VERSION	include/tlTeeKeymaster_Api.h	44;"	d
+CMD_VERSION_TEE_KEYMASTER3	include/tlTeeKeymaster_Api.h	48;"	d
+CMD_VERSION_TEE_KEYMASTER4	include/tlTeeKeymaster_Api.h	49;"	d
+CUST_TEE_KEYMASTER_UTILS_H_	include/cust_tee_keymaster_utils.h	33;"	d
+DECL_SGLIST	test/test_km_util.h	121;"	d
+DEFAULT_OBJECT_FILE	src/cust_tee_keymaster_impl.cpp	41;"	d	file:
+EC_MAX_KEY_SIZE	src/tlcTeeKeymaster_if.cpp	52;"	d	file:
+EK_offset	include/tlTeeKeymaster_Api.h	/^    uint32_t EK_offset; \/**< [in] *\/$/;"	m	struct:__anon32
+ETK_offset	include/tlTeeKeymaster_Api.h	/^    uint32_t ETK_offset; \/**< [in] *\/$/;"	m	struct:__anon32
+FREE	test/test_km_util.h	53;"	d
+HAL_Configure	src/cust_tee_keymaster_impl.cpp	/^keymaster_error_t HAL_Configure(TEE_SessionHandle sessionHandle)$/;"	f
+HIDL_FETCH_IKeymasterDevice	src/TrustonicKeymaster4Device.cpp	/^IKeymasterDevice* HIDL_FETCH_IKeymasterDevice(const char* name) {$/;"	f	namespace:android::hardware::keymaster::V4_0::implementation
+HMAC_MAX_KEY_SIZE	src/tlcTeeKeymaster_if.cpp	54;"	d	file:
+INPUT_CHUNK_SIZE	src/tlcTeeKeymaster_if.cpp	1815;"	d	file:
+IS_CMD	include/tci.h	43;"	d
+IS_RSP	include/tci.h	44;"	d
+IV_len	include/tlTeeKeymaster_Api.h	/^    uint8_t IV_len; \/** [in] *\/$/;"	m	struct:__anon32
+KD_offset	include/tlTeeKeymaster_Api.h	/^    uint32_t KD_offset; \/**< [in] *\/$/;"	m	struct:__anon32
+KEYMASTER_IMPLICIT_CMD_BITS	include/tlTeeKeymaster_Api.h	52;"	d
+KEYMASTER_IMPLICIT_CMD_BITS	include/tlTeeKeymaster_Api.h	54;"	d
+KEYMASTER_IMPLICIT_CMD_BITS	include/tlTeeKeymaster_Api.h	56;"	d
+KEYMASTER_IMPLICIT_CMD_BITS	include/tlTeeKeymaster_Api.h	61;"	d
+KEYMASTER_SIMPLE_COMPARE	include/keymaster_ta_defs.h	729;"	d
+KEYMASTER_SIMPLE_COMPARE	include/keymaster_ta_defs.h	776;"	d
+KEYMASTER_VERSION_MAJOR	include/keymaster_version.h	39;"	d
+KEYMASTER_VERSION_MINOR	include/keymaster_version.h	40;"	d
+KEYMASTER_WANTED_VERSION	test/test_km_verbind.cpp	37;"	d	file:
+KEY_CREATION_ALLOWED_TAGS	src/tlcTeeKeymaster_if.cpp	279;"	d	file:
+KM_ALGORITHM_AES	include/keymaster_ta_defs.h	/^    KM_ALGORITHM_AES = 32,$/;"	e	enum:__anon46
+KM_ALGORITHM_EC	include/keymaster_ta_defs.h	/^    KM_ALGORITHM_EC = 3,$/;"	e	enum:__anon46
+KM_ALGORITHM_HMAC	include/keymaster_ta_defs.h	/^    KM_ALGORITHM_HMAC = 128,$/;"	e	enum:__anon46
+KM_ALGORITHM_RSA	include/keymaster_ta_defs.h	/^    KM_ALGORITHM_RSA = 1,$/;"	e	enum:__anon46
+KM_ALGORITHM_TRIPLE_DES	include/keymaster_ta_defs.h	/^    KM_ALGORITHM_TRIPLE_DES = 33,$/;"	e	enum:__anon46
+KM_ALLOC	include/km_shared_util.h	40;"	d
+KM_ALLOC	include/km_shared_util.h	54;"	d
+KM_BIGNUM	include/keymaster_ta_defs.h	/^    KM_BIGNUM = 8 << 28,$/;"	e	enum:__anon44
+KM_BLOB_REQUIRES_FILE_SYSTEM	include/keymaster_ta_defs.h	/^    KM_BLOB_REQUIRES_FILE_SYSTEM = 1,$/;"	e	enum:__anon53
+KM_BLOB_STANDALONE	include/keymaster_ta_defs.h	/^    KM_BLOB_STANDALONE = 0,$/;"	e	enum:__anon53
+KM_BOOL	include/keymaster_ta_defs.h	/^    KM_BOOL = 7 << 28,$/;"	e	enum:__anon44
+KM_BYTES	include/keymaster_ta_defs.h	/^    KM_BYTES = 9 << 28,$/;"	e	enum:__anon44
+KM_CERT_CHAIN_SIZE	include/km_shared_util.h	301;"	d
+KM_DATE	include/keymaster_ta_defs.h	/^    KM_DATE = 6 << 28,$/;"	e	enum:__anon44
+KM_DIGEST_MD5	include/keymaster_ta_defs.h	/^    KM_DIGEST_MD5 = 1,$/;"	e	enum:__anon49
+KM_DIGEST_NONE	include/keymaster_ta_defs.h	/^    KM_DIGEST_NONE = 0,$/;"	e	enum:__anon49
+KM_DIGEST_SHA1	include/keymaster_ta_defs.h	/^    KM_DIGEST_SHA1 = 2,$/;"	e	enum:__anon49
+KM_DIGEST_SHA_2_224	include/keymaster_ta_defs.h	/^    KM_DIGEST_SHA_2_224 = 3,$/;"	e	enum:__anon49
+KM_DIGEST_SHA_2_256	include/keymaster_ta_defs.h	/^    KM_DIGEST_SHA_2_256 = 4,$/;"	e	enum:__anon49
+KM_DIGEST_SHA_2_384	include/keymaster_ta_defs.h	/^    KM_DIGEST_SHA_2_384 = 5,$/;"	e	enum:__anon49
+KM_DIGEST_SHA_2_512	include/keymaster_ta_defs.h	/^    KM_DIGEST_SHA_2_512 = 6,$/;"	e	enum:__anon49
+KM_EC_CURVE_P_224	include/keymaster_ta_defs.h	/^    KM_EC_CURVE_P_224 = 0,$/;"	e	enum:__anon51
+KM_EC_CURVE_P_256	include/keymaster_ta_defs.h	/^    KM_EC_CURVE_P_256 = 1,$/;"	e	enum:__anon51
+KM_EC_CURVE_P_384	include/keymaster_ta_defs.h	/^    KM_EC_CURVE_P_384 = 2,$/;"	e	enum:__anon51
+KM_EC_CURVE_P_521	include/keymaster_ta_defs.h	/^    KM_EC_CURVE_P_521 = 3,$/;"	e	enum:__anon51
+KM_EC_METADATA_SIZE	include/tlTeeKeymaster_Api.h	189;"	d
+KM_ENUM	include/keymaster_ta_defs.h	/^    KM_ENUM = 1 << 28,$/;"	e	enum:__anon44
+KM_ENUM_REP	include/keymaster_ta_defs.h	/^    KM_ENUM_REP = 2 << 28, \/* Repeatable enumeration value. *\/$/;"	e	enum:__anon44
+KM_ERROR_ATTESTATION_APPLICATION_ID_MISSING	include/keymaster_ta_defs.h	/^    KM_ERROR_ATTESTATION_APPLICATION_ID_MISSING = -65,$/;"	e	enum:__anon70
+KM_ERROR_ATTESTATION_CHALLENGE_MISSING	include/keymaster_ta_defs.h	/^    KM_ERROR_ATTESTATION_CHALLENGE_MISSING = -63,$/;"	e	enum:__anon70
+KM_ERROR_CALLER_NONCE_PROHIBITED	include/keymaster_ta_defs.h	/^    KM_ERROR_CALLER_NONCE_PROHIBITED = -55,$/;"	e	enum:__anon70
+KM_ERROR_CANNOT_ATTEST_IDS	include/keymaster_ta_defs.h	/^    KM_ERROR_CANNOT_ATTEST_IDS = -66,$/;"	e	enum:__anon70
+KM_ERROR_CONCURRENT_ACCESS_CONFLICT	include/keymaster_ta_defs.h	/^    KM_ERROR_CONCURRENT_ACCESS_CONFLICT = -47,$/;"	e	enum:__anon70
+KM_ERROR_CONCURRENT_PROOF_OF_PRESENCE_REQUESTED	include/keymaster_ta_defs.h	/^    KM_ERROR_CONCURRENT_PROOF_OF_PRESENCE_REQUESTED = -70,$/;"	e	enum:__anon70
+KM_ERROR_DELEGATION_NOT_ALLOWED	include/keymaster_ta_defs.h	/^    KM_ERROR_DELEGATION_NOT_ALLOWED = -23,$/;"	e	enum:__anon70
+KM_ERROR_DEVICE_LOCKED	include/keymaster_ta_defs.h	/^    KM_ERROR_DEVICE_LOCKED = -72,$/;"	e	enum:__anon70
+KM_ERROR_HARDWARE_TYPE_UNAVAILABLE	include/keymaster_ta_defs.h	/^    KM_ERROR_HARDWARE_TYPE_UNAVAILABLE = -68,$/;"	e	enum:__anon70
+KM_ERROR_IMPORTED_KEY_DECRYPTION_FAILED	include/keymaster_ta_defs.h	/^    KM_ERROR_IMPORTED_KEY_DECRYPTION_FAILED = -35,$/;"	e	enum:__anon70
+KM_ERROR_IMPORTED_KEY_NOT_ENCRYPTED	include/keymaster_ta_defs.h	/^    KM_ERROR_IMPORTED_KEY_NOT_ENCRYPTED = -34,$/;"	e	enum:__anon70
+KM_ERROR_IMPORTED_KEY_NOT_SIGNED	include/keymaster_ta_defs.h	/^    KM_ERROR_IMPORTED_KEY_NOT_SIGNED = -36,$/;"	e	enum:__anon70
+KM_ERROR_IMPORTED_KEY_VERIFICATION_FAILED	include/keymaster_ta_defs.h	/^    KM_ERROR_IMPORTED_KEY_VERIFICATION_FAILED = -37,$/;"	e	enum:__anon70
+KM_ERROR_IMPORT_PARAMETER_MISMATCH	include/keymaster_ta_defs.h	/^    KM_ERROR_IMPORT_PARAMETER_MISMATCH = -44,$/;"	e	enum:__anon70
+KM_ERROR_INCOMPATIBLE_ALGORITHM	include/keymaster_ta_defs.h	/^    KM_ERROR_INCOMPATIBLE_ALGORITHM = -5,$/;"	e	enum:__anon70
+KM_ERROR_INCOMPATIBLE_BLOCK_MODE	include/keymaster_ta_defs.h	/^    KM_ERROR_INCOMPATIBLE_BLOCK_MODE = -8,$/;"	e	enum:__anon70
+KM_ERROR_INCOMPATIBLE_DIGEST	include/keymaster_ta_defs.h	/^    KM_ERROR_INCOMPATIBLE_DIGEST = -13,$/;"	e	enum:__anon70
+KM_ERROR_INCOMPATIBLE_KEY_FORMAT	include/keymaster_ta_defs.h	/^    KM_ERROR_INCOMPATIBLE_KEY_FORMAT = -18,$/;"	e	enum:__anon70
+KM_ERROR_INCOMPATIBLE_PADDING_MODE	include/keymaster_ta_defs.h	/^    KM_ERROR_INCOMPATIBLE_PADDING_MODE = -11,$/;"	e	enum:__anon70
+KM_ERROR_INCOMPATIBLE_PURPOSE	include/keymaster_ta_defs.h	/^    KM_ERROR_INCOMPATIBLE_PURPOSE = -3,$/;"	e	enum:__anon70
+KM_ERROR_INSUFFICIENT_BUFFER_SPACE	include/keymaster_ta_defs.h	/^    KM_ERROR_INSUFFICIENT_BUFFER_SPACE = -29,$/;"	e	enum:__anon70
+KM_ERROR_INVALID_ARGUMENT	include/keymaster_ta_defs.h	/^    KM_ERROR_INVALID_ARGUMENT = -38,$/;"	e	enum:__anon70
+KM_ERROR_INVALID_AUTHORIZATION_TIMEOUT	include/keymaster_ta_defs.h	/^    KM_ERROR_INVALID_AUTHORIZATION_TIMEOUT = -16,$/;"	e	enum:__anon70
+KM_ERROR_INVALID_EXPIRATION_TIME	include/keymaster_ta_defs.h	/^    KM_ERROR_INVALID_EXPIRATION_TIME = -14,$/;"	e	enum:__anon70
+KM_ERROR_INVALID_INPUT_LENGTH	include/keymaster_ta_defs.h	/^    KM_ERROR_INVALID_INPUT_LENGTH = -21,$/;"	e	enum:__anon70
+KM_ERROR_INVALID_KEY_BLOB	include/keymaster_ta_defs.h	/^    KM_ERROR_INVALID_KEY_BLOB = -33,$/;"	e	enum:__anon70
+KM_ERROR_INVALID_MAC_LENGTH	include/keymaster_ta_defs.h	/^    KM_ERROR_INVALID_MAC_LENGTH = -57,$/;"	e	enum:__anon70
+KM_ERROR_INVALID_NONCE	include/keymaster_ta_defs.h	/^    KM_ERROR_INVALID_NONCE = -52,$/;"	e	enum:__anon70
+KM_ERROR_INVALID_OPERATION_HANDLE	include/keymaster_ta_defs.h	/^    KM_ERROR_INVALID_OPERATION_HANDLE = -28,$/;"	e	enum:__anon70
+KM_ERROR_INVALID_TAG	include/keymaster_ta_defs.h	/^    KM_ERROR_INVALID_TAG = -40,$/;"	e	enum:__anon70
+KM_ERROR_INVALID_USER_ID	include/keymaster_ta_defs.h	/^    KM_ERROR_INVALID_USER_ID = -15,$/;"	e	enum:__anon70
+KM_ERROR_KEYMASTER_NOT_CONFIGURED	include/keymaster_ta_defs.h	/^    KM_ERROR_KEYMASTER_NOT_CONFIGURED = -64,$/;"	e	enum:__anon70
+KM_ERROR_KEY_EXPIRED	include/keymaster_ta_defs.h	/^    KM_ERROR_KEY_EXPIRED = -25,$/;"	e	enum:__anon70
+KM_ERROR_KEY_EXPORT_OPTIONS_INVALID	include/keymaster_ta_defs.h	/^    KM_ERROR_KEY_EXPORT_OPTIONS_INVALID = -22,$/;"	e	enum:__anon70
+KM_ERROR_KEY_MAX_OPS_EXCEEDED	include/keymaster_ta_defs.h	/^    KM_ERROR_KEY_MAX_OPS_EXCEEDED = -56,$/;"	e	enum:__anon70
+KM_ERROR_KEY_NOT_YET_VALID	include/keymaster_ta_defs.h	/^    KM_ERROR_KEY_NOT_YET_VALID = -24,$/;"	e	enum:__anon70
+KM_ERROR_KEY_RATE_LIMIT_EXCEEDED	include/keymaster_ta_defs.h	/^    KM_ERROR_KEY_RATE_LIMIT_EXCEEDED = -54,$/;"	e	enum:__anon70
+KM_ERROR_KEY_REQUIRES_UPGRADE	include/keymaster_ta_defs.h	/^    KM_ERROR_KEY_REQUIRES_UPGRADE = -62,$/;"	e	enum:__anon70
+KM_ERROR_KEY_USER_NOT_AUTHENTICATED	include/keymaster_ta_defs.h	/^    KM_ERROR_KEY_USER_NOT_AUTHENTICATED = -26,$/;"	e	enum:__anon70
+KM_ERROR_MEMORY_ALLOCATION_FAILED	include/keymaster_ta_defs.h	/^    KM_ERROR_MEMORY_ALLOCATION_FAILED = -41,$/;"	e	enum:__anon70
+KM_ERROR_MISSING_MAC_LENGTH	include/keymaster_ta_defs.h	/^    KM_ERROR_MISSING_MAC_LENGTH = -53,$/;"	e	enum:__anon70
+KM_ERROR_MISSING_MIN_MAC_LENGTH	include/keymaster_ta_defs.h	/^    KM_ERROR_MISSING_MIN_MAC_LENGTH = -58,$/;"	e	enum:__anon70
+KM_ERROR_MISSING_NONCE	include/keymaster_ta_defs.h	/^    KM_ERROR_MISSING_NONCE = -51,$/;"	e	enum:__anon70
+KM_ERROR_NO_USER_CONFIRMATION	include/keymaster_ta_defs.h	/^    KM_ERROR_NO_USER_CONFIRMATION = -71,$/;"	e	enum:__anon70
+KM_ERROR_OK	include/keymaster_ta_defs.h	/^    KM_ERROR_OK = 0,$/;"	e	enum:__anon70
+KM_ERROR_OPERATION_CANCELLED	include/keymaster_ta_defs.h	/^    KM_ERROR_OPERATION_CANCELLED = -46,$/;"	e	enum:__anon70
+KM_ERROR_OUTPUT_PARAMETER_NULL	include/keymaster_ta_defs.h	/^    KM_ERROR_OUTPUT_PARAMETER_NULL = -27,$/;"	e	enum:__anon70
+KM_ERROR_PROOF_OF_PRESENCE_REQUIRED	include/keymaster_ta_defs.h	/^    KM_ERROR_PROOF_OF_PRESENCE_REQUIRED = -69,$/;"	e	enum:__anon70
+KM_ERROR_ROLLBACK_RESISTANCE_UNAVAILABLE	include/keymaster_ta_defs.h	/^    KM_ERROR_ROLLBACK_RESISTANCE_UNAVAILABLE = -67,$/;"	e	enum:__anon70
+KM_ERROR_ROOT_OF_TRUST_ALREADY_SET	include/keymaster_ta_defs.h	/^    KM_ERROR_ROOT_OF_TRUST_ALREADY_SET = -1,$/;"	e	enum:__anon70
+KM_ERROR_SECURE_HW_ACCESS_DENIED	include/keymaster_ta_defs.h	/^    KM_ERROR_SECURE_HW_ACCESS_DENIED = -45,$/;"	e	enum:__anon70
+KM_ERROR_SECURE_HW_BUSY	include/keymaster_ta_defs.h	/^    KM_ERROR_SECURE_HW_BUSY = -48,$/;"	e	enum:__anon70
+KM_ERROR_SECURE_HW_COMMUNICATION_FAILED	include/keymaster_ta_defs.h	/^    KM_ERROR_SECURE_HW_COMMUNICATION_FAILED = -49,$/;"	e	enum:__anon70
+KM_ERROR_TOO_MANY_OPERATIONS	include/keymaster_ta_defs.h	/^    KM_ERROR_TOO_MANY_OPERATIONS = -31,$/;"	e	enum:__anon70
+KM_ERROR_UNEXPECTED_NULL_POINTER	include/keymaster_ta_defs.h	/^    KM_ERROR_UNEXPECTED_NULL_POINTER = -32,$/;"	e	enum:__anon70
+KM_ERROR_UNIMPLEMENTED	include/keymaster_ta_defs.h	/^    KM_ERROR_UNIMPLEMENTED = -100,$/;"	e	enum:__anon70
+KM_ERROR_UNKNOWN_ERROR	include/keymaster_ta_defs.h	/^    KM_ERROR_UNKNOWN_ERROR = -1000,$/;"	e	enum:__anon70
+KM_ERROR_UNSUPPORTED_ALGORITHM	include/keymaster_ta_defs.h	/^    KM_ERROR_UNSUPPORTED_ALGORITHM = -4,$/;"	e	enum:__anon70
+KM_ERROR_UNSUPPORTED_BLOCK_MODE	include/keymaster_ta_defs.h	/^    KM_ERROR_UNSUPPORTED_BLOCK_MODE = -7,$/;"	e	enum:__anon70
+KM_ERROR_UNSUPPORTED_DIGEST	include/keymaster_ta_defs.h	/^    KM_ERROR_UNSUPPORTED_DIGEST = -12,$/;"	e	enum:__anon70
+KM_ERROR_UNSUPPORTED_EC_CURVE	include/keymaster_ta_defs.h	/^    KM_ERROR_UNSUPPORTED_EC_CURVE = -61,$/;"	e	enum:__anon70
+KM_ERROR_UNSUPPORTED_EC_FIELD	include/keymaster_ta_defs.h	/^    KM_ERROR_UNSUPPORTED_EC_FIELD = -50,$/;"	e	enum:__anon70
+KM_ERROR_UNSUPPORTED_KDF	include/keymaster_ta_defs.h	/^    KM_ERROR_UNSUPPORTED_KDF = -60,$/;"	e	enum:__anon70
+KM_ERROR_UNSUPPORTED_KEY_ENCRYPTION_ALGORITHM	include/keymaster_ta_defs.h	/^    KM_ERROR_UNSUPPORTED_KEY_ENCRYPTION_ALGORITHM = -19,   \/* For PKCS8 & PKCS12 *\/$/;"	e	enum:__anon70
+KM_ERROR_UNSUPPORTED_KEY_FORMAT	include/keymaster_ta_defs.h	/^    KM_ERROR_UNSUPPORTED_KEY_FORMAT = -17,$/;"	e	enum:__anon70
+KM_ERROR_UNSUPPORTED_KEY_SIZE	include/keymaster_ta_defs.h	/^    KM_ERROR_UNSUPPORTED_KEY_SIZE = -6,$/;"	e	enum:__anon70
+KM_ERROR_UNSUPPORTED_KEY_VERIFICATION_ALGORITHM	include/keymaster_ta_defs.h	/^    KM_ERROR_UNSUPPORTED_KEY_VERIFICATION_ALGORITHM = -20, \/* For PKCS8 & PKCS12 *\/$/;"	e	enum:__anon70
+KM_ERROR_UNSUPPORTED_MAC_LENGTH	include/keymaster_ta_defs.h	/^    KM_ERROR_UNSUPPORTED_MAC_LENGTH = -9,$/;"	e	enum:__anon70
+KM_ERROR_UNSUPPORTED_MIN_MAC_LENGTH	include/keymaster_ta_defs.h	/^    KM_ERROR_UNSUPPORTED_MIN_MAC_LENGTH = -59,$/;"	e	enum:__anon70
+KM_ERROR_UNSUPPORTED_PADDING_MODE	include/keymaster_ta_defs.h	/^    KM_ERROR_UNSUPPORTED_PADDING_MODE = -10,$/;"	e	enum:__anon70
+KM_ERROR_UNSUPPORTED_PURPOSE	include/keymaster_ta_defs.h	/^    KM_ERROR_UNSUPPORTED_PURPOSE = -2,$/;"	e	enum:__anon70
+KM_ERROR_UNSUPPORTED_TAG	include/keymaster_ta_defs.h	/^    KM_ERROR_UNSUPPORTED_TAG = -39,$/;"	e	enum:__anon70
+KM_ERROR_VERIFICATION_FAILED	include/keymaster_ta_defs.h	/^    KM_ERROR_VERIFICATION_FAILED = -30,$/;"	e	enum:__anon70
+KM_ERROR_VERSION_MISMATCH	include/keymaster_ta_defs.h	/^    KM_ERROR_VERSION_MISMATCH = -101,$/;"	e	enum:__anon70
+KM_FREE	include/km_shared_util.h	41;"	d
+KM_FREE	include/km_shared_util.h	55;"	d
+KM_HW_AUTH_TYPE_ANY	include/keymaster_ta_defs.h	/^    KM_HW_AUTH_TYPE_ANY = 0xFFFFFFFF,$/;"	e	enum:__anon66
+KM_HW_AUTH_TYPE_FINGERPRINT	include/keymaster_ta_defs.h	/^    KM_HW_AUTH_TYPE_FINGERPRINT = 1 << 1,$/;"	e	enum:__anon66
+KM_HW_AUTH_TYPE_NONE	include/keymaster_ta_defs.h	/^    KM_HW_AUTH_TYPE_NONE = 0,$/;"	e	enum:__anon66
+KM_HW_AUTH_TYPE_PASSWORD	include/keymaster_ta_defs.h	/^    KM_HW_AUTH_TYPE_PASSWORD = 1 << 0,$/;"	e	enum:__anon66
+KM_INVALID	include/keymaster_ta_defs.h	/^    KM_INVALID = 0 << 28, \/* Invalid type, used to designate a tag as uninitialized *\/$/;"	e	enum:__anon44
+KM_KDF_ISO18033_2_KDF1_SHA1	include/keymaster_ta_defs.h	/^    KM_KDF_ISO18033_2_KDF1_SHA1 = 2,$/;"	e	enum:__anon50
+KM_KDF_ISO18033_2_KDF1_SHA256	include/keymaster_ta_defs.h	/^    KM_KDF_ISO18033_2_KDF1_SHA256 = 3,$/;"	e	enum:__anon50
+KM_KDF_ISO18033_2_KDF2_SHA1	include/keymaster_ta_defs.h	/^    KM_KDF_ISO18033_2_KDF2_SHA1 = 4,$/;"	e	enum:__anon50
+KM_KDF_ISO18033_2_KDF2_SHA256	include/keymaster_ta_defs.h	/^    KM_KDF_ISO18033_2_KDF2_SHA256 = 5,$/;"	e	enum:__anon50
+KM_KDF_NONE	include/keymaster_ta_defs.h	/^    KM_KDF_NONE = 0,$/;"	e	enum:__anon50
+KM_KDF_RFC5869_SHA256	include/keymaster_ta_defs.h	/^    KM_KDF_RFC5869_SHA256 = 1,$/;"	e	enum:__anon50
+KM_KEY_FORMAT_PKCS8	include/keymaster_ta_defs.h	/^    KM_KEY_FORMAT_PKCS8 = 1, \/* for asymmetric key pair import *\/$/;"	e	enum:__anon69
+KM_KEY_FORMAT_RAW	include/keymaster_ta_defs.h	/^    KM_KEY_FORMAT_RAW = 3,   \/* for symmetric key import and export*\/$/;"	e	enum:__anon69
+KM_KEY_FORMAT_X509	include/keymaster_ta_defs.h	/^    KM_KEY_FORMAT_X509 = 0,  \/* for public key export *\/$/;"	e	enum:__anon69
+KM_LOG	include/km_shared_util.h	39;"	d
+KM_LOG	include/km_shared_util.h	53;"	d
+KM_MAX_N_USER_SECURE_ID	include/km_shared_util.h	296;"	d
+KM_MODE_CBC	include/keymaster_ta_defs.h	/^    KM_MODE_CBC = 2,$/;"	e	enum:__anon47
+KM_MODE_CTR	include/keymaster_ta_defs.h	/^    KM_MODE_CTR = 3,$/;"	e	enum:__anon47
+KM_MODE_ECB	include/keymaster_ta_defs.h	/^    KM_MODE_ECB = 1,$/;"	e	enum:__anon47
+KM_MODE_GCM	include/keymaster_ta_defs.h	/^    KM_MODE_GCM = 32,$/;"	e	enum:__anon47
+KM_ORIGIN_DERIVED	include/keymaster_ta_defs.h	/^    KM_ORIGIN_DERIVED = 1,   \/* Derived inside keymaster.  Likely exists off-device. *\/$/;"	e	enum:__anon52
+KM_ORIGIN_GENERATED	include/keymaster_ta_defs.h	/^    KM_ORIGIN_GENERATED = 0, \/* Generated in keymaster.  Should not exist outside the TEE. *\/$/;"	e	enum:__anon52
+KM_ORIGIN_IMPORTED	include/keymaster_ta_defs.h	/^    KM_ORIGIN_IMPORTED = 2,  \/* Imported into keymaster.  Existed as cleartext in Android. *\/$/;"	e	enum:__anon52
+KM_ORIGIN_SECURELY_IMPORTED	include/keymaster_ta_defs.h	/^    KM_ORIGIN_SECURELY_IMPORTED = 4,$/;"	e	enum:__anon52
+KM_ORIGIN_UNKNOWN	include/keymaster_ta_defs.h	/^    KM_ORIGIN_UNKNOWN = 3,   \/* Keymaster did not record origin.  This value can only be seen on$/;"	e	enum:__anon52
+KM_PAD_NONE	include/keymaster_ta_defs.h	/^    KM_PAD_NONE = 1, \/* deprecated *\/$/;"	e	enum:__anon48
+KM_PAD_PKCS7	include/keymaster_ta_defs.h	/^    KM_PAD_PKCS7 = 64,$/;"	e	enum:__anon48
+KM_PAD_RSA_OAEP	include/keymaster_ta_defs.h	/^    KM_PAD_RSA_OAEP = 2,$/;"	e	enum:__anon48
+KM_PAD_RSA_PKCS1_1_5_ENCRYPT	include/keymaster_ta_defs.h	/^    KM_PAD_RSA_PKCS1_1_5_ENCRYPT = 4,$/;"	e	enum:__anon48
+KM_PAD_RSA_PKCS1_1_5_SIGN	include/keymaster_ta_defs.h	/^    KM_PAD_RSA_PKCS1_1_5_SIGN = 5,$/;"	e	enum:__anon48
+KM_PAD_RSA_PSS	include/keymaster_ta_defs.h	/^    KM_PAD_RSA_PSS = 3,$/;"	e	enum:__anon48
+KM_PURPOSE_DECRYPT	include/keymaster_ta_defs.h	/^    KM_PURPOSE_DECRYPT = 1,    \/* Usable with RSA, EC and AES keys. *\/$/;"	e	enum:__anon54
+KM_PURPOSE_DERIVE_KEY	include/keymaster_ta_defs.h	/^    KM_PURPOSE_DERIVE_KEY = 4, \/* Usable with EC keys. *\/$/;"	e	enum:__anon54
+KM_PURPOSE_ENCRYPT	include/keymaster_ta_defs.h	/^    KM_PURPOSE_ENCRYPT = 0,    \/* Usable with RSA, EC and AES keys. *\/$/;"	e	enum:__anon54
+KM_PURPOSE_SIGN	include/keymaster_ta_defs.h	/^    KM_PURPOSE_SIGN = 2,       \/* Usable with RSA, EC and HMAC keys. *\/$/;"	e	enum:__anon54
+KM_PURPOSE_VERIFY	include/keymaster_ta_defs.h	/^    KM_PURPOSE_VERIFY = 3,     \/* Usable with RSA, EC and HMAC keys. *\/$/;"	e	enum:__anon54
+KM_PURPOSE_WRAP_KEY	include/keymaster_ta_defs.h	/^    KM_PURPOSE_WRAP_KEY = 5,   \/* Usable with wrapping keys. *\/$/;"	e	enum:__anon54
+KM_RSA_METADATA_SIZE	include/tlTeeKeymaster_Api.h	188;"	d
+KM_SECURITY_LEVEL_SOFTWARE	include/keymaster_ta_defs.h	/^    KM_SECURITY_LEVEL_SOFTWARE = 0,$/;"	e	enum:__anon65
+KM_SECURITY_LEVEL_STRONGBOX	include/keymaster_ta_defs.h	/^    KM_SECURITY_LEVEL_STRONGBOX = 2,              \/* See IKeymaster::isStrongBox *\/$/;"	e	enum:__anon65
+KM_SECURITY_LEVEL_TRUSTED_ENVIRONMENT	include/keymaster_ta_defs.h	/^    KM_SECURITY_LEVEL_TRUSTED_ENVIRONMENT = 1,$/;"	e	enum:__anon65
+KM_TAG_ACTIVE_DATETIME	include/keymaster_ta_defs.h	/^    KM_TAG_ACTIVE_DATETIME = KM_DATE | 400,             \/* Start of validity *\/$/;"	e	enum:__anon45
+KM_TAG_ALGORITHM	include/keymaster_ta_defs.h	/^    KM_TAG_ALGORITHM = KM_ENUM | 2,      \/* keymaster_algorithm_t. *\/$/;"	e	enum:__anon45
+KM_TAG_ALLOW_WHILE_ON_BODY	include/keymaster_ta_defs.h	/^    KM_TAG_ALLOW_WHILE_ON_BODY = KM_BOOL | 506, \/* Allow key to be used after authentication timeout$/;"	e	enum:__anon45
+KM_TAG_ALL_APPLICATIONS	include/keymaster_ta_defs.h	/^    KM_TAG_ALL_APPLICATIONS = KM_BOOL | 600, \/* Specified to indicate key is usable by all$/;"	e	enum:__anon45
+KM_TAG_ALL_USERS	include/keymaster_ta_defs.h	/^    KM_TAG_ALL_USERS = KM_BOOL | 500,           \/* Reserved for future use -- ignore *\/$/;"	e	enum:__anon45
+KM_TAG_APPLICATION_DATA	include/keymaster_ta_defs.h	/^    KM_TAG_APPLICATION_DATA = KM_BYTES | 700,      \/* Data provided by authorized application. *\/$/;"	e	enum:__anon45
+KM_TAG_APPLICATION_ID	include/keymaster_ta_defs.h	/^    KM_TAG_APPLICATION_ID = KM_BYTES | 601,  \/* Byte string identifying the authorized$/;"	e	enum:__anon45
+KM_TAG_ASSOCIATED_DATA	include/keymaster_ta_defs.h	/^    KM_TAG_ASSOCIATED_DATA = KM_BYTES | 1000, \/* Used to provide associated data for AEAD modes. *\/$/;"	e	enum:__anon45
+KM_TAG_ATTESTATION_APPLICATION_ID	include/keymaster_ta_defs.h	/^    KM_TAG_ATTESTATION_APPLICATION_ID = KM_BYTES | 709, \/* Used to identify the set of possible$/;"	e	enum:__anon45
+KM_TAG_ATTESTATION_APPLICATION_ID	src/tlcTeeKeymaster_if.cpp	58;"	d	file:
+KM_TAG_ATTESTATION_APPLICATION_ID	test/test_km_attestation.cpp	42;"	d	file:
+KM_TAG_ATTESTATION_CHALLENGE	include/keymaster_ta_defs.h	/^    KM_TAG_ATTESTATION_CHALLENGE = KM_BYTES | 708, \/* Used to provide challenge in attestation *\/$/;"	e	enum:__anon45
+KM_TAG_ATTESTATION_ID_BRAND	include/keymaster_ta_defs.h	/^    KM_TAG_ATTESTATION_ID_BRAND = KM_BYTES | 710,  \/* Used to provide the device's brand name to be$/;"	e	enum:__anon45
+KM_TAG_ATTESTATION_ID_DEVICE	include/keymaster_ta_defs.h	/^    KM_TAG_ATTESTATION_ID_DEVICE = KM_BYTES | 711, \/* Used to provide the device's device name to be$/;"	e	enum:__anon45
+KM_TAG_ATTESTATION_ID_IMEI	include/keymaster_ta_defs.h	/^    KM_TAG_ATTESTATION_ID_IMEI = KM_BYTES | 714,   \/* Used to provide the device's IMEI to be included$/;"	e	enum:__anon45
+KM_TAG_ATTESTATION_ID_MANUFACTURER	include/keymaster_ta_defs.h	/^    KM_TAG_ATTESTATION_ID_MANUFACTURER = KM_BYTES | 716, \/* Used to provide the device's manufacturer$/;"	e	enum:__anon45
+KM_TAG_ATTESTATION_ID_MEID	include/keymaster_ta_defs.h	/^    KM_TAG_ATTESTATION_ID_MEID = KM_BYTES | 715,   \/* Used to provide the device's MEID to be included$/;"	e	enum:__anon45
+KM_TAG_ATTESTATION_ID_MODEL	include/keymaster_ta_defs.h	/^    KM_TAG_ATTESTATION_ID_MODEL = KM_BYTES | 717,  \/* Used to provide the device's model name to be$/;"	e	enum:__anon45
+KM_TAG_ATTESTATION_ID_PRODUCT	include/keymaster_ta_defs.h	/^    KM_TAG_ATTESTATION_ID_PRODUCT = KM_BYTES | 712, \/* Used to provide the device's product name to be$/;"	e	enum:__anon45
+KM_TAG_ATTESTATION_ID_SERIAL	include/keymaster_ta_defs.h	/^    KM_TAG_ATTESTATION_ID_SERIAL = KM_BYTES | 713, \/* Used to provide the device's serial number to be$/;"	e	enum:__anon45
+KM_TAG_AUTH_TIMEOUT	include/keymaster_ta_defs.h	/^    KM_TAG_AUTH_TIMEOUT = KM_UINT | 505,        \/* Required freshness of user authentication for$/;"	e	enum:__anon45
+KM_TAG_AUTH_TOKEN	include/keymaster_ta_defs.h	/^    KM_TAG_AUTH_TOKEN = KM_BYTES | 1002,      \/* Authentication token that proves secure user$/;"	e	enum:__anon45
+KM_TAG_BLOB_USAGE_REQUIREMENTS	include/keymaster_ta_defs.h	/^    KM_TAG_BLOB_USAGE_REQUIREMENTS = KM_ENUM | 301, \/* keymaster_key_blob_usage_requirements_t *\/$/;"	e	enum:__anon45
+KM_TAG_BLOCK_MODE	include/keymaster_ta_defs.h	/^    KM_TAG_BLOCK_MODE = KM_ENUM_REP | 4, \/* keymaster_block_mode_t. *\/$/;"	e	enum:__anon45
+KM_TAG_BOOTLOADER_ONLY	include/keymaster_ta_defs.h	/^    KM_TAG_BOOTLOADER_ONLY = KM_BOOL | 302,         \/* Usable only by bootloader *\/$/;"	e	enum:__anon45
+KM_TAG_BOOT_PATCHLEVEL	include/keymaster_ta_defs.h	/^    KM_TAG_BOOT_PATCHLEVEL = KM_UINT | 719,$/;"	e	enum:__anon45
+KM_TAG_CALLER_NONCE	include/keymaster_ta_defs.h	/^    KM_TAG_CALLER_NONCE = KM_BOOL | 7,   \/* Allow caller to specify nonce or IV. *\/$/;"	e	enum:__anon45
+KM_TAG_CONFIRMATION_TOKEN	include/keymaster_ta_defs.h	/^    KM_TAG_CONFIRMATION_TOKEN = KM_BYTES | 1005,$/;"	e	enum:__anon45
+KM_TAG_CREATION_DATETIME	include/keymaster_ta_defs.h	/^    KM_TAG_CREATION_DATETIME = KM_DATE | 701,      \/* Key creation time *\/$/;"	e	enum:__anon45
+KM_TAG_DIGEST	include/keymaster_ta_defs.h	/^    KM_TAG_DIGEST = KM_ENUM_REP | 5,     \/* keymaster_digest_t. *\/$/;"	e	enum:__anon45
+KM_TAG_ECIES_SINGLE_HASH_MODE	include/keymaster_ta_defs.h	/^    KM_TAG_ECIES_SINGLE_HASH_MODE = KM_BOOL | 201, \/* Whether the ephemeral public key is fed into$/;"	e	enum:__anon45
+KM_TAG_EC_CURVE	include/keymaster_ta_defs.h	/^    KM_TAG_EC_CURVE = KM_ENUM | 10,      \/* keymaster_ec_curve_t (keymaster2) *\/$/;"	e	enum:__anon45
+KM_TAG_EXPORTABLE	include/keymaster_ta_defs.h	/^    KM_TAG_EXPORTABLE = KM_BOOL | 602,       \/* If true, private\/secret key can be exported, but$/;"	e	enum:__anon45
+KM_TAG_HARDWARE_TYPE	include/keymaster_ta_defs.h	/^    KM_TAG_HARDWARE_TYPE = KM_ENUM | 304,$/;"	e	enum:__anon45
+KM_TAG_INCLUDE_UNIQUE_ID	include/keymaster_ta_defs.h	/^    KM_TAG_INCLUDE_UNIQUE_ID = KM_BOOL | 202,      \/* If true, attestation certificates for this key$/;"	e	enum:__anon45
+KM_TAG_INVALID	include/keymaster_ta_defs.h	/^    KM_TAG_INVALID = KM_INVALID | 0,$/;"	e	enum:__anon45
+KM_TAG_KDF	include/keymaster_ta_defs.h	/^    KM_TAG_KDF = KM_ENUM_REP | 9,        \/* keymaster_kdf_t (keymaster2) *\/$/;"	e	enum:__anon45
+KM_TAG_KEY_SIZE	include/keymaster_ta_defs.h	/^    KM_TAG_KEY_SIZE = KM_UINT | 3,       \/* Key size in bits. *\/$/;"	e	enum:__anon45
+KM_TAG_MAC_LENGTH	include/keymaster_ta_defs.h	/^    KM_TAG_MAC_LENGTH = KM_UINT | 1003,       \/* MAC or AEAD authentication tag length in$/;"	e	enum:__anon45
+KM_TAG_MAX_USES_PER_BOOT	include/keymaster_ta_defs.h	/^    KM_TAG_MAX_USES_PER_BOOT = KM_UINT | 404,           \/* Number of times the key can be used per$/;"	e	enum:__anon45
+KM_TAG_MIN_MAC_LENGTH	include/keymaster_ta_defs.h	/^    KM_TAG_MIN_MAC_LENGTH = KM_UINT | 8, \/* Minimum length of MAC or AEAD authentication tag in$/;"	e	enum:__anon45
+KM_TAG_MIN_SECONDS_BETWEEN_OPS	include/keymaster_ta_defs.h	/^    KM_TAG_MIN_SECONDS_BETWEEN_OPS = KM_UINT | 403,     \/* Minimum elapsed time between$/;"	e	enum:__anon45
+KM_TAG_NONCE	include/keymaster_ta_defs.h	/^    KM_TAG_NONCE = KM_BYTES | 1001,           \/* Nonce or Initialization Vector *\/$/;"	e	enum:__anon45
+KM_TAG_NO_AUTH_REQUIRED	include/keymaster_ta_defs.h	/^    KM_TAG_NO_AUTH_REQUIRED = KM_BOOL | 503,    \/* If key is usable without authentication. *\/$/;"	e	enum:__anon45
+KM_TAG_ORIGIN	include/keymaster_ta_defs.h	/^    KM_TAG_ORIGIN = KM_ENUM | 702,                 \/* keymaster_key_origin_t. *\/$/;"	e	enum:__anon45
+KM_TAG_ORIGINATION_EXPIRE_DATETIME	include/keymaster_ta_defs.h	/^    KM_TAG_ORIGINATION_EXPIRE_DATETIME = KM_DATE | 401, \/* Date when new "messages" should no$/;"	e	enum:__anon45
+KM_TAG_OS_PATCHLEVEL	include/keymaster_ta_defs.h	/^    KM_TAG_OS_PATCHLEVEL = KM_UINT | 706,          \/* Patch level of system (keymaster2) *\/$/;"	e	enum:__anon45
+KM_TAG_OS_VERSION	include/keymaster_ta_defs.h	/^    KM_TAG_OS_VERSION = KM_UINT | 705,             \/* Version of system (keymaster2) *\/$/;"	e	enum:__anon45
+KM_TAG_PADDING	include/keymaster_ta_defs.h	/^    KM_TAG_PADDING = KM_ENUM_REP | 6,    \/* keymaster_padding_t. *\/$/;"	e	enum:__anon45
+KM_TAG_PURPOSE	include/keymaster_ta_defs.h	/^    KM_TAG_PURPOSE = KM_ENUM_REP | 1,    \/* keymaster_purpose_t. *\/$/;"	e	enum:__anon45
+KM_TAG_RESET_SINCE_ID_ROTATION	include/keymaster_ta_defs.h	/^    KM_TAG_RESET_SINCE_ID_ROTATION = KM_BOOL | 1004, \/* Whether the device has beeen factory reset$/;"	e	enum:__anon45
+KM_TAG_ROLLBACK_RESISTANCE	include/keymaster_ta_defs.h	/^    KM_TAG_ROLLBACK_RESISTANCE = KM_BOOL | 303,   \/* Whether key is rollback-resistant.  Specified$/;"	e	enum:__anon45
+KM_TAG_ROLLBACK_RESISTANT	include/keymaster_ta_defs.h	/^    KM_TAG_ROLLBACK_RESISTANT = KM_BOOL | 703,     \/* Whether key is rollback-resistant. *\/$/;"	e	enum:__anon45
+KM_TAG_ROOT_OF_TRUST	include/keymaster_ta_defs.h	/^    KM_TAG_ROOT_OF_TRUST = KM_BYTES | 704,         \/* Root of trust ID. *\/$/;"	e	enum:__anon45
+KM_TAG_RSA_PUBLIC_EXPONENT	include/keymaster_ta_defs.h	/^    KM_TAG_RSA_PUBLIC_EXPONENT = KM_ULONG | 200,$/;"	e	enum:__anon45
+KM_TAG_TRUSTED_CONFIRMATION_REQUIRED	include/keymaster_ta_defs.h	/^    KM_TAG_TRUSTED_CONFIRMATION_REQUIRED = KM_BOOL | 508,$/;"	e	enum:__anon45
+KM_TAG_TRUSTED_USER_PRESENCE_REQUIRED	include/keymaster_ta_defs.h	/^    KM_TAG_TRUSTED_USER_PRESENCE_REQUIRED = KM_BOOL | 507,$/;"	e	enum:__anon45
+KM_TAG_UNIQUE_ID	include/keymaster_ta_defs.h	/^    KM_TAG_UNIQUE_ID = KM_BYTES | 707,             \/* Used to provide unique ID in attestation *\/$/;"	e	enum:__anon45
+KM_TAG_UNLOCKED_DEVICE_REQUIRED	include/keymaster_ta_defs.h	/^    KM_TAG_UNLOCKED_DEVICE_REQUIRED = KM_BOOL | 509, \/* Require the device screen to be unlocked if$/;"	e	enum:__anon45
+KM_TAG_USAGE_EXPIRE_DATETIME	include/keymaster_ta_defs.h	/^    KM_TAG_USAGE_EXPIRE_DATETIME = KM_DATE | 402,       \/* Date when existing "messages" should no$/;"	e	enum:__anon45
+KM_TAG_USER_AUTH_TYPE	include/keymaster_ta_defs.h	/^    KM_TAG_USER_AUTH_TYPE = KM_ENUM | 504,      \/* Bitmask of authenticator types allowed when$/;"	e	enum:__anon45
+KM_TAG_USER_ID	include/keymaster_ta_defs.h	/^    KM_TAG_USER_ID = KM_UINT | 501,             \/* Android ID of authorized user or authenticator(s) *\/$/;"	e	enum:__anon45
+KM_TAG_USER_SECURE_ID	include/keymaster_ta_defs.h	/^    KM_TAG_USER_SECURE_ID = KM_ULONG_REP | 502, \/* Secure ID of authorized user or authenticator(s).$/;"	e	enum:__anon45
+KM_TAG_VENDOR_PATCHLEVEL	include/keymaster_ta_defs.h	/^    KM_TAG_VENDOR_PATCHLEVEL = KM_UINT | 718,$/;"	e	enum:__anon45
+KM_UINT	include/keymaster_ta_defs.h	/^    KM_UINT = 3 << 28,$/;"	e	enum:__anon44
+KM_UINT_REP	include/keymaster_ta_defs.h	/^    KM_UINT_REP = 4 << 28, \/* Repeatable integer value *\/$/;"	e	enum:__anon44
+KM_ULONG	include/keymaster_ta_defs.h	/^    KM_ULONG = 5 << 28,$/;"	e	enum:__anon44
+KM_ULONG_REP	include/keymaster_ta_defs.h	/^    KM_ULONG_REP = 10 << 28, \/* Repeatable long value *\/$/;"	e	enum:__anon44
+KM_VERIFIED_BOOT_FAILED	include/keymaster_ta_defs.h	/^    KM_VERIFIED_BOOT_FAILED = 3,      \/* The device failed verification. The bootloader displays a$/;"	e	enum:__anon64
+KM_VERIFIED_BOOT_SELF_SIGNED	include/keymaster_ta_defs.h	/^    KM_VERIFIED_BOOT_SELF_SIGNED = 1, \/* The boot partition has been verified using the embedded$/;"	e	enum:__anon64
+KM_VERIFIED_BOOT_UNVERIFIED	include/keymaster_ta_defs.h	/^    KM_VERIFIED_BOOT_UNVERIFIED = 2,  \/* The device may be freely modified. Device integrity is left$/;"	e	enum:__anon64
+KM_VERIFIED_BOOT_VERIFIED	include/keymaster_ta_defs.h	/^    KM_VERIFIED_BOOT_VERIFIED = 0,    \/* Full chain of trust extending from the bootloader to$/;"	e	enum:__anon64
+KmHmacSharingParametersSet	src/TrustonicKeymaster4Device.cpp	/^    KmHmacSharingParametersSet(const hidl_vec<HmacSharingParameters>& hmacSharingParams) {$/;"	f	class:android::hardware::keymaster::V4_0::implementation::KmHmacSharingParametersSet
+KmHmacSharingParametersSet	src/TrustonicKeymaster4Device.cpp	/^class KmHmacSharingParametersSet : public keymaster_hmac_sharing_parameters_set_t {$/;"	c	namespace:android::hardware::keymaster::V4_0::implementation	file:
+KmHwAuthToken	src/TrustonicKeymaster4Device.cpp	/^    KmHwAuthToken(const HardwareAuthToken& authToken) {$/;"	f	class:android::hardware::keymaster::V4_0::implementation::KmHwAuthToken
+KmHwAuthToken	src/TrustonicKeymaster4Device.cpp	/^class KmHwAuthToken : public keymaster_hw_auth_token_t {$/;"	c	namespace:android::hardware::keymaster::V4_0::implementation	file:
+KmKeyParamSet	src/TrustonicKeymaster4Device.cpp	/^    KmKeyParamSet(KmKeyParamSet&& other) : keymaster_key_param_set_t{other.params, other.length} {$/;"	f	class:android::hardware::keymaster::V4_0::implementation::KmKeyParamSet
+KmKeyParamSet	src/TrustonicKeymaster4Device.cpp	/^    KmKeyParamSet(const hidl_vec<KeyParameter>& keyParams) {$/;"	f	class:android::hardware::keymaster::V4_0::implementation::KmKeyParamSet
+KmKeyParamSet	src/TrustonicKeymaster4Device.cpp	/^class KmKeyParamSet : public keymaster_key_param_set_t {$/;"	c	namespace:android::hardware::keymaster::V4_0::implementation	file:
+KmVerificationToken	src/TrustonicKeymaster4Device.cpp	/^    KmVerificationToken(const VerificationToken& verificationToken) {$/;"	f	class:android::hardware::keymaster::V4_0::implementation::KmVerificationToken
+KmVerificationToken	src/TrustonicKeymaster4Device.cpp	/^class KmVerificationToken : public keymaster_verification_token_t {$/;"	c	namespace:android::hardware::keymaster::V4_0::implementation	file:
+LOCAL_CPPFLAGS	Android.mk	/^LOCAL_CPPFLAGS := -Wall$/;"	m
+LOCAL_C_INCLUDES	Android.mk	/^LOCAL_C_INCLUDES := $(LOCAL_PATH)\/include$/;"	m
+LOCAL_LDLIBS	Android.mk	/^LOCAL_LDLIBS := -llog$/;"	m
+LOCAL_MODULE	Android.mk	/^LOCAL_MODULE := $(MY_LIBRARY_MODULE)$/;"	m
+LOCAL_MODULE	Android.mk	/^LOCAL_MODULE := testTeeKeymaster4$/;"	m
+LOCAL_MODULE_RELATIVE_PATH	Android.mk	/^LOCAL_MODULE_RELATIVE_PATH := hw$/;"	m
+LOCAL_PATH	Android.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_PROPRIETARY_MODULE	Android.mk	/^LOCAL_PROPRIETARY_MODULE := true$/;"	m
+LOCAL_SHARED_LIBRARIES	Android.mk	/^LOCAL_SHARED_LIBRARIES := $(MY_LIBRARY_MODULE) libMcClient$/;"	m
+LOCAL_SHARED_LIBRARIES	Android.mk	/^LOCAL_SHARED_LIBRARIES := libMcClient$/;"	m
+LOCAL_SRC_FILES	Android.mk	/^LOCAL_SRC_FILES := $(ALL_SRC_FILES:$(LOCAL_PATH)\/%=%)$/;"	m
+LOCAL_SRC_FILES	Android.mk	/^LOCAL_SRC_FILES := $(ALL_TST_FILES:$(LOCAL_PATH)\/%=%)$/;"	m
+LOG_D	include/km_shared_util.h	51;"	d
+LOG_E	include/km_shared_util.h	49;"	d
+LOG_I	include/km_shared_util.h	50;"	d
+LOG_TAG	include/km_shared_util.h	44;"	d
+LOG_TAG	include/km_util.h	38;"	d
+LOG_TAG	src/TrustonicKeymaster4Device.cpp	32;"	d	file:
+LOG_TAG	src/TrustonicKeymaster4DeviceImpl.cpp	39;"	d	file:
+LOG_TAG	src/TrustonicKeymaster4DeviceImpl.cpp	40;"	d	file:
+MAX_DYNAMIC_PARAM_BUFFERS	src/serialization.cpp	40;"	d	file:
+MAX_NUM_USE_COUNTED_KEYS	include/tlTeeKeymaster_Api.h	341;"	d
+MAX_SESSION_NUM	include/tlTeeKeymaster_Api.h	335;"	d
+MIN	include/km_shared_util.h	94;"	d
+MK	test/test_km_import.cpp	/^static const uint8_t MK[32] = {$/;"	v	file:
+MOBICORE_COMPONENT_BUILD_TAG	include/buildTag.h	32;"	d
+MY_LIBRARY_MODULE	Android.mk	/^MY_LIBRARY_MODULE := keystore.$(TARGET_BOARD_PLATFORM)$/;"	m
+MY_LIBRARY_MODULE	Android.mk	/^MY_LIBRARY_MODULE := libMcTeeKeymaster4$/;"	m
+N_ARRAY_ELTS	test/test_km_util.h	77;"	d
+N_TAGS	src/authlist.cpp	82;"	d	file:
+OWN_PARAMS_MAX_SIZE	include/km_shared_util.h	320;"	d
+PARAM_CASE	src/tlcTeeKeymaster_if.cpp	143;"	d	file:
+PARAM_CASE_BOOL	src/tlcTeeKeymaster_if.cpp	158;"	d	file:
+PARAM_CASE_BYTES	src/tlcTeeKeymaster_if.cpp	160;"	d	file:
+PARAM_CASE_DATE	src/tlcTeeKeymaster_if.cpp	157;"	d	file:
+PARAM_CASE_ENUM	src/tlcTeeKeymaster_if.cpp	154;"	d	file:
+PARAM_CASE_UINT	src/tlcTeeKeymaster_if.cpp	155;"	d	file:
+PARAM_CASE_ULONG	src/tlcTeeKeymaster_if.cpp	156;"	d	file:
+PRINT_BLOB	src/tlcTeeKeymaster_if.cpp	230;"	d	file:
+PRINT_BLOB	src/tlcTeeKeymaster_if.cpp	63;"	d	file:
+PRINT_BLOB_HEX	src/tlcTeeKeymaster_if.cpp	243;"	d	file:
+PRINT_BLOB_HEX	src/tlcTeeKeymaster_if.cpp	64;"	d	file:
+PRINT_BOOL	src/tlcTeeKeymaster_if.cpp	140;"	d	file:
+PRINT_BUFFER	src/tlcTeeKeymaster_if.cpp	224;"	d	file:
+PRINT_BUFFER	src/tlcTeeKeymaster_if.cpp	62;"	d	file:
+PRINT_BYTES	src/tlcTeeKeymaster_if.cpp	142;"	d	file:
+PRINT_DATE	src/tlcTeeKeymaster_if.cpp	139;"	d	file:
+PRINT_ENUM	src/tlcTeeKeymaster_if.cpp	136;"	d	file:
+PRINT_PARAM_SET	src/tlcTeeKeymaster_if.cpp	236;"	d	file:
+PRINT_PARAM_SET	src/tlcTeeKeymaster_if.cpp	65;"	d	file:
+PRINT_UINT	src/tlcTeeKeymaster_if.cpp	137;"	d	file:
+PRINT_ULONG	src/tlcTeeKeymaster_if.cpp	138;"	d	file:
+RSA_MAX_KEY_SIZE	src/tlcTeeKeymaster_if.cpp	51;"	d	file:
+RSP_ID	include/tci.h	42;"	d
+RSP_ID_MASK	include/tci.h	41;"	d
+SBUF_SIZE	src/tlcTeeKeymaster_if.cpp	70;"	d	file:
+SECURE_OS_TIMEOUT	src/tlcTeeKeymaster_if.cpp	264;"	d	file:
+SETPARAM	test/test_km_util.h	78;"	d
+TAGID	src/authlist.cpp	83;"	d	file:
+TEE_Abort	src/tlcTeeKeymaster_if.cpp	/^keymaster_error_t TEE_Abort($/;"	f
+TEE_AddRngEntropy	src/tlcTeeKeymaster_if.cpp	/^keymaster_error_t TEE_AddRngEntropy($/;"	f
+TEE_AttestKey	src/tlcTeeKeymaster_if.cpp	/^keymaster_error_t TEE_AttestKey($/;"	f
+TEE_BEGIN_OUT_PARAMS_SIZE	include/km_shared_util.h	328;"	d
+TEE_Begin	src/tlcTeeKeymaster_if.cpp	/^keymaster_error_t TEE_Begin($/;"	f
+TEE_Close	src/tlcTeeKeymaster_if.cpp	/^void TEE_Close(TEE_SessionHandle sessionHandle)$/;"	f
+TEE_Configure	src/tlcTeeKeymaster_if.cpp	/^keymaster_error_t TEE_Configure($/;"	f
+TEE_ExportKey	src/tlcTeeKeymaster_if.cpp	/^keymaster_error_t TEE_ExportKey($/;"	f
+TEE_Finish	src/tlcTeeKeymaster_if.cpp	/^keymaster_error_t TEE_Finish($/;"	f
+TEE_GenerateKey	src/tlcTeeKeymaster_if.cpp	/^keymaster_error_t TEE_GenerateKey($/;"	f
+TEE_GetKeyCharacteristics	src/tlcTeeKeymaster_if.cpp	/^keymaster_error_t TEE_GetKeyCharacteristics($/;"	f
+TEE_ImportKey	src/tlcTeeKeymaster_if.cpp	/^keymaster_error_t TEE_ImportKey($/;"	f
+TEE_ImportWrappedKey	src/tlcTeeKeymaster_if.cpp	/^keymaster_error_t TEE_ImportWrappedKey($/;"	f
+TEE_KEYMASTER_M_TA_UUID	include/tlTeeKeymaster_Api.h	685;"	d
+TEE_KEYMASTER_N_TA_UUID	include/tlTeeKeymaster_Api.h	686;"	d
+TEE_KEYMASTER_TA_UUID	include/tlTeeKeymaster_Api.h	684;"	d
+TEE_Open	src/tlcTeeKeymaster_if.cpp	/^int TEE_Open(TEE_SessionHandle *pSessionHandle)$/;"	f
+TEE_Session	include/tlcTeeKeymaster_if.h	/^struct TEE_Session {$/;"	s
+TEE_SessionHandle	include/tlcTeeKeymaster_if.h	/^typedef void *TEE_SessionHandle;$/;"	t
+TEE_Update	src/tlcTeeKeymaster_if.cpp	/^keymaster_error_t TEE_Update($/;"	f
+TEE_UpgradeKey	src/tlcTeeKeymaster_if.cpp	/^keymaster_error_t TEE_UpgradeKey($/;"	f
+TRIPLE_DES_KEY_SIZE	src/tlcTeeKeymaster_if.cpp	55;"	d	file:
+TRUSTONIC_TEE_KEYMASTER_IMPL_H_	include/TrustonicKeymaster4DeviceImpl.h	33;"	d
+TrustonicKeymaster4Device	include/TrustonicKeymaster4Device.h	/^    TrustonicKeymaster4Device(TrustonicKeymaster4DeviceImpl *impl)$/;"	f	class:android::hardware::keymaster::V4_0::implementation::TrustonicKeymaster4Device
+TrustonicKeymaster4Device	include/TrustonicKeymaster4Device.h	/^class TrustonicKeymaster4Device : public IKeymasterDevice {$/;"	c	namespace:android::hardware::keymaster::V4_0::implementation
+TrustonicKeymaster4DeviceImpl	include/TrustonicKeymaster4DeviceImpl.h	/^class TrustonicKeymaster4DeviceImpl {$/;"	c
+TrustonicKeymaster4DeviceImpl	src/TrustonicKeymaster4DeviceImpl.cpp	/^TrustonicKeymaster4DeviceImpl::TrustonicKeymaster4DeviceImpl()$/;"	f	class:TrustonicKeymaster4DeviceImpl
+UPGRADE_OVERHEAD	src/tlcTeeKeymaster_if.cpp	1601;"	d	file:
+V4_0	include/TrustonicKeymaster4Device.h	/^namespace V4_0 {$/;"	n	namespace:android::hardware::keymaster
+V4_0	src/TrustonicKeymaster4Device.cpp	/^namespace V4_0 {$/;"	n	namespace:android::hardware::keymaster	file:
+WKB_offset	include/tlTeeKeymaster_Api.h	/^    uint32_t WKB_offset; \/**< [in] *\/$/;"	m	struct:__anon32
+X	test/test_km_import.cpp	/^static const uint8_t X[32] = {$/;"	v	file:
+_CUST_TEE_KEYMASTER_IMPL_H_	include/cust_tee_keymaster_impl.h	33;"	d
+_KEYMASTER_TA_DEFS_H_	include/keymaster_ta_defs.h	21;"	d
+_TRUSTONIC_KEYMASTER4_DEVICE_H_	include/TrustonicKeymaster4Device.h	33;"	d
+__AUTHLIST_H__	include/authlist.h	33;"	d
+__KEYMASTER_VERSION_H__	include/keymaster_version.h	33;"	d
+__KM_ENCODINGS_H__	include/km_encodings.h	33;"	d
+__KM_SHARED_UTIL_H__	include/km_shared_util.h	33;"	d
+__KM_UTIL_H__	include/km_util.h	33;"	d
+__SERIALIZATION_H__	include/serialization.h	33;"	d
+__STDC_FORMAT_MACROS	src/tlcTeeKeymaster_if.cpp	35;"	d	file:
+__TCI_H__	include/tci.h	33;"	d
+__TEST_KM_AES_H__	test/test_km_aes.h	33;"	d
+__TEST_KM_ATTESTATION_H__	test/test_km_attestation.h	33;"	d
+__TEST_KM_DES_H__	test/test_km_des.h	33;"	d
+__TEST_KM_EC_H__	test/test_km_ec.h	33;"	d
+__TEST_KM_HMAC_H__	test/test_km_hmac.h	33;"	d
+__TEST_KM_IMPORT_H__	test/test_km_import.h	33;"	d
+__TEST_KM_RESTRICTIONS_H__	test/test_km_restrictions.h	33;"	d
+__TEST_KM_RSA_H__	test/test_km_rsa.h	33;"	d
+__TEST_KM_UTIL_H__	test/test_km_util.h	33;"	d
+__TEST_KM_VERBIND_H__	test/test_km_verbind.h	33;"	d
+__TLCTEEKEYMASTERN_IF_H__	include/tlcTeeKeymaster_if.h	33;"	d
+__TLTEEKEYMASTER_API_H__	include/tlTeeKeymaster_Api.h	33;"	d
+abort	include/tlTeeKeymaster_Api.h	/^        abort_v0_t             abort;$/;"	m	union:__anon33::__anon35
+abort	include/tlTeeKeymaster_Api.h	/^        abort_v0_t             abort;$/;"	m	union:__anon36::__anon38
+abort	include/tlTeeKeymaster_Api.h	/^        abort_v0_t             abort;$/;"	m	union:__anon39::__anon41
+abort	src/TrustonicKeymaster4Device.cpp	/^Return<ErrorCode> TrustonicKeymaster4Device::abort($/;"	f	class:android::hardware::keymaster::V4_0::implementation::TrustonicKeymaster4Device
+abort	src/TrustonicKeymaster4DeviceImpl.cpp	/^keymaster_error_t TrustonicKeymaster4DeviceImpl::abort($/;"	f	class:TrustonicKeymaster4DeviceImpl
+abort_v0_t	include/tlTeeKeymaster_Api.h	/^} abort_v0_t;$/;"	t	typeref:struct:__anon22
+addRngEntropy	src/TrustonicKeymaster4Device.cpp	/^Return<ErrorCode> TrustonicKeymaster4Device::addRngEntropy($/;"	f	class:android::hardware::keymaster::V4_0::implementation::TrustonicKeymaster4Device
+add_rng_entropy	include/tlTeeKeymaster_Api.h	/^        add_rng_entropy_v0_t   add_rng_entropy;$/;"	m	union:__anon33::__anon35
+add_rng_entropy	include/tlTeeKeymaster_Api.h	/^        add_rng_entropy_v0_t   add_rng_entropy;$/;"	m	union:__anon36::__anon38
+add_rng_entropy	include/tlTeeKeymaster_Api.h	/^        add_rng_entropy_v0_t   add_rng_entropy;$/;"	m	union:__anon39::__anon41
+add_rng_entropy	src/TrustonicKeymaster4DeviceImpl.cpp	/^keymaster_error_t TrustonicKeymaster4DeviceImpl::add_rng_entropy($/;"	f	class:TrustonicKeymaster4DeviceImpl
+add_rng_entropy_v0_t	include/tlTeeKeymaster_Api.h	/^} add_rng_entropy_v0_t;$/;"	t	typeref:struct:__anon8
+add_to_sglist	test/test_km_util.cpp	/^void add_to_sglist(struct sgentry *sg, size_t *n, size_t max,$/;"	f
+algorithm	include/tlTeeKeymaster_Api.h	/^    uint32_t algorithm; \/**< [out] key type of operation (keymaster_algorithm_t) *\/$/;"	m	struct:__anon15
+algorithm	include/tlTeeKeymaster_Api.h	/^    uint32_t algorithm; \/**< [out] key type of operation (keymaster_algorithm_t) *\/$/;"	m	struct:__anon16
+algorithm	include/tlTeeKeymaster_Api.h	/^    uint32_t algorithm; \/**< [out] key type of operation (keymaster_algorithm_t) *\/$/;"	m	struct:__anon27
+algorithm	include/tlcTeeKeymaster_if.h	/^    keymaster_algorithm_t algorithm;$/;"	m	struct:operation
+android	include/TrustonicKeymaster4Device.h	/^namespace android {$/;"	n
+android	src/TrustonicKeymaster4Device.cpp	/^namespace android {$/;"	n	file:
+app_data	include/tlTeeKeymaster_Api.h	/^    data_blob_t app_data; \/**< [in] *\/$/;"	m	struct:__anon10
+app_data	include/tlTeeKeymaster_Api.h	/^    data_blob_t app_data; \/**< [in] *\/$/;"	m	struct:__anon12
+app_data	include/tlTeeKeymaster_Api.h	/^    data_blob_t app_data; \/**< [in] KM_TAG_APPLICATION_DATA *\/$/;"	m	struct:__anon26
+attestKey	src/TrustonicKeymaster4Device.cpp	/^Return<void> TrustonicKeymaster4Device::attestKey($/;"	f	class:android::hardware::keymaster::V4_0::implementation::TrustonicKeymaster4Device
+attest_allowed_params	src/tlcTeeKeymaster_if.cpp	/^static const keymaster_tag_t attest_allowed_params [] = {$/;"	v	file:
+attest_key	include/tlTeeKeymaster_Api.h	/^        attest_key_v3_t        attest_key;$/;"	m	union:__anon36::__anon38
+attest_key	include/tlTeeKeymaster_Api.h	/^        attest_key_v3_t        attest_key;$/;"	m	union:__anon39::__anon41
+attest_key	src/TrustonicKeymaster4DeviceImpl.cpp	/^keymaster_error_t TrustonicKeymaster4DeviceImpl::attest_key($/;"	f	class:TrustonicKeymaster4DeviceImpl
+attest_key_v3_t	include/tlTeeKeymaster_Api.h	/^} attest_key_v3_t;$/;"	t	typeref:struct:__anon24
+attest_params	include/tlTeeKeymaster_Api.h	/^    data_blob_t attest_params; \/**< [in] serialized *\/$/;"	m	struct:__anon24
+auth_authenticator_id	include/tlTeeKeymaster_Api.h	/^    uint64_t auth_authenticator_id; \/**< [in] HardwareAuthToken.authenticatorId *\/$/;"	m	struct:__anon16
+auth_authenticator_id	include/tlTeeKeymaster_Api.h	/^    uint64_t auth_authenticator_id; \/**< [in] HardwareAuthToken.authenticatorId *\/$/;"	m	struct:__anon18
+auth_authenticator_id	include/tlTeeKeymaster_Api.h	/^    uint64_t auth_authenticator_id; \/**< [in] HardwareAuthToken.authenticatorId *\/$/;"	m	struct:__anon21
+auth_authenticator_type	include/tlTeeKeymaster_Api.h	/^    uint32_t auth_authenticator_type; \/**< [in] HardwareAuthToken.authenticatorType *\/$/;"	m	struct:__anon16
+auth_authenticator_type	include/tlTeeKeymaster_Api.h	/^    uint32_t auth_authenticator_type; \/**< [in] HardwareAuthToken.authenticatorType *\/$/;"	m	struct:__anon18
+auth_authenticator_type	include/tlTeeKeymaster_Api.h	/^    uint32_t auth_authenticator_type; \/**< [in] HardwareAuthToken.authenticatorType *\/$/;"	m	struct:__anon21
+auth_challenge	include/tlTeeKeymaster_Api.h	/^    uint64_t auth_challenge; \/**< [in] HardwareAuthToken.challenge *\/$/;"	m	struct:__anon16
+auth_challenge	include/tlTeeKeymaster_Api.h	/^    uint64_t auth_challenge; \/**< [in] HardwareAuthToken.challenge *\/$/;"	m	struct:__anon18
+auth_challenge	include/tlTeeKeymaster_Api.h	/^    uint64_t auth_challenge; \/**< [in] HardwareAuthToken.challenge *\/$/;"	m	struct:__anon21
+auth_mac	include/tlTeeKeymaster_Api.h	/^    uint8_t auth_mac[32]; \/**< [in] HardwareAuthToken.mac *\/$/;"	m	struct:__anon16
+auth_mac	include/tlTeeKeymaster_Api.h	/^    uint8_t auth_mac[32]; \/**< [in] HardwareAuthToken.mac *\/$/;"	m	struct:__anon18
+auth_mac	include/tlTeeKeymaster_Api.h	/^    uint8_t auth_mac[32]; \/**< [in] HardwareAuthToken.mac *\/$/;"	m	struct:__anon21
+auth_timestamp	include/tlTeeKeymaster_Api.h	/^    uint64_t auth_timestamp; \/**< [in] HardwareAuthToken.timestamp *\/$/;"	m	struct:__anon16
+auth_timestamp	include/tlTeeKeymaster_Api.h	/^    uint64_t auth_timestamp; \/**< [in] HardwareAuthToken.timestamp *\/$/;"	m	struct:__anon18
+auth_timestamp	include/tlTeeKeymaster_Api.h	/^    uint64_t auth_timestamp; \/**< [in] HardwareAuthToken.timestamp *\/$/;"	m	struct:__anon21
+auth_user_id	include/tlTeeKeymaster_Api.h	/^    uint64_t auth_user_id; \/**< [in] HardwareAuthToken.userId *\/$/;"	m	struct:__anon16
+auth_user_id	include/tlTeeKeymaster_Api.h	/^    uint64_t auth_user_id; \/**< [in] HardwareAuthToken.userId *\/$/;"	m	struct:__anon18
+auth_user_id	include/tlTeeKeymaster_Api.h	/^    uint64_t auth_user_id; \/**< [in] HardwareAuthToken.userId *\/$/;"	m	struct:__anon21
+authenticator_id	include/keymaster_ta_defs.h	/^    uint64_t authenticator_id;$/;"	m	struct:__anon68
+authenticator_type	include/keymaster_ta_defs.h	/^    keymaster_hw_auth_type_t authenticator_type;$/;"	m	struct:__anon68
+begin	include/tlTeeKeymaster_Api.h	/^        begin_v0_t             begin;$/;"	m	union:__anon33::__anon35
+begin	include/tlTeeKeymaster_Api.h	/^        begin_v3_t             begin;$/;"	m	union:__anon36::__anon38
+begin	include/tlTeeKeymaster_Api.h	/^        begin_v4_t             begin;$/;"	m	union:__anon39::__anon41
+begin	src/TrustonicKeymaster4Device.cpp	/^Return<void> TrustonicKeymaster4Device::begin($/;"	f	class:android::hardware::keymaster::V4_0::implementation::TrustonicKeymaster4Device
+begin	src/TrustonicKeymaster4DeviceImpl.cpp	/^keymaster_error_t TrustonicKeymaster4DeviceImpl::begin($/;"	f	class:TrustonicKeymaster4DeviceImpl
+begin_v0_t	include/tlTeeKeymaster_Api.h	/^} begin_v0_t;$/;"	t	typeref:struct:__anon14
+begin_v3_t	include/tlTeeKeymaster_Api.h	/^} begin_v3_t;$/;"	t	typeref:struct:__anon15
+begin_v4_t	include/tlTeeKeymaster_Api.h	/^} begin_v4_t;$/;"	t	typeref:struct:__anon16
+biometric_sid	include/tlTeeKeymaster_Api.h	/^    uint64_t biometric_sid; \/**< [in] *\/$/;"	m	struct:__anon32
+blob	include/keymaster_ta_defs.h	/^        keymaster_blob_t blob; \/* KM_BIGNUM and KM_BYTES*\/$/;"	m	union:__anon56::__anon57
+blob	include/tlTeeKeymaster_Api.h	/^    data_blob_t blob; \/**< [out] encrypted attestation data (Secure Object) *\/$/;"	m	struct:__anon30
+block_length	test/test_km_util.cpp	/^uint32_t block_length($/;"	f
+boolean	include/keymaster_ta_defs.h	/^        bool boolean;          \/* KM_BOOL *\/$/;"	m	union:__anon56::__anon57
+boot_patchlevel	include/km_shared_util.h	/^    uint32_t boot_patchlevel;$/;"	m	struct:__anon4
+boot_patchlevel	include/tlTeeKeymaster_Api.h	/^    uint32_t boot_patchlevel; \/**< [in] *\/$/;"	m	struct:__anon29
+boot_patchlevel	test/test_km_verbind.cpp	/^    uint32_t boot_patchlevel;$/;"	m	struct:__anon3	file:
+bootimage_info_t	include/km_shared_util.h	/^} bootimage_info_t;$/;"	t	typeref:struct:__anon4
+bootimage_info_t	test/test_km_verbind.cpp	/^} bootimage_info_t;$/;"	t	typeref:struct:__anon3	file:
+buf	include/km_util.h	/^    std::unique_ptr<T> buf;$/;"	m	struct:scoped_data_ptr_t
+cert_chain	include/tlTeeKeymaster_Api.h	/^    data_blob_t cert_chain; \/**< [out] serialized *\/$/;"	m	struct:__anon24
+challenge	include/keymaster_ta_defs.h	/^    uint64_t challenge;$/;"	m	struct:__anon67
+challenge	include/keymaster_ta_defs.h	/^    uint64_t challenge;$/;"	m	struct:__anon68
+characteristics	include/tlTeeKeymaster_Api.h	/^    data_blob_t characteristics; \/**< [out] serialized *\/$/;"	m	struct:__anon10
+characteristics	include/tlTeeKeymaster_Api.h	/^    data_blob_t characteristics; \/**< [out] serialized *\/$/;"	m	struct:__anon11
+characteristics	include/tlTeeKeymaster_Api.h	/^    data_blob_t characteristics; \/**< [out] serialized *\/$/;"	m	struct:__anon9
+check_AuthorizationItem	src/authlist.cpp	/^static keymaster_error_t check_AuthorizationItem($/;"	f	file:
+check_AuthorizationList	src/authlist.cpp	/^static keymaster_error_t check_AuthorizationList($/;"	f	file:
+check_algorithm_purpose	src/km_shared_util.cpp	/^bool check_algorithm_purpose($/;"	f
+check_blob	test/test_km_verbind.cpp	/^static keymaster_error_t check_blob(TrustonicKeymaster4DeviceImpl *impl,$/;"	f	file:
+check_params	src/tlcTeeKeymaster_if.cpp	/^static keymaster_error_t check_params($/;"	f	file:
+chunk_submit_func	src/tlcTeeKeymaster_if.cpp	/^typedef keymaster_error_t chunk_submit_func($/;"	t	file:
+client_id	include/tlTeeKeymaster_Api.h	/^    data_blob_t client_id; \/**< [in] *\/$/;"	m	struct:__anon10
+client_id	include/tlTeeKeymaster_Api.h	/^    data_blob_t client_id; \/**< [in] *\/$/;"	m	struct:__anon12
+client_id	include/tlTeeKeymaster_Api.h	/^    data_blob_t client_id; \/**< [in] KM_TAG_APPLICATION_ID *\/$/;"	m	struct:__anon26
+command	include/tlTeeKeymaster_Api.h	/^        command_t command;$/;"	m	union:__anon33::__anon34
+command	include/tlTeeKeymaster_Api.h	/^        command_t command;$/;"	m	union:__anon36::__anon37
+command	include/tlTeeKeymaster_Api.h	/^        command_t command;$/;"	m	union:__anon39::__anon40
+commandId	include/tci.h	/^    tciCommandId_t commandId; \/**< Command ID *\/$/;"	m	struct:__anon71
+command_t	include/tlTeeKeymaster_Api.h	/^} command_t;$/;"	t	typeref:struct:__anon6
+computeSharedHmac	src/TrustonicKeymaster4Device.cpp	/^Return<void> TrustonicKeymaster4Device::computeSharedHmac($/;"	f	class:android::hardware::keymaster::V4_0::implementation::TrustonicKeymaster4Device
+compute_shared_hmac	src/TrustonicKeymaster4DeviceImpl.cpp	/^keymaster_error_t TrustonicKeymaster4DeviceImpl::compute_shared_hmac($/;"	f	class:TrustonicKeymaster4DeviceImpl
+configure	include/tlTeeKeymaster_Api.h	/^        configure_v3_t         configure;$/;"	m	union:__anon36::__anon38
+configure	include/tlTeeKeymaster_Api.h	/^        configure_v3_t         configure;$/;"	m	union:__anon39::__anon41
+configure_v3_t	include/tlTeeKeymaster_Api.h	/^} configure_v3_t;$/;"	t	typeref:struct:__anon23
+convert_blob	src/TrustonicKeymaster4Device.cpp	/^inline hidl_vec<uint8_t> convert_blob(const keymaster_blob_t& blob) {$/;"	f	namespace:android::hardware::keymaster::V4_0::implementation
+convert_blob	src/TrustonicKeymaster4Device.cpp	/^inline keymaster_blob_t convert_blob(const hidl_vec<uint8_t>& blob) {$/;"	f	namespace:android::hardware::keymaster::V4_0::implementation
+convert_cert_chain	src/TrustonicKeymaster4Device.cpp	/^convert_cert_chain(const keymaster_cert_chain_t& cert_chain) {$/;"	f	namespace:android::hardware::keymaster::V4_0::implementation
+convert_hmac_sharing_parameters	src/TrustonicKeymaster4Device.cpp	/^inline HmacSharingParameters convert_hmac_sharing_parameters($/;"	f	namespace:android::hardware::keymaster::V4_0::implementation
+convert_key_blob	src/TrustonicKeymaster4Device.cpp	/^inline hidl_vec<uint8_t> convert_key_blob(const keymaster_key_blob_t& blob) {$/;"	f	namespace:android::hardware::keymaster::V4_0::implementation
+convert_key_blob	src/TrustonicKeymaster4Device.cpp	/^inline keymaster_key_blob_t convert_key_blob(const hidl_vec<uint8_t>& blob) {$/;"	f	namespace:android::hardware::keymaster::V4_0::implementation
+convert_key_characteristics	src/TrustonicKeymaster4Device.cpp	/^inline KeyCharacteristics convert_key_characteristics($/;"	f	namespace:android::hardware::keymaster::V4_0::implementation
+convert_key_param_set	src/TrustonicKeymaster4Device.cpp	/^static inline hidl_vec<KeyParameter> convert_key_param_set(const keymaster_key_param_set_t& set) {$/;"	f	namespace:android::hardware::keymaster::V4_0::implementation
+convert_tag	src/TrustonicKeymaster4Device.cpp	/^inline Tag convert_tag(const keymaster_tag_t value) {$/;"	f	namespace:android::hardware::keymaster::V4_0::implementation
+convert_verification_token	src/TrustonicKeymaster4Device.cpp	/^inline VerificationToken convert_verification_token($/;"	f	namespace:android::hardware::keymaster::V4_0::implementation
+copy_to_scoped_buf	src/tlcTeeKeymaster_if.cpp	/^static keymaster_error_t copy_to_scoped_buf(const uint8_t *buf, uint32_t size, scoped_buf_ptr_t& data)$/;"	f	file:
+data	include/keymaster_ta_defs.h	/^    const uint8_t* data;$/;"	m	struct:__anon55
+data	include/tlTeeKeymaster_Api.h	/^    data_blob_t data; \/**< [in] attestation data (format is OEM-specific) *\/$/;"	m	struct:__anon30
+data	include/tlTeeKeymaster_Api.h	/^    data_blob_t data; \/**< [in] attestation data (format is OEM-specific) *\/$/;"	m	struct:__anon31
+data	include/tlTeeKeymaster_Api.h	/^    uint32_t data; \/**< secure address *\/$/;"	m	struct:__anon5
+data_blob_t	include/tlTeeKeymaster_Api.h	/^} data_blob_t;$/;"	t	typeref:struct:__anon5
+data_length	include/keymaster_ta_defs.h	/^    size_t data_length;$/;"	m	struct:__anon55
+data_length	include/tlTeeKeymaster_Api.h	/^    uint32_t data_length; \/**< [out] upper bound for length in bytes of output from finish() *\/$/;"	m	struct:__anon27
+data_length	include/tlTeeKeymaster_Api.h	/^    uint32_t data_length; \/**< data length *\/$/;"	m	struct:__anon5
+date_time	include/keymaster_ta_defs.h	/^        uint64_t date_time;    \/* KM_DATE *\/$/;"	m	union:__anon56::__anon57
+decode_key_data	src/km_shared_util.cpp	/^keymaster_error_t decode_key_data($/;"	f
+decode_pkcs8_ec	src/km_shared_util.cpp	/^static keymaster_error_t decode_pkcs8_ec($/;"	f	file:
+decode_pkcs8_rsa	src/km_shared_util.cpp	/^static keymaster_error_t decode_pkcs8_rsa($/;"	f	file:
+deleteAllKeys	src/TrustonicKeymaster4Device.cpp	/^Return<ErrorCode> TrustonicKeymaster4Device::deleteAllKeys()$/;"	f	class:android::hardware::keymaster::V4_0::implementation::TrustonicKeymaster4Device
+deleteKey	src/TrustonicKeymaster4Device.cpp	/^Return<ErrorCode> TrustonicKeymaster4Device::deleteKey($/;"	f	class:android::hardware::keymaster::V4_0::implementation::TrustonicKeymaster4Device
+der_0	test/test_km_import.cpp	/^static const uint8_t der_0[] = {0x02, 0x01, 0x00};$/;"	v	file:
+der_iv	test/test_km_import.cpp	/^static const uint8_t der_iv[18] = {0x04, 0x10, \/\/ OCTET STRING, length 16$/;"	v	file:
+der_read_bit_string_length	src/km_shared_util.cpp	/^bool der_read_bit_string_length($/;"	f
+der_read_explicit_tag_and_length	src/km_shared_util.cpp	/^bool der_read_explicit_tag_and_length($/;"	f
+der_read_integer_length	src/km_shared_util.cpp	/^bool der_read_integer_length($/;"	f
+der_read_octet_string_length	src/km_shared_util.cpp	/^bool der_read_octet_string_length($/;"	f
+der_read_oid_length	src/km_shared_util.cpp	/^bool der_read_oid_length($/;"	f
+der_read_sequence_length	src/km_shared_util.cpp	/^bool der_read_sequence_length($/;"	f
+deserialize_param_set	src/serialization.cpp	/^keymaster_error_t deserialize_param_set($/;"	f
+destroyAttestationIds	src/TrustonicKeymaster4Device.cpp	/^Return<ErrorCode> TrustonicKeymaster4Device::destroyAttestationIds()$/;"	f	class:android::hardware::keymaster::V4_0::implementation::TrustonicKeymaster4Device
+dummy_nonce	src/TrustonicKeymaster4DeviceImpl.cpp	/^static const uint8_t dummy_nonce[32] = {0};$/;"	v	file:
+dummy_sharing_check	src/TrustonicKeymaster4DeviceImpl.cpp	/^static const uint8_t dummy_sharing_check[32] = {0};$/;"	v	file:
+ec_bitlen	src/km_shared_util.cpp	/^uint32_t ec_bitlen($/;"	f
+ec_curve_nist_p192	src/km_encodings.cpp	/^    ec_curve_nist_p192 = 1,$/;"	e	enum:__anon1	file:
+ec_curve_nist_p192	src/km_shared_util.cpp	/^    ec_curve_nist_p192 = 1,$/;"	e	enum:__anon2	file:
+ec_curve_nist_p224	src/km_encodings.cpp	/^    ec_curve_nist_p224 = 2,$/;"	e	enum:__anon1	file:
+ec_curve_nist_p224	src/km_shared_util.cpp	/^    ec_curve_nist_p224 = 2,$/;"	e	enum:__anon2	file:
+ec_curve_nist_p256	src/km_encodings.cpp	/^    ec_curve_nist_p256 = 3,$/;"	e	enum:__anon1	file:
+ec_curve_nist_p256	src/km_shared_util.cpp	/^    ec_curve_nist_p256 = 3,$/;"	e	enum:__anon2	file:
+ec_curve_nist_p384	src/km_encodings.cpp	/^    ec_curve_nist_p384 = 4,$/;"	e	enum:__anon1	file:
+ec_curve_nist_p384	src/km_shared_util.cpp	/^    ec_curve_nist_p384 = 4,$/;"	e	enum:__anon2	file:
+ec_curve_nist_p521	src/km_encodings.cpp	/^    ec_curve_nist_p521 = 5$/;"	e	enum:__anon1	file:
+ec_curve_nist_p521	src/km_shared_util.cpp	/^    ec_curve_nist_p521 = 5$/;"	e	enum:__anon2	file:
+ec_curve_t	src/km_encodings.cpp	/^} ec_curve_t;$/;"	t	typeref:enum:__anon1	file:
+ec_curve_t	src/km_shared_util.cpp	/^} ec_curve_t;$/;"	t	typeref:enum:__anon2	file:
+eckey_oid	src/km_shared_util.cpp	/^static const uint8_t eckey_oid[] = {$/;"	v	file:
+encode_key	src/tlcTeeKeymaster_if.cpp	/^static keymaster_error_t encode_key($/;"	f	file:
+encode_x509	src/km_encodings.cpp	/^keymaster_error_t encode_x509($/;"	f
+encode_x509_ec_pub	src/km_encodings.cpp	/^static keymaster_error_t encode_x509_ec_pub($/;"	f	file:
+encode_x509_rsa_pub	src/km_encodings.cpp	/^static keymaster_error_t encode_x509_rsa_pub($/;"	f	file:
+entries	include/keymaster_ta_defs.h	/^    keymaster_blob_t* entries;$/;"	m	struct:__anon61
+entry_count	include/keymaster_ta_defs.h	/^    size_t entry_count;$/;"	m	struct:__anon61
+enumerated	include/keymaster_ta_defs.h	/^        uint32_t enumerated;   \/* KM_ENUM and KM_ENUM_REP *\/$/;"	m	union:__anon56::__anon57
+equal_sglists	test/test_km_util.cpp	/^bool equal_sglists(const struct sgentry *a, size_t na,$/;"	f
+errcode	include/TrustonicKeymaster4DeviceImpl.h	/^    int errcode;$/;"	m	class:TrustonicKeymaster4DeviceImpl
+exportKey	src/TrustonicKeymaster4Device.cpp	/^Return<void> TrustonicKeymaster4Device::exportKey($/;"	f	class:android::hardware::keymaster::V4_0::implementation::TrustonicKeymaster4Device
+export_data_length	src/tlcTeeKeymaster_if.cpp	/^static uint32_t export_data_length($/;"	f	file:
+export_key	include/tlTeeKeymaster_Api.h	/^        export_key_v0_t        export_key;$/;"	m	union:__anon33::__anon35
+export_key	include/tlTeeKeymaster_Api.h	/^        export_key_v0_t        export_key;$/;"	m	union:__anon36::__anon38
+export_key	include/tlTeeKeymaster_Api.h	/^        export_key_v0_t        export_key;$/;"	m	union:__anon39::__anon41
+export_key	src/TrustonicKeymaster4DeviceImpl.cpp	/^keymaster_error_t TrustonicKeymaster4DeviceImpl::export_key($/;"	f	class:TrustonicKeymaster4DeviceImpl
+export_key_v0_t	include/tlTeeKeymaster_Api.h	/^} export_key_v0_t;$/;"	t	typeref:struct:__anon12
+final_chunk	src/tlcTeeKeymaster_if.cpp	/^static keymaster_error_t final_chunk($/;"	f	file:
+final_length	include/tlTeeKeymaster_Api.h	/^    uint32_t final_length; \/**< [out] upper bound for extra length in bytes of output from finish() *\/$/;"	m	struct:__anon15
+final_length	include/tlTeeKeymaster_Api.h	/^    uint32_t final_length; \/**< [out] upper bound for extra length in bytes of output from finish() *\/$/;"	m	struct:__anon16
+final_length	include/tlcTeeKeymaster_if.h	/^    size_t final_length;$/;"	m	struct:operation
+find_spare_operation_slot	src/tlcTeeKeymaster_if.cpp	/^static struct operation *find_spare_operation_slot(TEE_Session *session,$/;"	f	file:
+finish	include/tlTeeKeymaster_Api.h	/^        finish_v0_t            finish;$/;"	m	union:__anon33::__anon35
+finish	include/tlTeeKeymaster_Api.h	/^        finish_v3_t            finish;$/;"	m	union:__anon36::__anon38
+finish	include/tlTeeKeymaster_Api.h	/^        finish_v4_t            finish;$/;"	m	union:__anon39::__anon41
+finish	src/TrustonicKeymaster4Device.cpp	/^Return<void> TrustonicKeymaster4Device::finish($/;"	f	class:android::hardware::keymaster::V4_0::implementation::TrustonicKeymaster4Device
+finish	src/TrustonicKeymaster4DeviceImpl.cpp	/^keymaster_error_t TrustonicKeymaster4DeviceImpl::finish($/;"	f	class:TrustonicKeymaster4DeviceImpl
+finish_chunk_ctx	src/tlcTeeKeymaster_if.cpp	/^struct finish_chunk_ctx {$/;"	s	file:
+finish_v0_t	include/tlTeeKeymaster_Api.h	/^} finish_v0_t;$/;"	t	typeref:struct:__anon19
+finish_v3_t	include/tlTeeKeymaster_Api.h	/^} finish_v3_t;$/;"	t	typeref:struct:__anon20
+finish_v4_t	include/tlTeeKeymaster_Api.h	/^} finish_v4_t;$/;"	t	typeref:struct:__anon21
+gDeviceId	src/tlcTeeKeymaster_if.cpp	/^static const uint32_t gDeviceId = MC_DEVICE_ID_DEFAULT;$/;"	v	file:
+gUuid	src/tlcTeeKeymaster_if.cpp	/^static const mcUuid_t gUuid = TEE_KEYMASTER_N_TA_UUID;$/;"	v	file:
+generateKey	src/TrustonicKeymaster4Device.cpp	/^Return<void> TrustonicKeymaster4Device::generateKey($/;"	f	class:android::hardware::keymaster::V4_0::implementation::TrustonicKeymaster4Device
+generate_key	include/tlTeeKeymaster_Api.h	/^        generate_key_v0_t      generate_key;$/;"	m	union:__anon33::__anon35
+generate_key	include/tlTeeKeymaster_Api.h	/^        generate_key_v0_t      generate_key;$/;"	m	union:__anon36::__anon38
+generate_key	include/tlTeeKeymaster_Api.h	/^        generate_key_v0_t      generate_key;$/;"	m	union:__anon39::__anon41
+generate_key	src/TrustonicKeymaster4DeviceImpl.cpp	/^keymaster_error_t TrustonicKeymaster4DeviceImpl::generate_key($/;"	f	class:TrustonicKeymaster4DeviceImpl
+generate_key_v0_t	include/tlTeeKeymaster_Api.h	/^} generate_key_v0_t;$/;"	t	typeref:struct:__anon9
+getFileContent	src/cust_tee_keymaster_utils.cpp	/^long getFileContent(const char* pPath, uint8_t** ppContent)$/;"	f
+getHardwareInfo	src/TrustonicKeymaster4Device.cpp	/^Return<void> TrustonicKeymaster4Device::getHardwareInfo($/;"	f	class:android::hardware::keymaster::V4_0::implementation::TrustonicKeymaster4Device
+getHmacSharingParameters	src/TrustonicKeymaster4Device.cpp	/^Return<void> TrustonicKeymaster4Device::getHmacSharingParameters($/;"	f	class:android::hardware::keymaster::V4_0::implementation::TrustonicKeymaster4Device
+getKeyCharacteristics	src/TrustonicKeymaster4Device.cpp	/^Return<void> TrustonicKeymaster4Device::getKeyCharacteristics($/;"	f	class:android::hardware::keymaster::V4_0::implementation::TrustonicKeymaster4Device
+get_enumerated_tag	src/tlcTeeKeymaster_if.cpp	/^static keymaster_error_t get_enumerated_tag($/;"	f	file:
+get_hardware_features	include/tlTeeKeymaster_Api.h	/^        get_hardware_features_v3_t get_hardware_features;$/;"	m	union:__anon36::__anon38
+get_hardware_features	include/tlTeeKeymaster_Api.h	/^        get_hardware_features_v3_t get_hardware_features;$/;"	m	union:__anon39::__anon41
+get_hardware_features_v3_t	include/tlTeeKeymaster_Api.h	/^} get_hardware_features_v3_t;$/;"	t	typeref:struct:__anon25
+get_hardware_info	src/TrustonicKeymaster4DeviceImpl.cpp	/^void TrustonicKeymaster4DeviceImpl::get_hardware_info($/;"	f	class:TrustonicKeymaster4DeviceImpl
+get_hmac_sharing_parameters	src/TrustonicKeymaster4DeviceImpl.cpp	/^keymaster_error_t TrustonicKeymaster4DeviceImpl::get_hmac_sharing_parameters($/;"	f	class:TrustonicKeymaster4DeviceImpl
+get_integer_tag	src/tlcTeeKeymaster_if.cpp	/^static keymaster_error_t get_integer_tag($/;"	f	file:
+get_key_characteristics	include/tlTeeKeymaster_Api.h	/^        get_key_characteristics_v0_t get_key_characteristics;$/;"	m	union:__anon33::__anon35
+get_key_characteristics	include/tlTeeKeymaster_Api.h	/^        get_key_characteristics_v0_t get_key_characteristics;$/;"	m	union:__anon36::__anon38
+get_key_characteristics	include/tlTeeKeymaster_Api.h	/^        get_key_characteristics_v0_t get_key_characteristics;$/;"	m	union:__anon39::__anon41
+get_key_characteristics	src/TrustonicKeymaster4DeviceImpl.cpp	/^keymaster_error_t TrustonicKeymaster4DeviceImpl::get_key_characteristics($/;"	f	class:TrustonicKeymaster4DeviceImpl
+get_key_characteristics_v0_t	include/tlTeeKeymaster_Api.h	/^} get_key_characteristics_v0_t;$/;"	t	typeref:struct:__anon10
+get_key_info	include/tlTeeKeymaster_Api.h	/^        get_key_info_v0_t      get_key_info;$/;"	m	union:__anon33::__anon35
+get_key_info	include/tlTeeKeymaster_Api.h	/^        get_key_info_v0_t      get_key_info;$/;"	m	union:__anon36::__anon38
+get_key_info	include/tlTeeKeymaster_Api.h	/^        get_key_info_v0_t      get_key_info;$/;"	m	union:__anon39::__anon41
+get_key_info_v0_t	include/tlTeeKeymaster_Api.h	/^} get_key_info_v0_t;$/;"	t	typeref:struct:__anon26
+get_long_integer_tag	src/tlcTeeKeymaster_if.cpp	/^static keymaster_error_t get_long_integer_tag($/;"	f	file:
+get_nid	src/km_encodings.cpp	/^static keymaster_error_t get_nid($/;"	f	file:
+get_operation_info	include/tlTeeKeymaster_Api.h	/^        get_operation_info_v0_t get_operation_info;$/;"	m	union:__anon33::__anon35
+get_operation_info	include/tlTeeKeymaster_Api.h	/^        get_operation_info_v0_t get_operation_info;$/;"	m	union:__anon36::__anon38
+get_operation_info	include/tlTeeKeymaster_Api.h	/^        get_operation_info_v0_t get_operation_info;$/;"	m	union:__anon39::__anon41
+get_operation_info_v0_t	include/tlTeeKeymaster_Api.h	/^} get_operation_info_v0_t;$/;"	t	typeref:struct:__anon27
+get_u32	src/km_shared_util.cpp	/^uint32_t get_u32(const uint8_t *pos) {$/;"	f
+get_u64	src/km_shared_util.cpp	/^uint64_t get_u64(const uint8_t *pos) {$/;"	f
+get_version	include/tlTeeKeymaster_Api.h	/^        get_version_t          get_version;$/;"	m	union:__anon33::__anon35
+get_version	include/tlTeeKeymaster_Api.h	/^        get_version_t          get_version;$/;"	m	union:__anon36::__anon38
+get_version	include/tlTeeKeymaster_Api.h	/^        get_version_t          get_version;$/;"	m	union:__anon39::__anon41
+get_version_info	src/TrustonicKeymaster4DeviceImpl.cpp	/^static int get_version_info($/;"	f	file:
+get_version_t	include/tlTeeKeymaster_Api.h	/^} get_version_t;$/;"	t	typeref:struct:__anon28
+handle	include/tlTeeKeymaster_Api.h	/^    keymaster_operation_handle_t handle; \/**< [in] *\/$/;"	m	struct:__anon17
+handle	include/tlTeeKeymaster_Api.h	/^    keymaster_operation_handle_t handle; \/**< [in] *\/$/;"	m	struct:__anon18
+handle	include/tlTeeKeymaster_Api.h	/^    keymaster_operation_handle_t handle; \/**< [in] *\/$/;"	m	struct:__anon19
+handle	include/tlTeeKeymaster_Api.h	/^    keymaster_operation_handle_t handle; \/**< [in] *\/$/;"	m	struct:__anon20
+handle	include/tlTeeKeymaster_Api.h	/^    keymaster_operation_handle_t handle; \/**< [in] *\/$/;"	m	struct:__anon21
+handle	include/tlTeeKeymaster_Api.h	/^    keymaster_operation_handle_t handle; \/**< [in] *\/$/;"	m	struct:__anon22
+handle	include/tlTeeKeymaster_Api.h	/^    keymaster_operation_handle_t handle; \/**< [in] *\/$/;"	m	struct:__anon27
+handle	include/tlTeeKeymaster_Api.h	/^    keymaster_operation_handle_t handle; \/**< [out] *\/$/;"	m	struct:__anon14
+handle	include/tlTeeKeymaster_Api.h	/^    keymaster_operation_handle_t handle; \/**< [out] *\/$/;"	m	struct:__anon15
+handle	include/tlTeeKeymaster_Api.h	/^    keymaster_operation_handle_t handle; \/**< [out] *\/$/;"	m	struct:__anon16
+handle	include/tlcTeeKeymaster_if.h	/^    keymaster_operation_handle_t handle;$/;"	m	struct:operation
+hardware	include/TrustonicKeymaster4Device.h	/^namespace hardware {$/;"	n	namespace:android
+hardware	src/TrustonicKeymaster4Device.cpp	/^namespace hardware {$/;"	n	namespace:android	file:
+header	include/tlTeeKeymaster_Api.h	/^    tciCommandHeader_t header; \/**< Command header *\/$/;"	m	struct:__anon6
+header	include/tlTeeKeymaster_Api.h	/^    tciResponseHeader_t header; \/**< Response header *\/$/;"	m	struct:__anon7
+hw_enforced	include/keymaster_ta_defs.h	/^    keymaster_key_param_set_t hw_enforced;$/;"	m	struct:__anon59
+impl_	include/TrustonicKeymaster4Device.h	/^    TrustonicKeymaster4DeviceImpl *impl_;$/;"	m	class:android::hardware::keymaster::V4_0::implementation::TrustonicKeymaster4Device
+implementation	include/TrustonicKeymaster4Device.h	/^namespace implementation {$/;"	n	namespace:android::hardware::keymaster::V4_0
+implementation	src/TrustonicKeymaster4Device.cpp	/^namespace implementation {$/;"	n	namespace:android::hardware::keymaster::V4_0	file:
+importKey	src/TrustonicKeymaster4Device.cpp	/^Return<void> TrustonicKeymaster4Device::importKey($/;"	f	class:android::hardware::keymaster::V4_0::implementation::TrustonicKeymaster4Device
+importWrappedKey	src/TrustonicKeymaster4Device.cpp	/^Return<void> TrustonicKeymaster4Device::importWrappedKey($/;"	f	class:android::hardware::keymaster::V4_0::implementation::TrustonicKeymaster4Device
+import_key	include/tlTeeKeymaster_Api.h	/^        import_key_v0_t        import_key;$/;"	m	union:__anon33::__anon35
+import_key	include/tlTeeKeymaster_Api.h	/^        import_key_v0_t        import_key;$/;"	m	union:__anon36::__anon38
+import_key	include/tlTeeKeymaster_Api.h	/^        import_key_v0_t        import_key;$/;"	m	union:__anon39::__anon41
+import_key	src/TrustonicKeymaster4DeviceImpl.cpp	/^keymaster_error_t TrustonicKeymaster4DeviceImpl::import_key($/;"	f	class:TrustonicKeymaster4DeviceImpl
+import_key_v0_t	include/tlTeeKeymaster_Api.h	/^} import_key_v0_t;$/;"	t	typeref:struct:__anon11
+import_wrapped_key	include/tlTeeKeymaster_Api.h	/^        import_wrapped_key_v4_t import_wrapped_key;$/;"	m	union:__anon39::__anon41
+import_wrapped_key	src/TrustonicKeymaster4DeviceImpl.cpp	/^keymaster_error_t TrustonicKeymaster4DeviceImpl::import_wrapped_key($/;"	f	class:TrustonicKeymaster4DeviceImpl
+import_wrapped_key_v4_t	include/tlTeeKeymaster_Api.h	/^} import_wrapped_key_v4_t;$/;"	t	typeref:struct:__anon32
+initialization_vector	include/tlTeeKeymaster_Api.h	/^    uint8_t initialization_vector[16]; \/**< [in] *\/$/;"	m	struct:__anon32
+input	include/tlTeeKeymaster_Api.h	/^    data_blob_t input; \/**< [in] *\/$/;"	m	struct:__anon17
+input	include/tlTeeKeymaster_Api.h	/^    data_blob_t input; \/**< [in] *\/$/;"	m	struct:__anon18
+input	include/tlTeeKeymaster_Api.h	/^    data_blob_t input; \/**< [in] *\/$/;"	m	struct:__anon20
+input	include/tlTeeKeymaster_Api.h	/^    data_blob_t input; \/**< [in] *\/$/;"	m	struct:__anon21
+input_consumed	include/tlTeeKeymaster_Api.h	/^    uint32_t input_consumed; \/**< [out] *\/$/;"	m	struct:__anon17
+input_consumed	include/tlTeeKeymaster_Api.h	/^    uint32_t input_consumed; \/**< [out] *\/$/;"	m	struct:__anon18
+int_from_datestr	src/TrustonicKeymaster4DeviceImpl.cpp	/^static bool int_from_datestr($/;"	f	file:
+integer	include/keymaster_ta_defs.h	/^        uint32_t integer;      \/* KM_INT and KM_INT_REP *\/$/;"	m	union:__anon56::__anon57
+is_secure	include/tlTeeKeymaster_Api.h	/^    bool is_secure; \/**< [out] keys are stored in secure hardware and never leave it *\/$/;"	m	struct:__anon25
+key_blob	include/tlTeeKeymaster_Api.h	/^    data_blob_t key_blob; \/**< [in] keymaster_key_blob_t *\/$/;"	m	struct:__anon10
+key_blob	include/tlTeeKeymaster_Api.h	/^    data_blob_t key_blob; \/**< [in] keymaster_key_blob_t *\/$/;"	m	struct:__anon12
+key_blob	include/tlTeeKeymaster_Api.h	/^    data_blob_t key_blob; \/**< [in] keymaster_key_blob_t *\/$/;"	m	struct:__anon14
+key_blob	include/tlTeeKeymaster_Api.h	/^    data_blob_t key_blob; \/**< [in] keymaster_key_blob_t *\/$/;"	m	struct:__anon15
+key_blob	include/tlTeeKeymaster_Api.h	/^    data_blob_t key_blob; \/**< [in] keymaster_key_blob_t *\/$/;"	m	struct:__anon16
+key_blob	include/tlTeeKeymaster_Api.h	/^    data_blob_t key_blob; \/**< [in] keymaster_key_blob_t *\/$/;"	m	struct:__anon26
+key_blob	include/tlTeeKeymaster_Api.h	/^    data_blob_t key_blob; \/**< [out] *\/$/;"	m	struct:__anon32
+key_blob	include/tlTeeKeymaster_Api.h	/^    data_blob_t key_blob; \/**< [out] keymaster_key_blob_t *\/$/;"	m	struct:__anon11
+key_blob	include/tlTeeKeymaster_Api.h	/^    data_blob_t key_blob; \/**< [out] keymaster_key_blob_t *\/$/;"	m	struct:__anon9
+key_blob_max_size	src/tlcTeeKeymaster_if.cpp	/^static uint32_t key_blob_max_size($/;"	f	file:
+key_characteristics	include/tlTeeKeymaster_Api.h	/^    data_blob_t key_characteristics; \/**< [out] serialized *\/$/;"	m	struct:__anon32
+key_creation_allowed_params	src/tlcTeeKeymaster_if.cpp	/^static const keymaster_tag_t key_creation_allowed_params [] = {$/;"	v	file:
+key_data	include/tlTeeKeymaster_Api.h	/^    data_blob_t key_data; \/**< [in] km_key_data *\/$/;"	m	struct:__anon11
+key_data	include/tlTeeKeymaster_Api.h	/^    data_blob_t key_data; \/**< [out] km_key_data *\/$/;"	m	struct:__anon12
+key_format	include/tlTeeKeymaster_Api.h	/^    uint32_t key_format; \/**< [in] *\/$/;"	m	struct:__anon32
+key_import_allowed_params	src/tlcTeeKeymaster_if.cpp	/^static const keymaster_tag_t key_import_allowed_params [] = {$/;"	v	file:
+key_material	include/keymaster_ta_defs.h	/^    const uint8_t* key_material;$/;"	m	struct:__anon60
+key_material_size	include/keymaster_ta_defs.h	/^    size_t key_material_size;$/;"	m	struct:__anon60
+key_size	include/tlTeeKeymaster_Api.h	/^    uint32_t key_size; \/**< [out] bits *\/$/;"	m	struct:__anon26
+key_size_supported	src/tlcTeeKeymaster_if.cpp	/^static bool key_size_supported($/;"	f	file:
+key_to_attest	include/tlTeeKeymaster_Api.h	/^    data_blob_t key_to_attest; \/**< [in] keymaster_key_blob_t *\/$/;"	m	struct:__anon24
+key_to_upgrade	include/tlTeeKeymaster_Api.h	/^    data_blob_t key_to_upgrade; \/**< [in] keymaster_key_blob_t *\/$/;"	m	struct:__anon13
+key_type	include/tlTeeKeymaster_Api.h	/^    uint32_t key_type;  \/**< [in] *\/$/;"	m	struct:__anon32
+key_type	include/tlTeeKeymaster_Api.h	/^    uint32_t key_type; \/**< [out] (keymaster_algorithm_t) *\/$/;"	m	struct:__anon26
+keymaster	include/TrustonicKeymaster4Device.h	/^namespace keymaster {$/;"	n	namespace:android::hardware
+keymaster	src/TrustonicKeymaster4Device.cpp	/^namespace keymaster {$/;"	n	namespace:android::hardware	file:
+keymaster_algorithm_t	include/keymaster_ta_defs.h	/^} keymaster_algorithm_t;$/;"	t	typeref:enum:__anon46
+keymaster_blob_t	include/keymaster_ta_defs.h	/^} keymaster_blob_t;$/;"	t	typeref:struct:__anon55
+keymaster_block_mode_t	include/keymaster_ta_defs.h	/^} keymaster_block_mode_t;$/;"	t	typeref:enum:__anon47
+keymaster_cert_chain_t	include/keymaster_ta_defs.h	/^} keymaster_cert_chain_t;$/;"	t	typeref:struct:__anon61
+keymaster_digest_t	include/keymaster_ta_defs.h	/^} keymaster_digest_t;$/;"	t	typeref:enum:__anon49
+keymaster_ec_curve_t	include/keymaster_ta_defs.h	/^} keymaster_ec_curve_t;$/;"	t	typeref:enum:__anon51
+keymaster_error_t	include/keymaster_ta_defs.h	/^} keymaster_error_t;$/;"	t	typeref:enum:__anon70
+keymaster_free_cert_chain	include/keymaster_ta_defs.h	/^inline void keymaster_free_cert_chain(keymaster_cert_chain_t* chain) {$/;"	f
+keymaster_free_characteristics	include/keymaster_ta_defs.h	/^inline void keymaster_free_characteristics(keymaster_key_characteristics_t* characteristics) {$/;"	f
+keymaster_free_param_set	include/keymaster_ta_defs.h	/^inline void keymaster_free_param_set(keymaster_key_param_set_t* set) {$/;"	f
+keymaster_free_param_values	include/keymaster_ta_defs.h	/^inline void keymaster_free_param_values(keymaster_key_param_t* param, size_t param_count) {$/;"	f
+keymaster_hmac_sharing_parameters_set_t	include/keymaster_ta_defs.h	/^} keymaster_hmac_sharing_parameters_set_t;$/;"	t	typeref:struct:__anon63
+keymaster_hmac_sharing_parameters_t	include/keymaster_ta_defs.h	/^} keymaster_hmac_sharing_parameters_t;$/;"	t	typeref:struct:__anon62
+keymaster_hw_auth_token_t	include/keymaster_ta_defs.h	/^} keymaster_hw_auth_token_t;$/;"	t	typeref:struct:__anon68
+keymaster_hw_auth_type_t	include/keymaster_ta_defs.h	/^} keymaster_hw_auth_type_t;$/;"	t	typeref:enum:__anon66
+keymaster_kdf_t	include/keymaster_ta_defs.h	/^} keymaster_kdf_t;$/;"	t	typeref:enum:__anon50
+keymaster_key_blob_t	include/keymaster_ta_defs.h	/^} keymaster_key_blob_t;$/;"	t	typeref:struct:__anon60
+keymaster_key_blob_usage_requirements_t	include/keymaster_ta_defs.h	/^} keymaster_key_blob_usage_requirements_t;$/;"	t	typeref:enum:__anon53
+keymaster_key_characteristics_t	include/keymaster_ta_defs.h	/^} keymaster_key_characteristics_t;$/;"	t	typeref:struct:__anon59
+keymaster_key_format_t	include/keymaster_ta_defs.h	/^} keymaster_key_format_t;$/;"	t	typeref:enum:__anon69
+keymaster_key_origin_t	include/keymaster_ta_defs.h	/^} keymaster_key_origin_t;$/;"	t	typeref:enum:__anon52
+keymaster_key_param_set_t	include/keymaster_ta_defs.h	/^} keymaster_key_param_set_t;$/;"	t	typeref:struct:__anon58
+keymaster_key_param_t	include/keymaster_ta_defs.h	/^} keymaster_key_param_t;$/;"	t	typeref:struct:__anon56
+keymaster_operation_handle_t	include/keymaster_ta_defs.h	/^typedef uint64_t keymaster_operation_handle_t;$/;"	t
+keymaster_padding_t	include/keymaster_ta_defs.h	/^} keymaster_padding_t;$/;"	t	typeref:enum:__anon48
+keymaster_param_blob	include/keymaster_ta_defs.h	/^inline keymaster_key_param_t keymaster_param_blob(keymaster_tag_t tag, const uint8_t* bytes,$/;"	f
+keymaster_param_bool	include/keymaster_ta_defs.h	/^inline keymaster_key_param_t keymaster_param_bool(keymaster_tag_t tag) {$/;"	f
+keymaster_param_compare	include/keymaster_ta_defs.h	/^inline int keymaster_param_compare(const keymaster_key_param_t* a, const keymaster_key_param_t* b) {$/;"	f
+keymaster_param_date	include/keymaster_ta_defs.h	/^inline keymaster_key_param_t keymaster_param_date(keymaster_tag_t tag, uint64_t value) {$/;"	f
+keymaster_param_enum	include/keymaster_ta_defs.h	/^inline keymaster_key_param_t keymaster_param_enum(keymaster_tag_t tag, uint32_t value) {$/;"	f
+keymaster_param_int	include/keymaster_ta_defs.h	/^inline keymaster_key_param_t keymaster_param_int(keymaster_tag_t tag, uint32_t value) {$/;"	f
+keymaster_param_long	include/keymaster_ta_defs.h	/^inline keymaster_key_param_t keymaster_param_long(keymaster_tag_t tag, uint64_t value) {$/;"	f
+keymaster_purpose_t	include/keymaster_ta_defs.h	/^} keymaster_purpose_t;$/;"	t	typeref:enum:__anon54
+keymaster_security_level_t	include/keymaster_ta_defs.h	/^} keymaster_security_level_t;$/;"	t	typeref:enum:__anon65
+keymaster_tag_get_type	include/keymaster_ta_defs.h	/^static inline keymaster_tag_type_t keymaster_tag_get_type(keymaster_tag_t tag) {$/;"	f
+keymaster_tag_mask_type	include/keymaster_ta_defs.h	/^static inline uint32_t keymaster_tag_mask_type(keymaster_tag_t tag) {$/;"	f
+keymaster_tag_repeatable	include/keymaster_ta_defs.h	/^static inline bool keymaster_tag_repeatable(keymaster_tag_t tag) {$/;"	f
+keymaster_tag_t	include/keymaster_ta_defs.h	/^} keymaster_tag_t;$/;"	t	typeref:enum:__anon45
+keymaster_tag_type_repeatable	include/keymaster_ta_defs.h	/^static inline bool keymaster_tag_type_repeatable(keymaster_tag_type_t type) {$/;"	f
+keymaster_tag_type_t	include/keymaster_ta_defs.h	/^} keymaster_tag_type_t;$/;"	t	typeref:enum:__anon44
+keymaster_verification_token_t	include/keymaster_ta_defs.h	/^} keymaster_verification_token_t;$/;"	t	typeref:struct:__anon67
+keymaster_verified_boot_t	include/keymaster_ta_defs.h	/^} keymaster_verified_boot_t;$/;"	t	typeref:enum:__anon64
+keymaster_version_t	include/keymaster_version.h	/^} keymaster_version_t;$/;"	t	typeref:struct:__anon43
+km_alloc	src/km_shared_util.cpp	/^keymaster_error_t km_alloc($/;"	f
+km_author_name	src/TrustonicKeymaster4DeviceImpl.cpp	/^static const char *km_author_name = "Trustonic";$/;"	v	file:
+km_deserialize_attestation	src/serialization.cpp	/^keymaster_error_t km_deserialize_attestation($/;"	f
+km_deserialize_characteristics	src/serialization.cpp	/^keymaster_error_t km_deserialize_characteristics($/;"	f
+km_free	src/km_shared_util.cpp	/^void km_free($/;"	f
+km_free_blob	test/test_km_util.cpp	/^void km_free_blob($/;"	f
+km_free_key_blob	test/test_km_util.cpp	/^void km_free_key_blob($/;"	f
+km_key_data_max_size	src/tlcTeeKeymaster_if.cpp	/^static uint32_t km_key_data_max_size($/;"	f	file:
+km_max_key_size	src/tlcTeeKeymaster_if.cpp	/^static uint32_t km_max_key_size($/;"	f	file:
+km_name	src/TrustonicKeymaster4DeviceImpl.cpp	/^static const char *km_name = "Kinibi Keymaster4";$/;"	v	file:
+km_serialize_params	src/serialization.cpp	/^keymaster_error_t km_serialize_params($/;"	f
+km_tags	src/authlist.cpp	/^static const keymaster_tag_t km_tags[] = {$/;"	v	file:
+len	include/tlTeeKeymaster_Api.h	/^    uint32_t len; \/**< Length of data to process *\/$/;"	m	struct:__anon6
+len	include/tlTeeKeymaster_Api.h	/^    uint32_t len;$/;"	m	struct:__anon7
+length	include/keymaster_ta_defs.h	/^    size_t length;$/;"	m	struct:__anon58
+length	include/keymaster_ta_defs.h	/^    size_t length;$/;"	m	struct:__anon63
+live	include/tlcTeeKeymaster_if.h	/^    bool live;$/;"	m	struct:operation
+live_ops	include/tlcTeeKeymaster_if.h	/^    unsigned            live_ops;$/;"	m	struct:TEE_Session
+load_attestation_data	include/tlTeeKeymaster_Api.h	/^        load_attestation_data_v3_t load_attestation_data;$/;"	m	union:__anon36::__anon38
+load_attestation_data	include/tlTeeKeymaster_Api.h	/^        load_attestation_data_v3_t load_attestation_data;$/;"	m	union:__anon39::__anon41
+load_attestation_data_v3_t	include/tlTeeKeymaster_Api.h	/^} load_attestation_data_v3_t;$/;"	t	typeref:struct:__anon31
+long_integer	include/keymaster_ta_defs.h	/^        uint64_t long_integer; \/* KM_LONG *\/$/;"	m	union:__anon56::__anon57
+lookup_operation	src/tlcTeeKeymaster_if.cpp	/^static keymaster_error_t lookup_operation(TEE_Session *session,$/;"	f	file:
+mac	include/keymaster_ta_defs.h	/^    keymaster_blob_t mac;$/;"	m	struct:__anon67
+mac	include/keymaster_ta_defs.h	/^    keymaster_blob_t mac;$/;"	m	struct:__anon68
+main	src/service.cpp	/^int main() {$/;"	f
+main	test/testTeeKeymaster.cpp	/^int main(void)$/;"	f
+major	include/keymaster_version.h	/^    uint32_t major; \/* (defined by Google Keymaster version) *\/$/;"	m	struct:__anon43
+make_key	test/test_km_verbind.cpp	/^static keymaster_error_t make_key(TrustonicKeymaster4DeviceImpl *impl,$/;"	f	file:
+map_buffer	src/tlcTeeKeymaster_if.cpp	/^keymaster_error_t map_buffer($/;"	f
+masking_key	include/tlTeeKeymaster_Api.h	/^    uint8_t masking_key[32]; \/**< [in] *\/$/;"	m	struct:__anon32
+message	include/tlTeeKeymaster_Api.h	/^    tciMessage_t message; \/**< TCI message *\/$/;"	m	struct:__anon42
+minor	include/keymaster_version.h	/^    uint32_t minor; \/* (defined by Trustonic implementation version) *\/$/;"	m	struct:__anon43
+nonce	include/keymaster_ta_defs.h	/^    uint8_t nonce[32];$/;"	m	struct:__anon62
+op	include/tlcTeeKeymaster_if.h	/^    struct operation    op[MAX_SESSION_NUM];$/;"	m	struct:TEE_Session	typeref:struct:TEE_Session::operation
+op_allowed_params	src/tlcTeeKeymaster_if.cpp	/^static const keymaster_tag_t op_allowed_params [] = {$/;"	v	file:
+op_begin_allowed_params	src/tlcTeeKeymaster_if.cpp	/^static const keymaster_tag_t op_begin_allowed_params [] = {$/;"	v	file:
+operation	include/tlcTeeKeymaster_if.h	/^struct operation {$/;"	s
+os_patchlevel	include/km_shared_util.h	/^    uint32_t os_patchlevel;$/;"	m	struct:__anon4
+os_patchlevel	include/tlTeeKeymaster_Api.h	/^    uint32_t os_patchlevel; \/**< [in] *\/$/;"	m	struct:__anon29
+os_patchlevel	test/test_km_verbind.cpp	/^    uint32_t os_patchlevel;$/;"	m	struct:__anon3	file:
+os_version	include/km_shared_util.h	/^    uint32_t os_version;$/;"	m	struct:__anon4
+os_version	include/tlTeeKeymaster_Api.h	/^    uint32_t os_version; \/**< [in] *\/$/;"	m	struct:__anon29
+os_version	test/test_km_verbind.cpp	/^    uint32_t os_version;$/;"	m	struct:__anon3	file:
+out_params	include/tlTeeKeymaster_Api.h	/^    data_blob_t out_params; \/**< [out] serialized *\/$/;"	m	struct:__anon14
+out_params	include/tlTeeKeymaster_Api.h	/^    data_blob_t out_params; \/**< [out] serialized *\/$/;"	m	struct:__anon15
+out_params	include/tlTeeKeymaster_Api.h	/^    data_blob_t out_params; \/**< [out] serialized *\/$/;"	m	struct:__anon16
+output	include/tlTeeKeymaster_Api.h	/^    data_blob_t output; \/**< [out] *\/$/;"	m	struct:__anon17
+output	include/tlTeeKeymaster_Api.h	/^    data_blob_t output; \/**< [out] *\/$/;"	m	struct:__anon18
+output	include/tlTeeKeymaster_Api.h	/^    data_blob_t output; \/**< [out] *\/$/;"	m	struct:__anon19
+output	include/tlTeeKeymaster_Api.h	/^    data_blob_t output; \/**< [out] *\/$/;"	m	struct:__anon20
+output	include/tlTeeKeymaster_Api.h	/^    data_blob_t output; \/**< [out] *\/$/;"	m	struct:__anon21
+p	test/test_km_util.h	/^    const void *p;$/;"	m	struct:sgentry
+p224_oid	src/km_shared_util.cpp	/^static const uint8_t p224_oid[] = {$/;"	v	file:
+p256_oid	src/km_shared_util.cpp	/^static const uint8_t p256_oid[] = {$/;"	v	file:
+p384_oid	src/km_shared_util.cpp	/^static const uint8_t p384_oid[] = {$/;"	v	file:
+p521_oid	src/km_shared_util.cpp	/^static const uint8_t p521_oid[] = {$/;"	v	file:
+pTci	include/tlcTeeKeymaster_if.h	/^    tciMessage_ptr      pTci;$/;"	m	struct:TEE_Session
+padding	include/tci.h	/^    uint32_t       padding;$/;"	m	struct:__anon71
+parameters_verified	include/keymaster_ta_defs.h	/^    keymaster_key_param_set_t parameters_verified;$/;"	m	struct:__anon67
+params	include/keymaster_ta_defs.h	/^    keymaster_hmac_sharing_parameters_t *params;$/;"	m	struct:__anon63
+params	include/keymaster_ta_defs.h	/^    keymaster_key_param_t* params; \/* may be NULL if length == 0 *\/$/;"	m	struct:__anon58
+params	include/tlTeeKeymaster_Api.h	/^    data_blob_t params; \/**< [in] *\/$/;"	m	struct:__anon32
+params	include/tlTeeKeymaster_Api.h	/^    data_blob_t params; \/**< [in] serialized *\/$/;"	m	struct:__anon11
+params	include/tlTeeKeymaster_Api.h	/^    data_blob_t params; \/**< [in] serialized *\/$/;"	m	struct:__anon14
+params	include/tlTeeKeymaster_Api.h	/^    data_blob_t params; \/**< [in] serialized *\/$/;"	m	struct:__anon15
+params	include/tlTeeKeymaster_Api.h	/^    data_blob_t params; \/**< [in] serialized *\/$/;"	m	struct:__anon16
+params	include/tlTeeKeymaster_Api.h	/^    data_blob_t params; \/**< [in] serialized *\/$/;"	m	struct:__anon17
+params	include/tlTeeKeymaster_Api.h	/^    data_blob_t params; \/**< [in] serialized *\/$/;"	m	struct:__anon18
+params	include/tlTeeKeymaster_Api.h	/^    data_blob_t params; \/**< [in] serialized *\/$/;"	m	struct:__anon19
+params	include/tlTeeKeymaster_Api.h	/^    data_blob_t params; \/**< [in] serialized *\/$/;"	m	struct:__anon20
+params	include/tlTeeKeymaster_Api.h	/^    data_blob_t params; \/**< [in] serialized *\/$/;"	m	struct:__anon21
+params	include/tlTeeKeymaster_Api.h	/^    data_blob_t params; \/**< [in] serialized *\/$/;"	m	struct:__anon23
+params	include/tlTeeKeymaster_Api.h	/^    data_blob_t params; \/**< [in] serialized *\/$/;"	m	struct:__anon9
+parse_AuthorizationList	src/authlist.cpp	/^keymaster_error_t parse_AuthorizationList($/;"	f
+parse_SecureKeyWrapper	src/tlcTeeKeymaster_if.cpp	/^static keymaster_error_t parse_SecureKeyWrapper($/;"	f	file:
+password_sid	include/tlTeeKeymaster_Api.h	/^    uint64_t password_sid; \/**< [in] *\/$/;"	m	struct:__anon32
+purpose	include/tlTeeKeymaster_Api.h	/^    keymaster_purpose_t purpose; \/**< [in] *\/$/;"	m	struct:__anon14
+purpose	include/tlTeeKeymaster_Api.h	/^    keymaster_purpose_t purpose; \/**< [in] *\/$/;"	m	struct:__anon15
+purpose	include/tlTeeKeymaster_Api.h	/^    keymaster_purpose_t purpose; \/**< [in] *\/$/;"	m	struct:__anon16
+read_length	src/km_shared_util.cpp	/^static bool read_length($/;"	f	file:
+read_something_length	src/km_shared_util.cpp	/^static bool read_something_length($/;"	f	file:
+read_u32	src/authlist.cpp	/^static uint32_t read_u32(const uint8_t *a, size_t l) {$/;"	f	file:
+read_u64	src/authlist.cpp	/^static uint64_t read_u64(const uint8_t *a, size_t l) {$/;"	f	file:
+release_operation_slot	src/tlcTeeKeymaster_if.cpp	/^static void release_operation_slot(TEE_Session *session,$/;"	f	file:
+response	include/tlTeeKeymaster_Api.h	/^        response_t response;$/;"	m	union:__anon33::__anon34
+response	include/tlTeeKeymaster_Api.h	/^        response_t response;$/;"	m	union:__anon36::__anon37
+response	include/tlTeeKeymaster_Api.h	/^        response_t response;$/;"	m	union:__anon39::__anon40
+responseId	include/tci.h	/^    tciResponseId_t     responseId; \/**< Response ID (must be command ID | RSP_ID_MASK )*\/$/;"	m	struct:__anon72
+response_t	include/tlTeeKeymaster_Api.h	/^} response_t;$/;"	t	typeref:struct:__anon7
+returnCode	include/tci.h	/^    uint32_t            returnCode; \/**< Return code of command (keymaster_error_t) *\/$/;"	m	struct:__anon72
+rng_data	include/tlTeeKeymaster_Api.h	/^    data_blob_t rng_data; \/**< [in] random data to be mixed in *\/$/;"	m	struct:__anon8
+rsakey_oid	src/km_shared_util.cpp	/^static const uint8_t rsakey_oid[] = {$/;"	v	file:
+save_key_blob	test/test_km_util.cpp	/^keymaster_error_t save_key_blob($/;"	f
+sbuf	src/tlcTeeKeymaster_if.cpp	/^static char sbuf[SBUF_SIZE]; \/\/ for formatting debug output prior to LOG_I$/;"	v	file:
+scoped_buf_ptr_t	include/km_util.h	/^typedef scoped_data_ptr_t<uint8_t[]> scoped_buf_ptr_t;$/;"	t
+scoped_data_ptr_t	include/km_util.h	/^    scoped_data_ptr_t()$/;"	f	struct:scoped_data_ptr_t
+scoped_data_ptr_t	include/km_util.h	/^template<typename T> struct scoped_data_ptr_t$/;"	s
+secure_os_init	src/tlcTeeKeymaster_if.cpp	/^static int secure_os_init(void)$/;"	f	file:
+security_level	include/keymaster_ta_defs.h	/^    keymaster_security_level_t security_level;$/;"	m	struct:__anon67
+seed	include/keymaster_ta_defs.h	/^    keymaster_blob_t seed;$/;"	m	struct:__anon62
+serialize_AuthorizationItem	src/authlist.cpp	/^static keymaster_error_t serialize_AuthorizationItem($/;"	f	file:
+serialize_AuthorizationList	src/authlist.cpp	/^static keymaster_error_t serialize_AuthorizationList($/;"	f	file:
+sessionHandle	include/tlcTeeKeymaster_if.h	/^    mcSessionHandle_t   sessionHandle;$/;"	m	struct:TEE_Session
+session_handle_	include/TrustonicKeymaster4DeviceImpl.h	/^    TEE_SessionHandle session_handle_;$/;"	m	class:TrustonicKeymaster4DeviceImpl
+set_attestation_data	include/tlTeeKeymaster_Api.h	/^        set_attestation_data_v3_t set_attestation_data;$/;"	m	union:__anon36::__anon38
+set_attestation_data	include/tlTeeKeymaster_Api.h	/^        set_attestation_data_v3_t set_attestation_data;$/;"	m	union:__anon39::__anon41
+set_attestation_data_v3_t	include/tlTeeKeymaster_Api.h	/^} set_attestation_data_v3_t;$/;"	t	typeref:struct:__anon30
+set_data_increment_pos	src/km_shared_util.cpp	/^void set_data_increment_pos(uint8_t **pos, const uint8_t *src, uint32_t len) {$/;"	f
+set_data_increment_src	src/km_shared_util.cpp	/^void set_data_increment_src(uint8_t *dest, uint8_t **src, uint32_t len) {$/;"	f
+set_debug_lies	include/tlTeeKeymaster_Api.h	/^        set_debug_lies_v4_t    set_debug_lies;$/;"	m	union:__anon36::__anon38
+set_debug_lies	include/tlTeeKeymaster_Api.h	/^        set_debug_lies_v4_t    set_debug_lies;$/;"	m	union:__anon39::__anon41
+set_debug_lies_v4_t	include/tlTeeKeymaster_Api.h	/^} set_debug_lies_v4_t;$/;"	t	typeref:struct:__anon29
+set_ptr_increment_src	src/km_shared_util.cpp	/^void set_ptr_increment_src(uint8_t **ptr, uint8_t **src, uint32_t len) {$/;"	f
+set_u32	src/km_shared_util.cpp	/^void set_u32(uint8_t *pos, uint32_t val) {$/;"	f
+set_u32_increment_pos	src/km_shared_util.cpp	/^void set_u32_increment_pos(uint8_t **pos, uint32_t val) {$/;"	f
+set_u64	src/km_shared_util.cpp	/^void set_u64(uint8_t *pos, uint64_t val) {$/;"	f
+set_u64_increment_pos	src/km_shared_util.cpp	/^void set_u64_increment_pos(uint8_t **pos, uint64_t val) {$/;"	f
+sgentry	test/test_km_util.h	/^struct sgentry {$/;"	s
+signature	include/tlTeeKeymaster_Api.h	/^    data_blob_t signature; \/**< [in] *\/$/;"	m	struct:__anon19
+signature	include/tlTeeKeymaster_Api.h	/^    data_blob_t signature; \/**< [in] *\/$/;"	m	struct:__anon20
+signature	include/tlTeeKeymaster_Api.h	/^    data_blob_t signature; \/**< [in] *\/$/;"	m	struct:__anon21
+signature_map	src/tlcTeeKeymaster_if.cpp	/^    mcBulkMap_t signature_map;$/;"	m	struct:finish_chunk_ctx	file:
+size	include/km_util.h	/^    uint32_t           size;$/;"	m	struct:scoped_data_ptr_t
+snprint_blob	src/tlcTeeKeymaster_if.cpp	/^static int snprint_blob($/;"	f	file:
+snprint_bool	src/tlcTeeKeymaster_if.cpp	/^static int snprint_bool($/;"	f	file:
+snprint_buffer	src/tlcTeeKeymaster_if.cpp	/^static int snprint_buffer($/;"	f	file:
+snprint_param_set	src/tlcTeeKeymaster_if.cpp	/^static int snprint_param_set($/;"	f	file:
+snprint_uint64	src/tlcTeeKeymaster_if.cpp	/^static int snprint_uint64($/;"	f	file:
+split_update_chunks	src/tlcTeeKeymaster_if.cpp	/^static keymaster_error_t split_update_chunks($/;"	f	file:
+supports_attestation	include/tlTeeKeymaster_Api.h	/^    bool supports_attestation; \/**< [out] hardware supports generation of public key attestation certificates *\/$/;"	m	struct:__anon25
+supports_elliptic_curve	include/tlTeeKeymaster_Api.h	/^    bool supports_elliptic_curve; \/**< [out] hardware supports ECC with P224, P256, P384 and P521 *\/$/;"	m	struct:__anon25
+supports_symmetric_cryptography	include/tlTeeKeymaster_Api.h	/^    bool supports_symmetric_cryptography; \/**< [out] hardware supports AES and HMAC *\/$/;"	m	struct:__anon25
+sw_enforced	include/keymaster_ta_defs.h	/^    keymaster_key_param_set_t sw_enforced;$/;"	m	struct:__anon59
+sz	test/test_km_util.h	/^    size_t sz;$/;"	m	struct:sgentry
+tag	include/keymaster_ta_defs.h	/^    keymaster_tag_t tag;$/;"	m	struct:__anon56
+tag	include/tlTeeKeymaster_Api.h	/^    uint8_t tag[16]; \/**< [in] *\/$/;"	m	struct:__anon32
+tciCommandHeader_t	include/tci.h	/^} tciCommandHeader_t; \/\/ 8 bytes$/;"	t	typeref:struct:__anon71
+tciCommandId_t	include/tci.h	/^typedef uint32_t tciCommandId_t;$/;"	t
+tciMessage_ptr	include/tlTeeKeymaster_Api.h	/^  typedef tciMessage_v0_t tciMessage_t, *tciMessage_ptr;$/;"	t
+tciMessage_ptr	include/tlTeeKeymaster_Api.h	/^  typedef tciMessage_v3_t tciMessage_t, *tciMessage_ptr;$/;"	t
+tciMessage_ptr	include/tlTeeKeymaster_Api.h	/^  typedef tciMessage_v4_t tciMessage_t, *tciMessage_ptr;$/;"	t
+tciMessage_t	include/tlTeeKeymaster_Api.h	/^  typedef tciMessage_v0_t tciMessage_t, *tciMessage_ptr;$/;"	t
+tciMessage_t	include/tlTeeKeymaster_Api.h	/^  typedef tciMessage_v3_t tciMessage_t, *tciMessage_ptr;$/;"	t
+tciMessage_t	include/tlTeeKeymaster_Api.h	/^  typedef tciMessage_v4_t tciMessage_t, *tciMessage_ptr;$/;"	t
+tciMessage_v0_t	include/tlTeeKeymaster_Api.h	/^} tciMessage_v0_t;$/;"	t	typeref:struct:__anon33
+tciMessage_v3_t	include/tlTeeKeymaster_Api.h	/^} tciMessage_v3_t;$/;"	t	typeref:struct:__anon36
+tciMessage_v4_t	include/tlTeeKeymaster_Api.h	/^} tciMessage_v4_t;$/;"	t	typeref:struct:__anon39
+tciResponseHeader_t	include/tci.h	/^} tciResponseHeader_t; \/\/ 8 bytes$/;"	t	typeref:struct:__anon72
+tciResponseId_t	include/tci.h	/^typedef uint32_t tciResponseId_t;$/;"	t
+tci_t	include/tlTeeKeymaster_Api.h	/^} tci_t;$/;"	t	typeref:struct:__anon42
+tee__set_debug_lies	src/tlcTeeKeymaster_if.cpp	/^keymaster_error_t tee__set_debug_lies($/;"	f
+test_api	test/testTeeKeymaster.cpp	/^static keymaster_error_t test_api($/;"	f	file:
+test_km_aes	test/test_km_aes.cpp	/^keymaster_error_t test_km_aes($/;"	f
+test_km_aes_gcm_roundtrip	test/test_km_aes.cpp	/^static keymaster_error_t test_km_aes_gcm_roundtrip($/;"	f	file:
+test_km_aes_gcm_roundtrip_incr	test/test_km_aes.cpp	/^static keymaster_error_t test_km_aes_gcm_roundtrip_incr($/;"	f	file:
+test_km_aes_gcm_roundtrip_nodata	test/test_km_aes.cpp	/^static keymaster_error_t test_km_aes_gcm_roundtrip_nodata($/;"	f	file:
+test_km_aes_gcm_roundtrip_noncegen	test/test_km_aes.cpp	/^static keymaster_error_t test_km_aes_gcm_roundtrip_noncegen($/;"	f	file:
+test_km_aes_import	test/test_km_aes.cpp	/^keymaster_error_t test_km_aes_import($/;"	f
+test_km_aes_import_bad_length	test/test_km_aes.cpp	/^keymaster_error_t test_km_aes_import_bad_length($/;"	f
+test_km_aes_pkcs7	test/test_km_aes.cpp	/^static keymaster_error_t test_km_aes_pkcs7($/;"	f	file:
+test_km_aes_roundtrip	test/test_km_aes.cpp	/^static keymaster_error_t test_km_aes_roundtrip($/;"	f	file:
+test_km_aes_roundtrip_noncegen	test/test_km_aes.cpp	/^static keymaster_error_t test_km_aes_roundtrip_noncegen($/;"	f	file:
+test_km_attestation	test/test_km_attestation.cpp	/^keymaster_error_t test_km_attestation($/;"	f
+test_km_des	test/test_km_des.cpp	/^keymaster_error_t test_km_des($/;"	f
+test_km_des_import	test/test_km_des.cpp	/^keymaster_error_t test_km_des_import($/;"	f
+test_km_des_import_bad_length	test/test_km_des.cpp	/^keymaster_error_t test_km_des_import_bad_length($/;"	f
+test_km_des_pkcs7	test/test_km_des.cpp	/^static keymaster_error_t test_km_des_pkcs7($/;"	f	file:
+test_km_des_roundtrip	test/test_km_des.cpp	/^static keymaster_error_t test_km_des_roundtrip($/;"	f	file:
+test_km_des_roundtrip_noncegen	test/test_km_des.cpp	/^static keymaster_error_t test_km_des_roundtrip_noncegen($/;"	f	file:
+test_km_ec	test/test_km_ec.cpp	/^keymaster_error_t test_km_ec($/;"	f
+test_km_ec_import_export	test/test_km_ec.cpp	/^keymaster_error_t test_km_ec_import_export($/;"	f
+test_km_ec_p521_import_sign	test/test_km_ec.cpp	/^keymaster_error_t test_km_ec_p521_import_sign($/;"	f
+test_km_ec_p521_interop	test/test_km_ec.cpp	/^keymaster_error_t test_km_ec_p521_interop($/;"	f
+test_km_ec_sign_verify	test/test_km_ec.cpp	/^static keymaster_error_t test_km_ec_sign_verify($/;"	f	file:
+test_km_ec_sign_verify_empty_message	test/test_km_ec.cpp	/^static keymaster_error_t test_km_ec_sign_verify_empty_message($/;"	f	file:
+test_km_hmac	test/test_km_hmac.cpp	/^keymaster_error_t test_km_hmac($/;"	f
+test_km_hmac_import	test/test_km_hmac.cpp	/^keymaster_error_t test_km_hmac_import($/;"	f
+test_km_hmac_sign_verify	test/test_km_hmac.cpp	/^static keymaster_error_t test_km_hmac_sign_verify($/;"	f	file:
+test_km_import	test/test_km_import.cpp	/^keymaster_error_t test_km_import($/;"	f
+test_km_import_ec	test/test_km_import.cpp	/^static keymaster_error_t test_km_import_ec($/;"	f	file:
+test_km_import_hmac	test/test_km_import.cpp	/^static keymaster_error_t test_km_import_hmac($/;"	f	file:
+test_km_import_rsa	test/test_km_import.cpp	/^static keymaster_error_t test_km_import_rsa($/;"	f	file:
+test_km_restrictions	test/test_km_restrictions.cpp	/^keymaster_error_t test_km_restrictions($/;"	f
+test_km_restrictions_app_id_and_data	test/test_km_restrictions.cpp	/^static keymaster_error_t test_km_restrictions_app_id_and_data($/;"	f	file:
+test_km_rsa	test/test_km_rsa.cpp	/^keymaster_error_t test_km_rsa($/;"	f
+test_km_rsa_concurrent	test/test_km_rsa.cpp	/^static keymaster_error_t test_km_rsa_concurrent($/;"	f	file:
+test_km_rsa_encrypt_decrypt	test/test_km_rsa.cpp	/^static keymaster_error_t test_km_rsa_encrypt_decrypt($/;"	f	file:
+test_km_rsa_encrypt_decrypt_empty_message	test/test_km_rsa.cpp	/^static keymaster_error_t test_km_rsa_encrypt_decrypt_empty_message($/;"	f	file:
+test_km_rsa_encrypt_raw_one	test/test_km_rsa.cpp	/^static keymaster_error_t test_km_rsa_encrypt_raw_one($/;"	f	file:
+test_km_rsa_generate_export	test/test_km_rsa.cpp	/^keymaster_error_t test_km_rsa_generate_export($/;"	f
+test_km_rsa_import_export	test/test_km_rsa.cpp	/^keymaster_error_t test_km_rsa_import_export($/;"	f
+test_km_rsa_raw_too_large	test/test_km_rsa.cpp	/^static keymaster_error_t test_km_rsa_raw_too_large($/;"	f	file:
+test_km_rsa_sign_verify	test/test_km_rsa.cpp	/^static keymaster_error_t test_km_rsa_sign_verify($/;"	f	file:
+test_km_rsa_sign_verify_empty_message	test/test_km_rsa.cpp	/^static keymaster_error_t test_km_rsa_sign_verify_empty_message($/;"	f	file:
+test_km_rsa_sign_verify_pkcs1_1_5_raw	test/test_km_rsa.cpp	/^static keymaster_error_t test_km_rsa_sign_verify_pkcs1_1_5_raw($/;"	f	file:
+test_km_rsa_sign_verify_pkcs1_no_digest_too_long	test/test_km_rsa.cpp	/^static keymaster_error_t test_km_rsa_sign_verify_pkcs1_no_digest_too_long($/;"	f	file:
+test_km_rsa_verify_empty_signature	test/test_km_rsa.cpp	/^static keymaster_error_t test_km_rsa_verify_empty_signature($/;"	f	file:
+test_km_verbind	test/test_km_verbind.cpp	/^keymaster_error_t test_km_verbind()$/;"	f
+test_verbind	test/test_km_verbind.cpp	/^static keymaster_error_t test_verbind()$/;"	f	file:
+timestamp	include/keymaster_ta_defs.h	/^    uint64_t timestamp;$/;"	m	struct:__anon67
+timestamp	include/keymaster_ta_defs.h	/^    uint64_t timestamp;$/;"	m	struct:__anon68
+transact	src/tlcTeeKeymaster_if.cpp	/^keymaster_error_t transact($/;"	f
+unmap_buffer	src/tlcTeeKeymaster_if.cpp	/^void unmap_buffer($/;"	f
+update	include/tlTeeKeymaster_Api.h	/^        update_v0_t            update;$/;"	m	union:__anon33::__anon35
+update	include/tlTeeKeymaster_Api.h	/^        update_v0_t            update;$/;"	m	union:__anon36::__anon38
+update	include/tlTeeKeymaster_Api.h	/^        update_v4_t            update;$/;"	m	union:__anon39::__anon41
+update	src/TrustonicKeymaster4Device.cpp	/^Return<void> TrustonicKeymaster4Device::update($/;"	f	class:android::hardware::keymaster::V4_0::implementation::TrustonicKeymaster4Device
+update	src/TrustonicKeymaster4DeviceImpl.cpp	/^keymaster_error_t TrustonicKeymaster4DeviceImpl::update($/;"	f	class:TrustonicKeymaster4DeviceImpl
+update_chunk	src/tlcTeeKeymaster_if.cpp	/^static keymaster_error_t update_chunk($/;"	f	file:
+update_v0_t	include/tlTeeKeymaster_Api.h	/^} update_v0_t;$/;"	t	typeref:struct:__anon17
+update_v4_t	include/tlTeeKeymaster_Api.h	/^} update_v4_t;$/;"	t	typeref:struct:__anon18
+upgradeKey	src/TrustonicKeymaster4Device.cpp	/^Return<void> TrustonicKeymaster4Device::upgradeKey($/;"	f	class:android::hardware::keymaster::V4_0::implementation::TrustonicKeymaster4Device
+upgrade_key	include/tlTeeKeymaster_Api.h	/^        upgrade_key_v3_t       upgrade_key;$/;"	m	union:__anon36::__anon38
+upgrade_key	include/tlTeeKeymaster_Api.h	/^        upgrade_key_v3_t       upgrade_key;$/;"	m	union:__anon39::__anon41
+upgrade_key	src/TrustonicKeymaster4DeviceImpl.cpp	/^keymaster_error_t TrustonicKeymaster4DeviceImpl::upgrade_key($/;"	f	class:TrustonicKeymaster4DeviceImpl
+upgrade_key_v3_t	include/tlTeeKeymaster_Api.h	/^} upgrade_key_v3_t;$/;"	t	typeref:struct:__anon13
+upgrade_params	include/tlTeeKeymaster_Api.h	/^    data_blob_t upgrade_params; \/**< [in] keymaster_key_param_set_t *\/$/;"	m	struct:__anon13
+upgraded_key	include/tlTeeKeymaster_Api.h	/^    data_blob_t upgraded_key; \/**< [out] keymaster_key_blob_t *\/$/;"	m	struct:__anon13
+user_id	include/keymaster_ta_defs.h	/^    uint64_t user_id;$/;"	m	struct:__anon68
+vendor_patchlevel	include/km_shared_util.h	/^    uint32_t vendor_patchlevel;$/;"	m	struct:__anon4
+vendor_patchlevel	include/tlTeeKeymaster_Api.h	/^    uint32_t vendor_patchlevel; \/**< [in] *\/$/;"	m	struct:__anon29
+vendor_patchlevel	test/test_km_verbind.cpp	/^    uint32_t vendor_patchlevel;$/;"	m	struct:__anon3	file:
+verifyAuthorization	src/TrustonicKeymaster4Device.cpp	/^Return<void> TrustonicKeymaster4Device::verifyAuthorization($/;"	f	class:android::hardware::keymaster::V4_0::implementation::TrustonicKeymaster4Device
+verify_authorization	src/TrustonicKeymaster4DeviceImpl.cpp	/^keymaster_error_t TrustonicKeymaster4DeviceImpl::verify_authorization($/;"	f	class:TrustonicKeymaster4DeviceImpl
+version	include/tlTeeKeymaster_Api.h	/^    keymaster_version_t version; \/**< [out] version number  *\/$/;"	m	struct:__anon28
+wrap	include/tlTeeKeymaster_Api.h	/^    data_blob_t wrap; \/**< [in] *\/$/;"	m	struct:__anon32
+write_cert	test/test_km_attestation.cpp	/^static keymaster_error_t write_cert($/;"	f	file:
+~KmKeyParamSet	src/TrustonicKeymaster4Device.cpp	/^    ~KmKeyParamSet() { delete[] params; }$/;"	f	class:android::hardware::keymaster::V4_0::implementation::KmKeyParamSet
+~TrustonicKeymaster4Device	src/TrustonicKeymaster4Device.cpp	/^TrustonicKeymaster4Device::~TrustonicKeymaster4Device() {}$/;"	f	class:android::hardware::keymaster::V4_0::implementation::TrustonicKeymaster4Device
+~TrustonicKeymaster4DeviceImpl	src/TrustonicKeymaster4DeviceImpl.cpp	/^TrustonicKeymaster4DeviceImpl::~TrustonicKeymaster4DeviceImpl()$/;"	f	class:TrustonicKeymaster4DeviceImpl

@@ -1,0 +1,8 @@
+soong_namespace {
+    imports: ["hardware/samsung_slsi/exynos/tee/kinibi410"],
+}
+
+subdirs = [
+    "hardware/interfaces/",
+    "TeeService/",
+]

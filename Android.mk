@@ -22,6 +22,7 @@ common_exynos_dirs := \
 	libv4l2 \
 	libswconverter \
 	libstagefrighthw \
+	exynos-thermal \
 	exyrngd \
 	rpmbd \
 	tee \

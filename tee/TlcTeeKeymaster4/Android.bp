@@ -45,7 +45,7 @@ cc_binary {
         "libkeymaster4",
         "liblog",
         "libutils",
-        "//hardware/samsung_slsi/exynos/tee/kinibi500:libMcClient",
+        "//hardware/samsung_slsi-linaro/exynos/tee/kinibi500:libMcClient",
         "libcrypto"
     ],
 

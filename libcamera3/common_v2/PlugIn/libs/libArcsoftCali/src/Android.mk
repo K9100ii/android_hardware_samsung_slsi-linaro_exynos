@@ -91,8 +91,8 @@ LOCAL_SHARED_LIBRARIES := libutils libcutils liblog libcalibverifyW_T libarcsoft
 LOCAL_MODULE := libexynoscamera_arcsoftcali
 
 LOCAL_C_INCLUDES += \
-	$(TOP)/hardware/samsung_slsi/exynos/include \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera/common_v3/PlugIn/include \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/include \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/libcamera/common_v3/PlugIn/include \
 	$(LOCAL_PATH)/../include \
 
 LOCAL_CFLAGS := -Wno-unused-parameter

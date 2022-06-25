@@ -27,10 +27,10 @@ LOCAL_SRC_FILES := \
 	../odm_specific/audio_odm_impl.c
 
 LOCAL_C_INCLUDES += \
-	$(TOP)/hardware/samsung_slsi/exynos/include/libaudio/audiohal_comv1 \
-	$(TOP)/hardware/samsung_slsi/exynos/libaudio/audiohal_comv1/odm_specific \
-	$(TOP)/hardware/samsung_slsi/exynos/libaudio/audiohal_comv1/odm_specific/audioril \
-	$(TOP)/hardware/samsung_slsi/exynos/libaudio/audiohal_comv1/odm_specific/audioril/include \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/include/libaudio/audiohal_comv1 \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/libaudio/audiohal_comv1/odm_specific \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/libaudio/audiohal_comv1/odm_specific/audioril \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/libaudio/audiohal_comv1/odm_specific/audioril/include \
 	$(call include-path-for, audio-utils)
 
 LOCAL_HEADER_LIBRARIES := libhardware_headers

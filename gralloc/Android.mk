@@ -40,8 +40,8 @@ MALI_AFBC_GRALLOC := 1
 
 LOCAL_C_INCLUDES := \
 	$(LOCAL_PATH)/../include \
-	$(TOP)/hardware/samsung_slsi/exynos/include \
-	$(TOP)/hardware/samsung_slsi/exynos5/include
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/include \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos5/include
 
 LOCAL_SRC_FILES := 	\
 	format_chooser.cpp \
@@ -80,8 +80,8 @@ LOCAL_SHARED_LIBRARIES := liblog libcutils libion_exynos libutils android.hardwa
 
 LOCAL_C_INCLUDES := \
 	$(LOCAL_PATH)/../include \
-	$(TOP)/hardware/samsung_slsi/exynos/include \
-	$(TOP)/hardware/samsung_slsi/exynos5/include \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/include \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos5/include \
 	$(TOP)/system/core/libsync/include
 
 LOCAL_SRC_FILES := 	\

@@ -10,7 +10,7 @@ LOCAL_SRC_FILES := \
 	csc.c
 
 LOCAL_C_INCLUDES := \
-	hardware/samsung_slsi/$(TARGET_BOARD_PLATFORM)/include \
+	hardware/samsung_slsi-linaro/$(TARGET_BOARD_PLATFORM)/include \
 	$(LOCAL_PATH)/../include \
 	$(LOCAL_PATH)/../libexynosutils
 
@@ -43,5 +43,5 @@ endif
 
 LOCAL_CFLAGS += -Wno-unused-variable -Wno-unused-label
 
-include $(TOP)/hardware/samsung_slsi/exynos/BoardConfigCFlags.mk
+include $(TOP)/hardware/samsung_slsi-linaro/exynos/BoardConfigCFlags.mk
 include $(BUILD_SHARED_LIBRARY)

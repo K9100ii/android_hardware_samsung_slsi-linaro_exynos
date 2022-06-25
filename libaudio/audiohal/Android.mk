@@ -26,9 +26,9 @@ LOCAL_SRC_FILES := \
 	factory_manager.c
 
 LOCAL_C_INCLUDES += \
-	$(TOP)/hardware/samsung_slsi/exynos/include/libaudio/audiohal \
-	$(TOP)/hardware/samsung_slsi/exynos/libaudio/audioril-sit \
-	$(TOP)/hardware/samsung_slsi/exynos/libaudio/audioril-sit/include
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/include/libaudio/audiohal \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/libaudio/audioril-sit \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/libaudio/audioril-sit/include
 
 LOCAL_HEADER_LIBRARIES := libhardware_headers
 LOCAL_SHARED_LIBRARIES := liblog libcutils libprocessgroup libaudioproxy

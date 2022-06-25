@@ -3,7 +3,7 @@
 ifeq ($(BOARD_CAMERA_USES_DUAL_CAMERA_SOLUTION_FAKE), true)
 LOCAL_CFLAGS += -DUSES_DUAL_CAMERA_SOLUTION_FAKE
 LOCAL_C_INCLUDES += \
-    $(TOP)/hardware/samsung_slsi/exynos/libcamera3/common_v2/PlugIn/converter/libs/libFakeFusion
+    $(TOP)/hardware/samsung_slsi-linaro/exynos/libcamera3/common_v2/PlugIn/converter/libs/libFakeFusion
 LOCAL_SRC_FILES += \
 	../../exynos/libcamera3/common_v2/PlugIn/converter/libs/libFakeFusion/ExynosCameraPlugInConverterFakeFusion.cpp
 endif
@@ -11,7 +11,7 @@ endif
 ifeq ($(BOARD_CAMERA_USES_DUAL_CAMERA_SOLUTION_ARCSOFT), true)
 LOCAL_CFLAGS += -DUSES_DUAL_CAMERA_SOLUTION_ARCSOFT
 LOCAL_C_INCLUDES += \
-    $(TOP)/hardware/samsung_slsi/exynos/libcamera3/common_v2/PlugIn/converter/libs/libArcsoftFusion
+    $(TOP)/hardware/samsung_slsi-linaro/exynos/libcamera3/common_v2/PlugIn/converter/libs/libArcsoftFusion
 
 LOCAL_SRC_FILES += \
 	../../exynos/libcamera3/common_v2/PlugIn/converter/libs/libArcsoftFusion/ExynosCameraPlugInConverterArcsoftFusion.cpp \
@@ -24,7 +24,7 @@ endif
 ifeq ($(BOARD_CAMERA_USES_LLS_SOLUTION), true)
 LOCAL_CFLAGS += -DUSES_LLS_SOLUTION
 LOCAL_C_INCLUDES += \
-    $(TOP)/hardware/samsung_slsi/exynos/libcamera3/common_v2/PlugIn/converter/libs/libLLS
+    $(TOP)/hardware/samsung_slsi-linaro/exynos/libcamera3/common_v2/PlugIn/converter/libs/libLLS
 LOCAL_SRC_FILES += \
 	../../exynos/libcamera3/common_v2/PlugIn/converter/libs/libLLS/ExynosCameraPlugInConverterLowLightShot.cpp
 endif
@@ -32,7 +32,7 @@ endif
 ifeq ($(BOARD_CAMERA_USES_CAMERA_SOLUTION_VDIS), true)
 LOCAL_CFLAGS += -DUSES_CAMERA_SOLUTION_VDIS
 LOCAL_C_INCLUDES += \
-    $(TOP)/hardware/samsung_slsi/exynos/libcamera3/common_v2/PlugIn/converter/libs/libVDIS
+    $(TOP)/hardware/samsung_slsi-linaro/exynos/libcamera3/common_v2/PlugIn/converter/libs/libVDIS
 LOCAL_SRC_FILES += \
 	../../exynos/libcamera3/common_v2/PlugIn/converter/libs/libVDIS/ExynosCameraPlugInConverterVDIS.cpp
 endif
@@ -40,7 +40,7 @@ endif
 ifeq ($(BOARD_CAMERA_USES_HIFI_LLS_CAPTURE), true)
 LOCAL_CFLAGS += -DUSES_HIFI_LLS_CAPTURE
 LOCAL_C_INCLUDES += \
-    $(TOP)/hardware/samsung_slsi/exynos/libcamera3/common_v2/PlugIn/converter/libs/libhifills
+    $(TOP)/hardware/samsung_slsi-linaro/exynos/libcamera3/common_v2/PlugIn/converter/libs/libhifills
 LOCAL_SRC_FILES += \
 	../../exynos/libcamera3/common_v2/PlugIn/converter/libs/libhifills/ExynosCameraPlugInConverterHifills.cpp
 endif

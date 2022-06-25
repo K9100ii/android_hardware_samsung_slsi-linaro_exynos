@@ -40,5 +40,5 @@ ifeq ($(BOARD_USES_VENDORIMAGE), true)
 LOCAL_PROPRIETARY_MODULE := true
 endif
 
-include $(TOP)/hardware/samsung_slsi/exynos/BoardConfigCFlags.mk
+include $(TOP)/hardware/samsung_slsi-linaro/exynos/BoardConfigCFlags.mk
 include $(BUILD_SHARED_LIBRARY)

@@ -27,7 +27,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_C_INCLUDES += \
     external/tinyalsa/include \
-    $(TOP)/hardware/samsung_slsi/exynos/libaudio/sthal
+    $(TOP)/hardware/samsung_slsi-linaro/exynos/libaudio/sthal
 
 LOCAL_C_INCLUDES += \
     $(TOP)/device/samsung/$(TARGET_BOOTLOADER_BOARD_NAME)/conf

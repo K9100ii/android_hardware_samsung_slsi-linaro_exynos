@@ -36,12 +36,12 @@ LOCAL_SHARED_LIBRARIES := libutils libcutils liblog libexynoscamera_plugin libex
 LOCAL_MODULE := libexynoscamera_fakefusion_plugin
 
 LOCAL_C_INCLUDES += \
-	$(TOP)/hardware/samsung_slsi/exynos/include \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera3/common/ \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera3/common/PlugIn/ \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera3/common/PlugIn/include \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera3/common/PlugIn/libs/include \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera3/common/PlugIn/libs/libFakeFusion/include
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/include \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/libcamera3/common/ \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/libcamera3/common/PlugIn/ \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/libcamera3/common/PlugIn/include \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/libcamera3/common/PlugIn/libs/include \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/libcamera3/common/PlugIn/libs/libFakeFusion/include
 
 LOCAL_CFLAGS := -Wno-unused-parameter
 LOCAL_CFLAGS += -Wno-error=date-time

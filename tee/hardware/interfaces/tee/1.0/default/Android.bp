@@ -21,8 +21,8 @@ cc_library_static {
     ],
 
     include_dirs: [
-        "hardware/samsung_slsi/exynos/tee/kinibi410/ClientLib/include",
-        "hardware/samsung_slsi/exynos/tee/kinibi410/ClientLib/include/GP",
+        "hardware/samsung_slsi-linaro/exynos/tee/kinibi410/ClientLib/include",
+        "hardware/samsung_slsi-linaro/exynos/tee/kinibi410/ClientLib/include/GP",
     ],
 
     cflags: [
@@ -60,8 +60,8 @@ cc_binary {
     ],
 
     include_dirs: [
-        "hardware/samsung_slsi/exynos/tee/kinibi410/ClientLib/include",
-        "hardware/samsung_slsi/exynos/tee/kinibi410/ClientLib/include/GP",
+        "hardware/samsung_slsi-linaro/exynos/tee/kinibi410/ClientLib/include",
+        "hardware/samsung_slsi-linaro/exynos/tee/kinibi410/ClientLib/include/GP",
     ],
 
     cflags: [

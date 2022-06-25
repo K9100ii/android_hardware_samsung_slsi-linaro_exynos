@@ -123,7 +123,7 @@ endif
 endif
 
 LOCAL_C_INCLUDES := $(MALI_LOCAL_PATH) $(MALI_DDK_INCLUDES) \
-    $(TOP)/hardware/samsung_slsi/exynos/include
+    $(TOP)/hardware/samsung_slsi-linaro/exynos/include
 
 # General compilation flags
 LOCAL_CFLAGS := -ldl -Werror -DLOG_TAG=\"gralloc\" -DPLATFORM_SDK_VERSION=$(PLATFORM_SDK_VERSION)
@@ -299,7 +299,7 @@ include $(BUILD_SHARED_LIBRARY)
 #	libsync libhardware libhidlbase libhidltransport
 #
 #LOCAL_C_INCLUDES := \
-#    $(TOP)/hardware/samsung_slsi/exynos/include
+#    $(TOP)/hardware/samsung_slsi-linaro/exynos/include
 #
 #LOCAL_SRC_FILES := 	\
 #	GrallocWrapper.cpp

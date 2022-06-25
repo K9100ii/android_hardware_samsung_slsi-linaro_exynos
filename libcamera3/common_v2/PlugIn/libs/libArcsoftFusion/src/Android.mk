@@ -125,10 +125,10 @@ LOCAL_MODULE := libexynoscamera_arcsoftfusion
 LOCAL_C_INCLUDES += \
 	$(TOP)/system/core/libion/include \
     $(TOP)/hardware/libhardware/include/ \
-	$(TOP)/hardware/samsung_slsi/exynos/include \
-	$(TOP)/hardware/samsung_slsi/exynos/include/hardware/exynos \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera3/common_v2/PlugIn/include \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera3/common_v2/PlugIn/libs/libArcsoftCali/include \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/include \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/include/hardware/exynos \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/libcamera3/common_v2/PlugIn/include \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/libcamera3/common_v2/PlugIn/libs/libArcsoftCali/include \
 	$(LOCAL_PATH)/../include \
 
 LOCAL_CFLAGS := -Wno-unused-parameter

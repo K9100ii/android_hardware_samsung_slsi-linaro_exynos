@@ -9,8 +9,8 @@ LOCAL_SHARED_LIBRARIES := libutils libcutils liblog libexynosutils
 LOCAL_MODULE := libexynoscamera_fakefusion
 
 LOCAL_C_INCLUDES += \
-	$(TOP)/hardware/samsung_slsi/exynos/include \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera3/common/PlugIn/include \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/include \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/libcamera3/common/PlugIn/include \
 	$(LOCAL_PATH)/../include \
 
 LOCAL_CFLAGS := -Wno-unused-parameter

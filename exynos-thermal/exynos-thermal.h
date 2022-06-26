@@ -118,7 +118,7 @@ private:
 	const int triggerPoint = 0;
 	const int clearPoint = 0;
 	vector<Sensor *> sensors;
-	int math = 0;
+	__unused int math = 0;
 	vector<int> offsets;
 	vector<int> weights;
 	int weightSum = 0;

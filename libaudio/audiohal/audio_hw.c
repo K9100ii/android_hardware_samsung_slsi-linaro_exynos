@@ -3443,9 +3443,9 @@ static int adev_set_parameters(struct audio_hw_device *dev, const char *kvpairs)
         ALOGV("device-%s: FM_Radio_Volume = %s", __func__, value);
         if(strncmp(value, "on", 2) == 0) {
             adev_set_route((void *)primary_out, AUSAGE_PLAYBACK, ROUTE, NON_FORCE_ROUTE);
-            proxy_start_fm_radio(adev->proxy);
+            //proxy_start_fm_radio(adev->proxy);
         } else {
-            proxy_stop_fm_radio(adev->proxy);
+            //proxy_stop_fm_radio(adev->proxy);
 
             if (is_active_usage_APCall(adev->proxy) || (adev->voice && voice_is_call_active(adev->voice)))
                 ALOGV("device-%s: FM_Radio_Volume = %s, skip unroute path during call", __func__, value);

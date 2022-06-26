@@ -33,7 +33,7 @@ LOCAL_C_INCLUDES += \
     external/expat/lib
 
 LOCAL_HEADER_LIBRARIES := libhardware_headers
-LOCAL_SHARED_LIBRARIES := liblog libcutils libtinyalsa_sec libtinycompress libaudioutils libaudioroute_sec libalsautils_sec libexpat
+LOCAL_SHARED_LIBRARIES := liblog libcutils libtinyalsa libtinycompress libaudioutils libaudioroute libalsautils libexpat
 
 # To use the headers from vndk-ext libs
 LOCAL_CFLAGS += -D__ANDROID_VNDK_SEC__

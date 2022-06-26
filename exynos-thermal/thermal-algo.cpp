@@ -140,7 +140,7 @@ void Monitor::deactivate(void) {
 
 /* SS Implemenation */
 SS::SS(string &name, unsigned int samplingTime, int triggerPoint, int clearPoint, int startLevel, string &scenName, bool isNegative, Sensor* sensor, SSThread *thread, Device *device, int devicePerfFloor = 0, int timeTickTrigger = 0) :
-Algo(name, samplingTime, triggerPoint, clearPoint, scenName, isNegative, sensor, thread), startLevel(startLevel), device(device), devicePerfFloor(devicePerfFloor), timeTickTrigger(timeTickTrigger) {}
+Algo(name, samplingTime, triggerPoint, clearPoint, scenName, isNegative, sensor, thread), device(device), devicePerfFloor(devicePerfFloor), timeTickTrigger(timeTickTrigger), startLevel(startLevel) {}
 int SS::decision(void){
 	int temp = 0;
 	int nextStatus, nextValue, tempDiff, tickTriggered = 0;

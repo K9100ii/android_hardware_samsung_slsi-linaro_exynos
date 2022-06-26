@@ -24,7 +24,7 @@ Device::Device(string &name, string &nodePath) : name(name), nodePath(nodePath) 
 	if (!node.is_open()) printlog("[ExynosThermal] Device [%s] open failed\n", name.c_str());
 	node << unitbuf; // Flush the write buffer every write
 }
-Device::Device(string &name, string &nodePath, string &levelType, vector<string> &leveltoValue) : name(name), nodePath(nodePath), levelType(levelType), leveltoValue(leveltoValue) {
+Device::Device(string &name, string &nodePath, string &levelType, vector<string> &leveltoValue) : name(name), nodePath(nodePath), leveltoValue(leveltoValue), levelType(levelType) {
 	node.open(nodePath);
 	if (!node.is_open()) printlog("[ExynosThermal] Device [%s] open failed\n", name.c_str());
 	node << unitbuf; // Flush the write buffer every write

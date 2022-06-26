@@ -13,7 +13,6 @@ cc_library_static {
 
     shared_libs: [
         "libhidlbase",
-        "libhidltransport",
         "libhidlmemory",
         "libutils",
         "vendor.trustonic.tee@1.1",
@@ -49,7 +48,6 @@ cc_binary {
         "liblog",
         "libutils",
         "libhidlbase",
-        "libhidltransport",
         "libhidlmemory",
         "libcutils",
         "android.hidl.allocator@1.0",

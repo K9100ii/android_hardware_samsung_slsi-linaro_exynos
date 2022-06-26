@@ -76,7 +76,7 @@ include $(BUILD_SHARED_LIBRARY)
 include $(CLEAR_VARS)
 
 LOCAL_SHARED_LIBRARIES := liblog libcutils libion_exynos libutils android.hardware.graphics.allocator@2.0 android.hardware.graphics.mapper@2.0 \
-						libsync libhardware libhidlbase libhidltransport libion
+						libsync libhardware libhidlbase libion
 
 LOCAL_C_INCLUDES := \
 	$(LOCAL_PATH)/../include \

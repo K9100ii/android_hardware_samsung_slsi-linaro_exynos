@@ -13,7 +13,6 @@ cc_binary {
         "liblog",
         "libutils",
         "libhidlbase",
-        "libhidltransport",
         "libhidlmemory",
         "android.hidl.allocator@1.0",
         "android.hidl.memory@1.0",

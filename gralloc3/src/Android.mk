@@ -188,13 +188,13 @@ ifeq ($(shell expr $(GRALLOC_VERSION_MAJOR) \<= 1), 1)
 LOCAL_SHARED_LIBRARIES := libhardware liblog libcutils libGLESv1_CM libion_exynos libsync libutils
 else ifeq ($(GRALLOC_VERSION_MAJOR), 2)
     ifeq ($(GRALLOC_MAPPER), 1)
-        LOCAL_SHARED_LIBRARIES := libhardware libhidlbase libhidltransport liblog libcutils libion_exynos libsync libutils
+        LOCAL_SHARED_LIBRARIES := libhardware libhidlbase liblog libcutils libion_exynos libsync libutils
         LOCAL_SHARED_LIBRARIES += android.hardware.graphics.mapper@2.0
         ifeq ($(HIDL_MAPPER_VERSION_SCALED), 210)
             LOCAL_SHARED_LIBRARIES += android.hardware.graphics.mapper@2.1
         endif
     else
-        LOCAL_SHARED_LIBRARIES := libhardware libhidlbase libhidltransport liblog libcutils libion_exynos libsync libutils
+        LOCAL_SHARED_LIBRARIES := libhardware libhidlbase liblog libcutils libion_exynos libsync libutils
         LOCAL_SHARED_LIBRARIES += android.hardware.graphics.allocator@2.0
         ifeq ($(HIDL_MAPPER_VERSION_SCALED), 210)
             LOCAL_SHARED_LIBRARIES += android.hardware.graphics.mapper@2.1
@@ -269,8 +269,7 @@ else ifeq ($(GRALLOC_VERSION_MAJOR), 2)
 
     LOCAL_EXPORT_SHARED_LIBRARY_HEADERS := \
         android.hardware.graphics.allocator@2.0 \
-        libhidlbase \
-        libhidltransport
+        libhidlbase
 
     ifeq ($(HIDL_MAPPER_VERSION_SCALED), 200)
         LOCAL_EXPORT_SHARED_LIBRARY_HEADERS += android.hardware.graphics.mapper@2.0
@@ -296,7 +295,7 @@ include $(BUILD_SHARED_LIBRARY)
 #include $(CLEAR_VARS)
 #
 #LOCAL_SHARED_LIBRARIES := liblog libcutils libutils android.hardware.graphics.allocator@2.0 android.hardware.graphics.mapper@2.0 \
-#	libsync libhardware libhidlbase libhidltransport
+#	libsync libhardware libhidlbase
 #
 #LOCAL_C_INCLUDES := \
 #    $(TOP)/hardware/samsung_slsi-linaro/exynos/include

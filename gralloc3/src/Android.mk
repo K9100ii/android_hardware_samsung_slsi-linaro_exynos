@@ -126,7 +126,7 @@ LOCAL_C_INCLUDES := $(MALI_LOCAL_PATH) $(MALI_DDK_INCLUDES) \
     $(TOP)/hardware/samsung_slsi-linaro/exynos/include
 
 # General compilation flags
-LOCAL_CFLAGS := -ldl -Werror -DLOG_TAG=\"gralloc\" -DPLATFORM_SDK_VERSION=$(PLATFORM_SDK_VERSION)
+LOCAL_CFLAGS := -Werror -DLOG_TAG=\"gralloc\" -DPLATFORM_SDK_VERSION=$(PLATFORM_SDK_VERSION)
 
 # ALOGV flag
 LOCAL_CFLAGS += -DLOG_NDEBUG=$(MALI_GRALLOC_DISABLE_ALOGV)

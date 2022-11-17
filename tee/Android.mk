@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 
+ifeq ($(BOARD_USES_MOBICORE_TEE),true)
 ifndef TARGET_SOC_BASE
 TARGET_SOC_BASE = $(TARGET_SOC)
 endif
@@ -41,3 +42,4 @@ ifeq ($(TARGET_SOC_BASE), exynos9630)
 include $(call all-named-subdir-makefiles,$(exynos9630_dirs))
 
 endif
+endif # BOARD_USES_MOBICORE_TEE

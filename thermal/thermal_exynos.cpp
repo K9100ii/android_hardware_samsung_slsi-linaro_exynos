@@ -100,9 +100,9 @@ void initExynosThermalHal(void) {
 		else if (zoneName == "G3D") {
 			tempType = TemperatureType::GPU;
 		}
-//		else if (zoneName == "NPU") {
-//			tempType = TemperatureType::NPU;
-//		}
+		else if (zoneName == "NPU") {
+			tempType = TemperatureType::NPU;
+		}
 		else {
 			continue;
 		}
@@ -136,9 +136,9 @@ void initExynosThermalHal(void) {
 		else if (cdevName.find("gpufreq") != string::npos) {
 			cdevType = CoolingType::GPU;
 		}
-//		else if (cdevName.find("npu") != string::npos) {
-//			cdevType = CoolingType::NPU;
-//		}
+		else if (cdevName.find("npu") != string::npos) {
+			cdevType = CoolingType::NPU;
+		}
 		else {
 			continue;
 		}

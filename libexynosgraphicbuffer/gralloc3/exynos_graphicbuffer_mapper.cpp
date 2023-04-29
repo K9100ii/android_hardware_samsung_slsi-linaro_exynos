@@ -15,19 +15,19 @@
  */
 
 #include <ui/Gralloc.h>
-#include "VendorGraphicBuffer.h"
+#include "ExynosGraphicBuffer.h"
 
 using namespace android;
 using namespace vendor::graphics;
 
-status_t VendorGraphicBufferMapper::lock64(buffer_handle_t handle, uint64_t usage, const Rect& bounds,
+status_t ExynosGraphicBufferMapper::lock64(buffer_handle_t handle, uint64_t usage, const Rect& bounds,
 	void** vaddr, int32_t* outBytesPerPixel, int32_t* outBytesPerStride)
 {
 	return lockAsync(handle, usage, usage, bounds, vaddr,
 			-1, outBytesPerPixel, outBytesPerStride);
 }
 
-status_t VendorGraphicBufferMapper::lockYCbCr64(buffer_handle_t handle,
+status_t ExynosGraphicBufferMapper::lockYCbCr64(buffer_handle_t handle,
 	uint64_t usage, const Rect& bounds, android_ycbcr *ycbcr)
 {
 	return getGrallocMapper().lock(handle, usage, bounds, -1, ycbcr);

@@ -16,15 +16,15 @@
  */
 
 cc_library_shared {
-	name: "libvendorgraphicbuffer",
+	name: "libexynosgraphicbuffer",
 	include_dirs: [
-		"hardware/google/gchips/libvendorgraphicbuffer/include",
-		"hardware/google/gchips/gralloc3/src",
-		"hardware/google/gchips/include",
+		"hardware/samsung_slsi-linaro/exynos/libexynosgraphicbuffer/include",
+		"hardware/samsung_slsi-linaro/exynos/gralloc3/src",
+		"hardware/samsung_slsi-linaro/exynos/include",
 	],
 	srcs: [
-		"gralloc3/vendor_graphicbuffer_mapper.cpp",
-		"gralloc3/vendor_graphicbuffer_meta.cpp",
+		"gralloc3/exynos_graphicbuffer_mapper.cpp",
+		"gralloc3/exynos_graphicbuffer_meta.cpp",
 	],
 	shared_libs: [
 		"libcutils",

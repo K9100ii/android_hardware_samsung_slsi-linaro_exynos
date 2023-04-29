@@ -38,7 +38,7 @@ namespace graphics {
 typedef android::hardware::graphics::common::V1_2::BufferUsage BufferUsage;
 
 /* S.LSI specific usages */
-enum VendorGraphicBufferUsage {
+enum ExynosGraphicBufferUsage {
 	PROTECTED_DPB                   = 1ULL << 28,
 	NO_AFBC                         = 1ULL << 29,
 	CAMERA_RESERVED                 = 1ULL << 30,
@@ -59,9 +59,9 @@ enum VendorGraphicBufferUsage {
 
 
 /* A wrapper class to gralloc private handle */
-class VendorGraphicBufferMeta {
+class ExynosGraphicBufferMeta {
 private:
-	VendorGraphicBufferMeta() {};
+	ExynosGraphicBufferMeta() {};
 
 public:
 	enum
@@ -95,7 +95,7 @@ public:
 
 	int flags = 0;
 
-	VendorGraphicBufferMeta(const buffer_handle_t handle);
+	ExynosGraphicBufferMeta(const buffer_handle_t handle);
 
 	void init(const buffer_handle_t handle);
 
@@ -126,12 +126,12 @@ public:
 
 
 /* Mapper extension class to allow locking with 64-bit usages */
-class VendorGraphicBufferMapper : public android::GraphicBufferMapper
+class ExynosGraphicBufferMapper : public android::GraphicBufferMapper
 {
 public:
-	static inline VendorGraphicBufferMapper& get()
+	static inline ExynosGraphicBufferMapper& get()
 	{
-		return static_cast<VendorGraphicBufferMapper&>(getInstance());
+		return static_cast<ExynosGraphicBufferMapper&>(getInstance());
 	}
 
 	android::status_t lock64(buffer_handle_t handle, uint64_t usage, const android::Rect& bounds,
@@ -142,7 +142,7 @@ public:
 		uint64_t usage, const android::Rect& bounds, android_ycbcr *ycbcr);
 };
 
-typedef class android::GraphicBufferAllocator VendorGraphicBufferAllocator;
+typedef class android::GraphicBufferAllocator ExynosGraphicBufferAllocator;
 
 
 /* libion helper for use by OMX only */

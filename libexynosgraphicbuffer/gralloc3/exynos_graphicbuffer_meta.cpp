@@ -15,7 +15,7 @@
  */
 
 #include <log/log.h>
-#include "VendorGraphicBuffer.h"
+#include "ExynosGraphicBuffer.h"
 #include "mali_gralloc_buffer.h"
 #include "gralloc_buffer_priv.h"
 
@@ -24,7 +24,7 @@
 using namespace android;
 using namespace vendor::graphics;
 
-int VendorGraphicBufferMeta::is_afbc(buffer_handle_t buffer_hnd_p)
+int ExynosGraphicBufferMeta::is_afbc(buffer_handle_t buffer_hnd_p)
 {
 	const private_handle_t *gralloc_hnd = static_cast<const private_handle_t *>(buffer_hnd_p);
 
@@ -35,7 +35,7 @@ int VendorGraphicBufferMeta::is_afbc(buffer_handle_t buffer_hnd_p)
 }
 
 #define GRALLOC_META_GETTER(__type__, __name__, __member__) \
-__type__ VendorGraphicBufferMeta::get_##__name__(buffer_handle_t hnd) \
+__type__ ExynosGraphicBufferMeta::get_##__name__(buffer_handle_t hnd) \
 { \
 	const private_handle_t *gralloc_hnd = static_cast<const private_handle_t *>(hnd); \
 	if (!gralloc_hnd) return 0; \
@@ -57,7 +57,7 @@ GRALLOC_META_GETTER(uint64_t, consumer_usage, consumer_usage);
 
 GRALLOC_META_GETTER(uint64_t, flags, flags);
 
-int VendorGraphicBufferMeta::get_dataspace(buffer_handle_t hnd)
+int ExynosGraphicBufferMeta::get_dataspace(buffer_handle_t hnd)
 {
 	const private_handle_t *gralloc_hnd = static_cast<const private_handle_t *>(hnd);
 
@@ -84,7 +84,7 @@ int VendorGraphicBufferMeta::get_dataspace(buffer_handle_t hnd)
 	return dataspace;
 }
 
-int VendorGraphicBufferMeta::get_fd(buffer_handle_t hnd, int num)
+int ExynosGraphicBufferMeta::get_fd(buffer_handle_t hnd, int num)
 {
 	const private_handle_t *gralloc_hnd = static_cast<const private_handle_t *>(hnd);
 
@@ -97,7 +97,7 @@ int VendorGraphicBufferMeta::get_fd(buffer_handle_t hnd, int num)
 	return gralloc_hnd->fds[num];
 }
 
-int VendorGraphicBufferMeta::get_size(buffer_handle_t hnd, int num)
+int ExynosGraphicBufferMeta::get_size(buffer_handle_t hnd, int num)
 {
 	const private_handle_t *gralloc_hnd = static_cast<const private_handle_t *>(hnd);
 
@@ -111,7 +111,7 @@ int VendorGraphicBufferMeta::get_size(buffer_handle_t hnd, int num)
 }
 
 
-uint64_t VendorGraphicBufferMeta::get_usage(buffer_handle_t hnd)
+uint64_t ExynosGraphicBufferMeta::get_usage(buffer_handle_t hnd)
 {
 	const private_handle_t *gralloc_hnd = static_cast<const private_handle_t *>(hnd);
 
@@ -121,7 +121,7 @@ uint64_t VendorGraphicBufferMeta::get_usage(buffer_handle_t hnd)
 	return gralloc_hnd->producer_usage | gralloc_hnd->consumer_usage;
 }
 
-void* VendorGraphicBufferMeta::get_video_metadata(buffer_handle_t hnd)
+void* ExynosGraphicBufferMeta::get_video_metadata(buffer_handle_t hnd)
 {
 	private_handle_t *gralloc_hnd =
 		static_cast<private_handle_t *>(const_cast<native_handle_t *>(hnd));
@@ -151,7 +151,7 @@ void* VendorGraphicBufferMeta::get_video_metadata(buffer_handle_t hnd)
 	}
 }
 
-int VendorGraphicBufferMeta::get_video_metadata_fd(buffer_handle_t hnd)
+int ExynosGraphicBufferMeta::get_video_metadata_fd(buffer_handle_t hnd)
 {
 	const private_handle_t *gralloc_hnd = static_cast<const private_handle_t *>(hnd);
 
@@ -160,9 +160,9 @@ int VendorGraphicBufferMeta::get_video_metadata_fd(buffer_handle_t hnd)
 
 	int idx = -1;
 
-	if (gralloc_hnd->flags & VendorGraphicBufferMeta::PRIV_FLAGS_USES_2PRIVATE_DATA)
+	if (gralloc_hnd->flags & ExynosGraphicBufferMeta::PRIV_FLAGS_USES_2PRIVATE_DATA)
 		idx = 1;
-	else if (gralloc_hnd->flags & VendorGraphicBufferMeta::PRIV_FLAGS_USES_3PRIVATE_DATA)
+	else if (gralloc_hnd->flags & ExynosGraphicBufferMeta::PRIV_FLAGS_USES_3PRIVATE_DATA)
 		idx = 2;
 
 	if (idx < 0)
@@ -172,13 +172,13 @@ int VendorGraphicBufferMeta::get_video_metadata_fd(buffer_handle_t hnd)
 }
 
 /* This function is not supported with gralloc3. return nullptr */
-void* VendorGraphicBufferMeta::get_video_metadata_roiinfo(buffer_handle_t hnd)
+void* ExynosGraphicBufferMeta::get_video_metadata_roiinfo(buffer_handle_t hnd)
 {
 	UNUSED(hnd);
 	return nullptr;
 }
 
-void VendorGraphicBufferMeta::init(const buffer_handle_t handle)
+void ExynosGraphicBufferMeta::init(const buffer_handle_t handle)
 {
 	const private_handle_t *gralloc_hnd = static_cast<const private_handle_t *>(handle);
 
@@ -207,7 +207,7 @@ void VendorGraphicBufferMeta::init(const buffer_handle_t handle)
 	flags = gralloc_hnd->flags;
 }
 
-VendorGraphicBufferMeta::VendorGraphicBufferMeta(buffer_handle_t handle)
+ExynosGraphicBufferMeta::ExynosGraphicBufferMeta(buffer_handle_t handle)
 {
 	init(handle);
 }

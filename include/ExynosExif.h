@@ -219,12 +219,12 @@ typedef struct {
     char exif_version[4];
     char date_time[20];
     char sec_time[5];
-#if HWJPEG_ANDROID_VERSION >= 12
+#if HWJPEG_ANDROID_VERSION >= 11
     char pad2[13];
 #endif
     unsigned int  maker_note_size;
     unsigned char *maker_note;
-#if HWJPEG_ANDROID_VERSION >= 12
+#if HWJPEG_ANDROID_VERSION >= 11
     char pad3[4];
 #endif
     unsigned int  user_comment_size;

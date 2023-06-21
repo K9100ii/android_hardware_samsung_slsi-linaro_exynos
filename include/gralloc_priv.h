@@ -95,6 +95,130 @@ struct private_handle_t {
 		PRIV_FLAGS_USES_ION    = 0x00000020
 	};
 
+#if TARGET_SOC == exynos7580
+	// file-descriptors
+	int         fd;
+	int         fd1;
+	int         fd2;
+	// ints
+	int         magic;
+	int         flags;
+	int         size;
+	int         offset;
+	int         format;
+	int         width;
+	int         height;
+	int         stride;
+	int         vstride;
+	int         frameworkFormat;
+
+	ion_user_handle_t handle;
+	ion_user_handle_t handle1;
+	ion_user_handle_t handle2;
+
+	uint64_t base __attribute__((aligned(8)));
+	uint64_t base1 __attribute__((aligned(8)));
+	uint64_t base2 __attribute__((aligned(8)));
+
+#ifdef __cplusplus
+	static inline int sNumInts() {
+		return (((sizeof(private_handle_t) - sizeof(native_handle_t))/sizeof(int)) - sNumFds);
+	}
+	static const int sNumFds = 3;
+	static const int sMagic = 0x3141592;
+
+	private_handle_t(int fd, int size, int flags) :
+		fd(fd), fd1(-1), fd2(-1), magic(sMagic), flags(flags), size(size),
+		offset(0), format(0), width(0), height(0), stride(0), vstride(0), frameworkFormat(0),
+		handle(0), handle1(0), handle2(0), base(0), base1(0), base2(0),
+		dssRatio(0), prefer_compression(0),
+		internal_format(0), is_compressible(0), compressed_out(0)
+	{
+		version = sizeof(native_handle);
+		numInts = sNumInts() + 2;
+		numFds = sNumFds -2 ;
+	}
+
+	private_handle_t(int fd, int size, int flags, int w,
+			 int h, int format, uint64_t internal_format, int frameworkFormat, int stride, int vstride, int is_compressible) :
+		fd(fd), fd1(-1), fd2(-1), magic(sMagic), flags(flags), size(size),
+		offset(0), format(format), width(w), height(h), stride(stride), vstride(vstride), frameworkFormat(frameworkFormat),
+		handle(0), handle1(0), handle2(0), base(0), base1(0), base2(0),
+		dssRatio(0), prefer_compression(0),
+		internal_format(internal_format), is_compressible(is_compressible), compressed_out(0)
+	{
+		version = sizeof(native_handle);
+		numInts = sNumInts() + 2;
+		numFds = sNumFds - 2;
+	}
+
+	private_handle_t(int fd, int fd1, int size, int flags, int w,
+			 int h, int format, uint64_t internal_format, int frameworkFormat, int stride, int vstride, int is_compressible) :
+		fd(fd), fd1(fd1), fd2(-1), magic(sMagic), flags(flags), size(size),
+		offset(0), format(format), width(w), height(h), stride(stride), vstride(vstride), frameworkFormat(frameworkFormat),
+		handle(0), handle1(0), handle2(0), base(0), base1(0), base2(0),
+		dssRatio(0), prefer_compression(0),
+		internal_format(internal_format), is_compressible(is_compressible), compressed_out(0)
+	{
+		version = sizeof(native_handle);
+		numInts = sNumInts() + 1;
+		numFds = sNumFds - 1;
+	}
+
+	private_handle_t(int fd, int fd1, int fd2, int size, int flags, int w,
+			 int h, int format, uint64_t internal_format, int frameworkFormat, int stride, int vstride, int is_compressible) :
+		fd(fd), fd1(fd1), fd2(fd2), magic(sMagic), flags(flags), size(size),
+		offset(0), format(format), width(w), height(h), stride(stride), vstride(vstride), frameworkFormat(frameworkFormat),
+		handle(0), handle1(0), handle2(0), base(0), base1(0), base2(0),
+		dssRatio(0), prefer_compression(0),
+		internal_format(internal_format), is_compressible(is_compressible), compressed_out(0)
+	{
+		version = sizeof(native_handle);
+		numInts = sNumInts();
+		numFds = sNumFds;
+	}
+
+	~private_handle_t() {
+		magic = 0;
+	}
+
+	static int validate(const native_handle* h) {
+		const private_handle_t* hnd = static_cast<const private_handle_t*>(h);
+		if (!h || h->version != sizeof(native_handle) ||
+				hnd->numInts + hnd->numFds != sNumInts() + sNumFds ||
+				hnd->magic != sMagic)
+		{
+			ALOGE("invalid gralloc handle (at %p)", reinterpret_cast<void *>(const_cast<native_handle *>(h)));
+			return -EINVAL;
+		}
+		return 0;
+	}
+
+	static private_handle_t* dynamicCast(const native_handle* in)
+	{
+		if (validate(in) == 0)
+			return const_cast<private_handle_t*>(static_cast<const private_handle_t*>(in));
+
+		return NULL;
+	}
+
+	int         lock_usage;
+	int         lock_offset;
+	int         lock_len;
+
+	int         dssRatio;
+	int         cropLeft;
+	int         cropTop;
+	int         cropRight;
+	int         cropBottom;
+
+	int         prefer_compression;
+	uint64_t    internal_format;
+	int         is_compressible;
+	int         compressed_out;
+
+#endif /* __cplusplus */
+#else
 	// file-descriptors
 	int         fd;
 	int         fd1;
@@ -195,6 +319,7 @@ struct private_handle_t {
 
 		return NULL;
 	}
+#endif
 #endif
 };
 #endif /* GRALLOC_PRIV_H_ */

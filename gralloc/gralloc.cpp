@@ -163,9 +163,15 @@ static unsigned int _select_heap(int usage)
 static int gralloc_alloc_rgb(int ionfd, int w, int h, int format, int usage,
                              unsigned int ion_flags, private_handle_t **hnd, int *stride)
 {
-    size_t bpr = 0, ext_size=256, size = 0, size1 = 0, afbc_header_size = 0;
+    size_t bpr = 0, ext_size=256, size = 0;
+#if TARGET_SOC != exynos7580
+    size_t size1 = 0, afbc_header_size = 0;
+#endif
     int bpp = 0, vstride = 0;
-    int fd = -1, fd1 = -1;
+    int fd = -1;
+#if TARGET_SOC != exynos7580
+    int fd1 = -1;
+#endif
     uint32_t nblocks = 0;
 
     unsigned int heap_mask = _select_heap(usage);
@@ -218,8 +224,9 @@ static int gralloc_alloc_rgb(int ionfd, int w, int h, int format, int usage,
             int h_aligned = ALIGN( h, AFBC_PIXELS_PER_BLOCK );
             nblocks = *stride / AFBC_PIXELS_PER_BLOCK * h_aligned / AFBC_PIXELS_PER_BLOCK;
 
+#if TARGET_SOC != exynos7580
             afbc_header_size = ALIGN( nblocks * AFBC_HEADER_BUFFER_BYTES_PER_BLOCKENTRY, AFBC_BODY_BUFFER_BYTE_ALIGNMENT );
-
+#endif
             size = *stride * h_aligned * bpp +
                 ALIGN( nblocks * AFBC_HEADER_BUFFER_BYTES_PER_BLOCKENTRY, AFBC_BODY_BUFFER_BYTE_ALIGNMENT ) + ext_size;
 
@@ -254,6 +261,7 @@ static int gralloc_alloc_rgb(int ionfd, int w, int h, int format, int usage,
         ALOGE("failed to get fd from exynos_ion_alloc, %s, %d\n", __func__, __LINE__);
         return -EINVAL;
     }
+#if TARGET_SOC != exynos7580
     else
     {
         // Alloc for AFBC data
@@ -287,13 +295,20 @@ static int gralloc_alloc_rgb(int ionfd, int w, int h, int format, int usage,
             munmap(afbc_buf, afbc_header_size);
         }
     }
+#endif
 
+#if TARGET_SOC == exynos7580
+    *hnd = new private_handle_t(fd, size, usage, w, h, format, format,
+                    format, *stride, vstride, is_compressible);
+#else
     *hnd = new private_handle_t(fd, fd1, -1, size, size1, 0,
                     usage, w, h, format, format, format, *stride,
                     vstride, is_compressible);
+#endif
 
     return 0;
 
+#if TARGET_SOC != exynos7580
 error_close_fd_and_return:
 	if (fd  >= 0)
 		close(fd);
@@ -302,6 +317,7 @@ error_close_fd_and_return:
 		close(fd1);
 
 	return -EINVAL;
+#endif
 }
 
 static int gralloc_alloc_framework_yuv(int ionfd, int w, int h, int format, int frameworkFormat,
@@ -351,8 +367,13 @@ static int gralloc_alloc_framework_yuv(int ionfd, int w, int h, int format, int 
         return -EINVAL;
     }
 
+#if TARGET_SOC == exynos7580
+    *hnd = new private_handle_t(fd, size,
+                    usage, w, h, format, format, frameworkFormat, *stride, h, is_compressible);
+#else
     *hnd = new private_handle_t(fd, -1, -1, size, 0, 0,
                     usage, w, h, format, format, frameworkFormat, *stride, h, is_compressible);
+#endif
     return 0;
 }
 
@@ -542,8 +563,13 @@ static int gralloc_alloc_yuv(int ionfd, int w, int h, int format,
     }
 
     if (planes == 1) {
+#if TARGET_SOC == exynos7580
+        *hnd = new private_handle_t(fd, size, usage, w, h,
+                                    format, internal_format, frameworkFormat, *stride, luma_vstride, is_compressible);
+#else
         *hnd = new private_handle_t(fd, -1, -1, size, 0, 0, usage, w, h,
                                     format, internal_format, frameworkFormat, *stride, luma_vstride, is_compressible);
+#endif
     } else {
         size1 = chroma_size;
         fd1 = exynos_ion_alloc(ionfd, size1, heap_mask, ion_flags);
@@ -571,11 +597,21 @@ static int gralloc_alloc_yuv(int ionfd, int w, int h, int format,
                 return -EINVAL;
             }
 
+#if TARGET_SOC == exynos7580
+            *hnd = new private_handle_t(fd, fd1, fd2, size, usage, w, h,
+                                        format, internal_format, frameworkFormat, *stride, luma_vstride, is_compressible);
+#else
             *hnd = new private_handle_t(fd, fd1, fd2, size, size1, size2, usage, w, h,
                                         format, internal_format, frameworkFormat, *stride, luma_vstride, is_compressible);
+#endif
         } else {
+#if TARGET_SOC == exynos7580
+            *hnd = new private_handle_t(fd, fd1, size, usage, w, h,
+                                        format, internal_format, frameworkFormat, *stride, luma_vstride, is_compressible);
+#else
             *hnd = new private_handle_t(fd, fd1, -1, size, size1, 0, usage, w, h,
                                         format, internal_format, frameworkFormat, *stride, luma_vstride, is_compressible);
+#endif
         }
     }
 

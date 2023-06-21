@@ -1,3 +1,7 @@
+soong_namespace {
+    imports: ["hardware/samsung_slsi-linaro/exynos/tee/hardware/interfaces"],
+}
+
 hidl_package_root {
     name: "vendor.trustonic",
     path: "hardware/samsung_slsi-linaro/exynos/tee/hardware/interfaces",

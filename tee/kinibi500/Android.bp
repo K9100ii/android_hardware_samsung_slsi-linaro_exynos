@@ -1,5 +1,8 @@
 soong_namespace {
-    imports: ["hardware/samsung_slsi-linaro/exynos/tee/kinibi500"],
+    imports: [
+        "hardware/samsung_slsi-linaro/exynos/tee/kinibi500",
+        "hardware/samsung_slsi-linaro/exynos/tee/hardware/interfaces",
+    ],
 }
 
 subdirs = [

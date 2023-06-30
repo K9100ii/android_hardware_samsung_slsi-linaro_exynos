@@ -58,7 +58,7 @@ int getIonFd(gralloc_module_t const *module)
 
 static int gralloc_map(gralloc_module_t const* module, buffer_handle_t handle)
 {
-#if TARGET_SOC == exynos7580
+#ifdef USES_EXYNOS7580
     size_t chroma_vstride = 0;
     size_t chroma_size = 0;
     size_t ext_size = 256;
@@ -69,7 +69,7 @@ static int gralloc_map(gralloc_module_t const* module, buffer_handle_t handle)
     hnd->base = hnd->base1 = hnd->base2 = 0;
 
     switch (hnd->format) {
-#if TARGET_SOC == exynos7580
+#ifdef USES_EXYNOS7580
     case HAL_PIXEL_FORMAT_EXYNOS_YCbCr_420_SP_M_TILED:
         chroma_vstride = ALIGN(hnd->height / 2, 32);
         chroma_size = chroma_vstride * hnd->stride + ext_size;
@@ -85,12 +85,12 @@ static int gralloc_map(gralloc_module_t const* module, buffer_handle_t handle)
         break;
 #endif
     case HAL_PIXEL_FORMAT_EXYNOS_YCbCr_420_SP_M_S10B:
-#if TARGET_SOC == exynos7580
+#ifdef USES_EXYNOS7580
         chroma_size = (hnd->stride * ALIGN(hnd->vstride / 2, 8) + 64) + ((ALIGN(hnd->width / 4, 16) * (hnd->height / 2)) + 64) + ext_size;
         break;
 #endif
     case HAL_PIXEL_FORMAT_EXYNOS_YCbCr_420_SP_M_PRIV:
-#if TARGET_SOC == exynos7580
+#ifdef USES_EXYNOS7580
         chroma_size = hnd->stride * ALIGN(hnd->vstride / 2, 8) + ext_size;
         privAddress = mmap(0, PRIV_SIZE, PROT_READ|PROT_WRITE, MAP_SHARED, hnd->fd2, 0);
 #else
@@ -123,7 +123,7 @@ static int gralloc_map(gralloc_module_t const* module, buffer_handle_t handle)
         exynos_ion_sync_fd(getIonFd(module), hnd->fd);
 
         if (hnd->fd1 >= 0) {
-#if TARGET_SOC == exynos7580
+#ifdef USES_EXYNOS7580
             void *mappedAddress1 = (void*)mmap(0, chroma_size, PROT_READ|PROT_WRITE,
                                                 MAP_SHARED, hnd->fd1, 0);
 #else
@@ -140,7 +140,7 @@ static int gralloc_map(gralloc_module_t const* module, buffer_handle_t handle)
         if (hnd->fd2 >= 0) {
             if ((hnd->format != HAL_PIXEL_FORMAT_EXYNOS_YCbCr_420_SP_M_PRIV) &&
                 (hnd->format != HAL_PIXEL_FORMAT_EXYNOS_YCbCr_420_SP_M_S10B)) {
-#if TARGET_SOC == exynos7580
+#ifdef USES_EXYNOS7580
                 void *mappedAddress2 = (void*)mmap(0, chroma_size, PROT_READ|PROT_WRITE, MAP_SHARED, hnd->fd2, 0);
 #else
                 void *mappedAddress2 = (void*)mmap(0, hnd->size2, PROT_READ|PROT_WRITE, MAP_SHARED, hnd->fd2, 0);
@@ -161,14 +161,14 @@ static int gralloc_map(gralloc_module_t const* module, buffer_handle_t handle)
 static int gralloc_unmap(buffer_handle_t handle)
 {
     private_handle_t* hnd = (private_handle_t*)handle;
-#if TARGET_SOC == exynos7580
+#ifdef USES_EXYNOS7580
     size_t chroma_vstride = 0;
     size_t chroma_size = 0;
     size_t ext_size = 256;
 #endif
 
     switch (hnd->format) {
-#if TARGET_SOC == exynos7580
+#ifdef USES_EXYNOS7580
     case HAL_PIXEL_FORMAT_EXYNOS_YCbCr_420_SP_M_TILED:
         chroma_vstride = ALIGN(hnd->height / 2, 32);
         chroma_size = chroma_vstride * hnd->stride + ext_size;
@@ -184,12 +184,12 @@ static int gralloc_unmap(buffer_handle_t handle)
         break;
 #endif
     case HAL_PIXEL_FORMAT_EXYNOS_YCbCr_420_SP_M_S10B:
-#if TARGET_SOC == exynos7580
+#ifdef USES_EXYNOS7580
         chroma_size = (hnd->stride * ALIGN(hnd->vstride / 2, 8) + 64) + ((ALIGN(hnd->width / 4, 16) * (hnd->height / 2)) + 64) + ext_size;
         break;
 #endif
     case HAL_PIXEL_FORMAT_EXYNOS_YCbCr_420_SP_M_PRIV:
-#if TARGET_SOC == exynos7580
+#ifdef USES_EXYNOS7580
         chroma_size = hnd->stride * ALIGN(hnd->vstride / 2, 8) + ext_size;
         if (munmap(INT_TO_PTR(hnd->base2), PRIV_SIZE) < 0) {
             ALOGE("%s :could not unmap %s %#" PRIx64 " %d", __func__, strerror(errno), hnd->base2, chroma_size);
@@ -216,7 +216,7 @@ static int gralloc_unmap(buffer_handle_t handle)
     if (hnd->fd1 >= 0) {
         if (!hnd->base1)
             return 0;
-#if TARGET_SOC == exynos7580
+#ifdef USES_EXYNOS7580
         if (munmap(INT_TO_PTR(hnd->base1), chroma_size) < 0) {
             ALOGE("%s :could not unmap %s %#" PRIx64 " %d", __func__, strerror(errno), hnd->base1, chroma_size);
         }
@@ -230,7 +230,7 @@ static int gralloc_unmap(buffer_handle_t handle)
     if (hnd->fd2 >= 0) {
         if (!hnd->base2)
             return 0;
-#if TARGET_SOC == exynos7580
+#ifdef USES_EXYNOS7580
         if (munmap(INT_TO_PTR(hnd->base2), chroma_size) < 0) {
             ALOGE("%s :could not unmap %s %#" PRIx64 " %d", __func__, strerror(errno), hnd->base2, chroma_size);
         }
@@ -324,7 +324,7 @@ int gralloc_lock(gralloc_module_t const* module,
     // flushed or invalidated depending on the usage bits and the
     // hardware.
 
-#if TARGET_SOC == exynos7580
+#ifdef USES_EXYNOS7580
     int ext_size = 256;
 #endif
 
@@ -341,7 +341,7 @@ int gralloc_lock(gralloc_module_t const* module,
         return -EINVAL;
     }
 
-#if TARGET_SOC != exynos7580
+#ifndef USES_EXYNOS7580
     switch(hnd->format)
     {
         case HAL_PIXEL_FORMAT_EXYNOS_ARGB_8888:
@@ -386,7 +386,7 @@ int gralloc_lock(gralloc_module_t const* module,
 
     *vaddr = INT_TO_PTR(hnd->base);
 
-#if TARGET_SOC == exynos7580
+#ifdef USES_EXYNOS7580
     if (hnd->format == HAL_PIXEL_FORMAT_EXYNOS_YCbCr_420_SPN)
         vaddr[1] = (int*)vaddr[0] + (hnd->stride * hnd->vstride) + ext_size;
     else if (hnd->format == HAL_PIXEL_FORMAT_EXYNOS_YCbCr_420_SPN_S10B)

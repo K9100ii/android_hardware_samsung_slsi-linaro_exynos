@@ -95,7 +95,7 @@ struct private_handle_t {
 		PRIV_FLAGS_USES_ION    = 0x00000020
 	};
 
-#if TARGET_SOC == exynos7580
+#ifdef USES_EXYNOS7580
 	// file-descriptors
 	int         fd;
 	int         fd1;

@@ -9,13 +9,13 @@ LOCAL_SHARED_LIBRARIES := libutils libcutils liblog libexynosutils libexynoscame
 LOCAL_MODULE := libvdis
 
 LOCAL_C_INCLUDES += \
-	$(TOP)/hardware/samsung_slsi/exynos/include \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera3/9xxx \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera3/common_v2/PlugIn/include \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/include \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/libcamera3/9xxx \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/libcamera3/common_v2/PlugIn/include \
 	$(LOCAL_PATH)/../include \
 
 LOCAL_CFLAGS := -Wno-unused-parameter
 LOCAL_CFLAGS += -Wno-error=date-time
 
-include $(TOP)/hardware/samsung_slsi/exynos/BoardConfigCFlags.mk
+include $(TOP)/hardware/samsung_slsi-linaro/exynos/BoardConfigCFlags.mk
 include $(BUILD_SHARED_LIBRARY)

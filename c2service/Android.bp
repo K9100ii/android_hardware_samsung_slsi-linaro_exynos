@@ -33,7 +33,7 @@ soong_namespace {
 }
 
 package {
-    default_applicable_licenses: ["hardware_samsung_slsi_exynos_c2service_license"],
+    default_applicable_licenses: ["hardware_samsung_slsi-linaro_exynos_c2service_license"],
 
     default_visibility: [ "//visibility:private" ],
 }
@@ -41,7 +41,7 @@ package {
 // Added automatically by a large-scale-change
 // See: http://go/android-license-faq
 license {
-    name: "hardware_samsung_slsi_exynos_c2service_license",
+    name: "hardware_samsung_slsi-linaro_exynos_c2service_license",
     visibility: [":__subpackages__"],
     license_kinds: [
         "SPDX-license-identifier-Apache-2.0",

@@ -21,12 +21,12 @@ LOCAL_PROPRIETARY_MODULE := true
 
 LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH)/../include \
-	$(TOP)/hardware/samsung_slsi/exynos/include \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera_external \
-	$(TOP)/hardware/samsung_slsi/$(TARGET_BOARD_PLATFORM)/include \
-	$(TOP)/hardware/samsung_slsi/$(TARGET_SOC)/include \
-	$(TOP)/hardware/samsung_slsi/$(TARGET_SOC)/libcamera \
-	$(TOP)/hardware/samsung_slsi/$(TARGET_SOC)/libcamera_external \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/include \
+	$(TOP)/hardware/samsung_slsi-linaro/exynos/libcamera_external \
+	$(TOP)/hardware/samsung_slsi-linaro/$(TARGET_BOARD_PLATFORM)/include \
+	$(TOP)/hardware/samsung_slsi-linaro/$(TARGET_SOC)/include \
+	$(TOP)/hardware/samsung_slsi-linaro/$(TARGET_SOC)/libcamera \
+	$(TOP)/hardware/samsung_slsi-linaro/$(TARGET_SOC)/libcamera_external \
 	frameworks/native/include \
 	system/media/camera/include
 

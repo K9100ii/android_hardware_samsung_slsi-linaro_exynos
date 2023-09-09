@@ -1,0 +1,21 @@
+on early-init
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d \
+	    /vendor/lib/modules mobicore 
+
+on early-fs
+    start trustonic-daemon
+
+on nonencrypted
+    mkdir /data/vendor/mcRegistry 0775 system system
+    chown system system /data/vendor/mcRegistry/TbStorage
+    chown system system /data/vendor/mcRegistry/TbStorage/Store_0.tf
+
+on property:vold.decrypt=trigger_restart_framework
+    mkdir /data/vendor/mcRegistry 0775 system system
+    chown system system /data/vendor/mcRegistry/TbStorage
+    chown system system /data/vendor/mcRegistry/TbStorage/Store_0.tf
+
+service trustonic-daemon /vendor/bin/mcDriverDaemon --sfs-reformat -r FFFFFFFF000000000000000000000001 -r /vendor/app/mcRegistry/FFFFFFFFD00000000000000000000016.tlbin
+    user system
+    group system
+    class core

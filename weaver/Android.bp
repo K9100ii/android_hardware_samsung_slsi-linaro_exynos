@@ -1,0 +1,46 @@
+soong_namespace {
+    imports: [
+        "hardware/samsung_slsi/exynos/tee/kinibi520",
+        "hardware/samsung_slsi/exynos/tee/kinibi510",
+        "hardware/samsung_slsi/exynos/tee/kinibi500"
+    ],
+}
+
+
+cc_binary {
+	name : "android.hardware.weaver@1.0-service",
+	relative_install_path: "hw",
+	vendor : true,
+
+	srcs: [
+		"service.cpp",
+		"src/weaver_device.cpp",
+		"src/weaver_device_impl.cpp",
+		"src/weaver_throttle_list.cpp",
+		"src/weaver_hwctl.cpp",
+	],
+
+	local_include_dirs: [
+		"include",
+	],
+
+	init_rc: [
+		"android.hardware.weaver@1.0-service.rc",
+	],
+
+	cflags :[
+		"-Wno-unused-variable",
+		"-Wno-unused-parameter",
+	],
+
+	shared_libs: [
+		"android.hardware.weaver@1.0",
+		"libhidlbase",
+		"libbase",
+		"libcutils",
+		"libhardware",
+		"liblog",
+		"libutils",
+		"libMcClient",
+	 ],
+}

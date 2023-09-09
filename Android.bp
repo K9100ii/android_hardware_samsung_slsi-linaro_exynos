@@ -1,0 +1,45 @@
+soong_config_module_type {
+    name: "libexynos_headers_c2_cc_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "exynos_headers_c2",
+    variables: [
+        "full_st2094_40",
+    ],
+    properties: [
+        "cflags",
+    ],
+}
+
+soong_config_bool_variable {
+    name: "full_st2094_40",
+}
+
+libexynos_headers_c2_cc_defaults {
+    name: "libexynos_headers_c2_defaults",
+    soong_config_variables: {
+        full_st2094_40: {
+            cflags: ["-DUSE_FULL_ST2094_40"],
+        }
+    }
+}
+
+cc_library_headers {
+    name: "libexynos_headers",
+    header_libs: [
+        "libaudio_system_headers",
+        "libhardware_headers",
+        "libsystem_headers",
+        "libcutils_headers",
+    ],
+    export_header_lib_headers: [
+        "libaudio_system_headers",
+        "libsystem_headers",
+        "libcutils_headers",
+        "libhardware_headers",
+    ],
+
+    export_include_dirs: ["include"],
+    proprietary: true,
+}
+
+subdirs = ["*"]

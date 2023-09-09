@@ -1,0 +1,150 @@
+/*
+ * Copyright (C) 2020 Arm Limited.
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+soong_config_module_type {
+    name: "arm_gralloc_core_cc_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "arm_gralloc",
+    variables: [
+        "gralloc_ion_sync_on_lock",
+        "gralloc_product_vendor_version",
+        "mfc_chroma_valign",
+        "support_raw10_raw12_cam_wr",
+        "cam_jpeg_blob_wa",
+        "support_ycrcb_420_sp_align_16",
+    ],
+    properties: [
+        "cflags",
+    ],
+}
+
+soong_config_bool_variable {
+    name: "gralloc_ion_sync_on_lock",
+}
+
+soong_config_bool_variable {
+    name: "gralloc_product_vendor_version",
+}
+
+soong_config_bool_variable {
+    name: "mfc_chroma_valign",
+}
+
+soong_config_bool_variable {
+    name: "support_raw10_raw12_cam_wr",
+}
+
+soong_config_bool_variable {
+    name: "cam_jpeg_blob_wa",
+}
+
+soong_config_bool_variable {
+    name: "support_ycrcb_420_sp_align_16",
+}
+
+arm_gralloc_core_cc_defaults {
+    name: "arm_gralloc_core_defaults",
+    defaults: [
+        "arm_gralloc_defaults",
+    ],
+    cflags: [
+        /* Minimum buffer dimensions in pixels when buffer will use AFBC */
+        /* TODO: set this via BoardConfig */
+        "-DGRALLOC_DISP_W=1920",
+        "-DGRALLOC_DISP_H=1080",
+    ],
+    soong_config_variables: {
+        gralloc_ion_sync_on_lock: {
+            cflags: [
+                "-DGRALLOC_ION_SYNC_ON_LOCK=1",
+            ],
+        },
+        gralloc_product_vendor_version: {
+            cflags: [
+                "-DPRODUCT_VENDOR_T",
+            ],
+        },
+        mfc_chroma_valign: {
+            cflags: [
+                "-DEXYNOS_CHROMA_VSTRIDE_ALIGN",
+                "-DCHROMA_VALIGN=32",
+            ],
+        },
+        support_raw10_raw12_cam_wr: {
+            cflags: [
+                "-DGRALLOC_SUPPORT_RAW10_RAW12",
+            ],
+        },
+        cam_jpeg_blob_wa: {
+            cflags: [
+                "-DJPEG_WA_ENABLED",
+            ],
+        },
+        support_ycrcb_420_sp_align_16: {
+            cflags: [
+                "-DGRALLOC_SUPPORT_YCRCB_420_SP_ALIGN_16",
+            ],
+        },
+    },
+    srcs: [
+        "mali_gralloc_bufferaccess.cpp",
+        "mali_gralloc_bufferallocation.cpp",
+        "mali_gralloc_formats.cpp",
+        "mali_gralloc_reference.cpp",
+        "mali_gralloc_debug.cpp",
+        "format_info.cpp",
+        "ip_info/format_manager.cpp",
+        "ip_info/cpu_format_manager.cpp",
+        "ip_info/mali_gpu_format_manager.cpp",
+        "ip_info/hwc_format_manager.cpp",
+        "ip_info/camera_format_manager.cpp",
+        "ip_info/video_format_manager.cpp",
+    ],
+    include_dirs: [
+        "hardware/samsung_slsi/exynos/include",
+    ],
+    static_libs: [
+        "libarect",
+    ],
+    shared_libs: [
+        "liblog",
+        "libcutils",
+        "libutils",
+    ],
+    target: {
+        android: {
+            shared_libs: [
+                "libhardware",
+            ],
+        },
+    },
+}
+
+cc_library_static {
+    name: "libgralloc_core",
+    defaults: [
+        "arm_gralloc_core_defaults",
+        "arm_gralloc_version_defaults",
+    ],
+}
+
+cc_library_host_static {
+    name: "libgralloc_core_host",
+    defaults: [
+        "arm_gralloc_core_defaults",
+    ],
+}

@@ -1,0 +1,64 @@
+cc_library_shared {
+    system_ext_specific: true,
+    name: "libTeeServiceJni",
+
+    srcs: [
+        "jni/native-lib-jni.cpp",
+        "jni/TeeCallback.cpp",
+    ],
+
+    cflags: [
+        "-UNDEBUG",
+        "-DLOG_ANDROID",
+    ],
+
+    shared_libs: [
+        "liblog",
+        "libutils",
+        "libcutils",
+        "liblog",
+        "libbinder",
+        "libdl",
+        "libgui",
+        "libui",
+        "libselinux",
+        "libhidlbase",
+        "libhidlmemory",
+
+        "android.hidl.allocator@1.0",
+        "android.hidl.memory@1.0",
+        "vendor.trustonic.tee@1.1",
+    ],
+
+    static_libs: [
+        "libteeservice_server",
+    ],
+}
+
+android_app {
+    name: "TeeService",
+    platform_apis: true,
+    certificate: "platform",
+    system_ext_specific: true,
+
+    optimize: {
+        enabled: false,
+    },
+
+    srcs: [
+        "java/**/*.java",
+    ],
+
+    jni_libs: [
+        "libTeeServiceJni"
+    ],
+
+    static_libs: [
+        "android.hidl.base-V1.0-java",
+        "vendor.trustonic.tee.tui-V1.0-java",
+    ],
+
+    dex_preopt: {
+        enabled: false,
+    },
+}

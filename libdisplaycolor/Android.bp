@@ -1,0 +1,19 @@
+cc_library_headers {
+    name: "libdisplaycolor_interface",
+    proprietary: true,
+    export_include_dirs: ["include"],
+}
+
+cc_library {
+    name: "libdisplaycolor_default",
+    proprietary: true,
+    srcs: ["libdisplaycolor_default.cpp"],
+    shared_libs: [
+        "liblog",
+        "libxml2",
+        "libcutils",
+        "libutils",
+    ],
+    header_libs: ["libdisplaycolor_interface"],
+    cflags: ["-Werror"],
+}

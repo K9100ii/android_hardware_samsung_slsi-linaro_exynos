@@ -1,0 +1,40 @@
+cc_binary {
+    name: "vendor.trustonic.tee@1.1-service",
+    relative_install_path: "hw",
+    proprietary: true,
+
+    srcs: [
+        "service.cpp",
+        "Tee.cpp",
+        "Tui.cpp",
+        "TuiManager.cpp",
+        "TrustonicService.cpp",
+        "driver.cpp",
+    ],
+
+    header_libs: [
+        "trustonic-api-headers",
+    ],
+
+    shared_libs: [
+        "libbinder",
+        "liblog",
+        "libutils",
+        "libhidlbase",
+        "libhidlmemory",
+        "libcutils",
+        "android.hidl.allocator@1.0",
+        "android.hidl.memory@1.0",
+        "vendor.trustonic.tee@1.1",
+        "vendor.trustonic.tee.tui@1.0",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-DTBASE_API_LEVEL=11",
+    ],
+
+    init_rc: ["vendor.trustonic.tee@1.1-service.rc"],
+}

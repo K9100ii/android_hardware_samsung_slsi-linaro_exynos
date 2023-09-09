@@ -1,0 +1,60 @@
+cc_library_shared {
+    name: "libMcClient",
+    proprietary: true,
+
+    srcs: [
+        "src/*.cpp",
+    ],
+
+    shared_libs: [
+        "liblog",
+    ],
+
+    cflags: [
+        "-Werror",
+        "-Wall",
+        "-Wextra",
+        "-fvisibility=hidden",
+        "-DLOG_ANDROID",
+        "-DDYNAMIC_LOG",
+    ],
+
+    header_libs: [
+        "trustonic-api-headers",
+    ],
+
+    export_header_lib_headers: [
+        "trustonic-api-headers",
+    ]
+}
+
+cc_library_static {
+    name: "libMcClient_static",
+    proprietary: true,
+    recovery_available: true,
+
+    srcs: [
+        "src/*.cpp",
+    ],
+
+    shared_libs: [
+        "liblog",
+    ],
+
+    cflags: [
+        "-Werror",
+        "-Wall",
+        "-Wextra",
+        "-fvisibility=hidden",
+        "-DLOG_ANDROID",
+        "-DDYNAMIC_LOG",
+    ],
+
+    header_libs: [
+        "trustonic-api-headers",
+    ],
+
+    export_header_lib_headers: [
+        "trustonic-api-headers",
+    ]
+}

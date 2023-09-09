@@ -1,0 +1,78 @@
+//
+// Copyright (C) 2017 The Android Open Source Project
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+soong_config_module_type {
+    name: "exynos_usb_gadget_hal",
+    module_type: "cc_defaults",
+    config_namespace: "usbgadgethal",
+    variables: [
+        "exynos_product",
+    ],
+    properties: [
+        "include_dirs",
+    ],
+}
+
+soong_config_string_variable {
+    name: "exynos_product",
+    values: ["s5e8825", "s5e9925", "default"],
+}
+
+exynos_usb_gadget_hal {
+	name: "usbgadgethal_defaults",
+	soong_config_variables: {
+		exynos_product: {
+			s5e8825: {
+				include_dirs: [
+				"device/samsung/erd8825/usb",
+				],
+			},
+			s5e9925: {
+				include_dirs: [
+				"device/samsung/universal9925/usb",
+				],
+			},
+			default: {
+				include_dirs: [
+				"hardware/samsung_slsi/exynos/usb/default",
+				],
+			},
+		},
+	},
+}
+
+cc_binary {
+    name: "android.hardware.usb@1.1-service",
+    relative_install_path: "hw",
+    defaults: ["usbgadgethal_defaults"],
+    init_rc: ["android.hardware.usb@1.1-service.rc"],
+    srcs: ["service.cpp", "Usb.cpp", "UsbGadget.cpp"],
+    cflags: ["-Wall", "-Werror"],
+    shared_libs: [
+        "libbase",
+        "libhidlbase",
+        "liblog",
+        "libutils",
+        "libhardware",
+        "android.hardware.usb@1.0",
+        "android.hardware.usb@1.1",
+        "android.hardware.usb.gadget@1.0",
+        "android.hardware.usb.gadget@1.1",
+        "android.hardware.usb.gadget@1.2",
+        "libcutils",
+    ],
+    static_libs : ["libexynosusb"],
+    proprietary: true,
+}

@@ -1,0 +1,137 @@
+//
+// Copyright (C) 2019 The Android Open Source Project
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+soong_config_module_type
+{
+    name:"libhdr_cc_defaults",
+    module_type:"cc_defaults",
+    config_namespace:"libhdr",
+    value_variables:["meta_plugin"],
+    properties:["shared_libs",],
+}
+
+libhdr_cc_defaults {
+    name: "libhdr_defaults",
+    soong_config_variables: {
+        meta_plugin: {
+            shared_libs: ["%s"],
+        },
+    },
+}
+
+cc_library {
+    name: "libhdr_meta_plugin_default",
+    cflags: [
+	"-Wno-unused-function",
+        "-DLOG_TAG=\"libhdr-meta\"",
+    ],
+    header_libs: [
+        "libhdr_meta_interface_header",
+    ],
+    srcs: [
+        "./srcs/meta/libhdr_meta_default.cpp",
+    ],
+    proprietary: true,
+}
+
+cc_library_shared {
+    name: "libhdr_plugin",
+    defaults: ["libhdr_defaults",],
+    cflags: [
+	"-Wno-unused-function",
+        "-DLOG_TAG=\"libhdr\"",
+        "-DUSE_FULL_ST2094_40",
+        "-DLIBHDR_PLUGIN_INCLUDED",
+    ],
+    local_include_dirs: [
+        "include",
+    ],
+    srcs: [
+        "libhdr.cpp",
+        "./srcs/hw/hdrHwInfo.cpp",
+        "./srcs/hw/hdrHwDPU.cpp",
+        "./srcs/utils/hdrUtil.cpp",
+        "./srcs/wcg/wcgCoef.cpp",
+        "./srcs/hdr10/hdr10Coef.cpp",
+        "./srcs/hdr10p/hdr10pCoef.cpp",
+        "./srcs/tune/hdrTuneCoef.cpp",
+        "./srcs/hdr10p/hdr10pMeta2Meta.cpp",
+        "./srcs/utils/hdrCurveData.cpp",
+        "./srcs/hdr10p/dynamic_info_legacy.cpp",
+        "./srcs/hlg/hlgCoef.cpp",
+        "./srcs/hw/hdrModuleSpecifiers.cpp",
+        "./srcs/extra/extraCoef.cpp",
+        "./srcs/context/hdrContext.cpp",
+    ],
+    shared_libs: [
+        "libbase",
+        "liblog",
+        "libutils",
+        "libcutils",
+        "libxml2",
+    ],
+    header_libs: [
+        "libhdrinterface_header_default",
+        "libsystem_headers",
+        "libexynos_headers",
+        "libhdr_meta_interface_header",
+    ],
+    proprietary: true,
+}
+
+cc_library {
+    name: "libhdr_plugin_test",
+    cflags: [
+	"-Wno-unused-function",
+        "-DLOG_TAG=\"libhdr\"",
+        "-DUSE_FULL_ST2094_40",
+        "-DHDR_TEST",
+        "-DLIBHDR_PLUGIN_INCLUDED",
+    ],
+    local_include_dirs: [
+        "include",
+    ],
+    srcs: [
+        "libhdr.cpp",
+        "./srcs/hw/hdrHwInfo.cpp",
+        "./srcs/hw/hdrHwDPU.cpp",
+        "./srcs/hw/hdrModuleSpecifiers.cpp",
+        "./srcs/utils/hdrUtil.cpp",
+        "./srcs/wcg/wcgCoef.cpp",
+        "./srcs/hdr10/hdr10Coef.cpp",
+        "./srcs/hdr10p/hdr10pCoef.cpp",
+        "./srcs/tune/hdrTuneCoef.cpp",
+        "./srcs/hdr10p/hdr10pMeta2Meta.cpp",
+        "./srcs/utils/hdrCurveData.cpp",
+        "./srcs/hdr10p/dynamic_info_legacy.cpp",
+        "./srcs/hlg/hlgCoef.cpp",
+        "./srcs/extra/extraCoef.cpp",
+        "./srcs/meta/libhdr_meta_default.cpp",
+        "./srcs/context/hdrContext.cpp",
+    ],
+    shared_libs: [
+        "libbase",
+        "liblog",
+        "libutils",
+        "libcutils",
+        "libxml2",
+    ],
+    header_libs: [
+        "libhdrinterface_header_default_test",
+        "libsystem_headers",
+        "libhdr_meta_interface_header_test",
+    ],
+    vendor_available: true,
+}

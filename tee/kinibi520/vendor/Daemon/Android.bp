@@ -1,0 +1,77 @@
+cc_binary {
+    name: "mcDriverDaemon",
+    proprietary: true,
+    recovery_available: true,
+
+    srcs: [
+        "src/daemon_log.cpp",
+        "src/Connection.cpp",
+        "src/MobiCoreDriverDaemon.cpp",
+        "src/SecureWorld.cpp",
+        "src/FSD2.cpp",
+        "src/DebugSession.cpp",
+        "src/EndorsementInstaller.cpp",
+        "src/PrivateRegistry.cpp",
+        "src/RegistryServer.cpp",
+        "src/TuiStarter.cpp",
+    ],
+
+    local_include_dirs: [
+        "include"
+    ],
+
+    shared_libs: [
+        "liblog",
+        /* ExySp */
+        "libcutils",
+    ],
+
+    static_libs: [
+        "libMcClient_static",
+    ],
+
+    cflags: [
+        "-Werror",
+        "-Wall",
+        "-Wextra",
+        "-DLOG_ANDROID",
+        "-DDYNAMIC_LOG",
+        "-DTBASE_API_LEVEL=11",
+    ],
+
+    init_rc: ["init.trustonic.rc"],
+}
+
+cc_library_shared {
+    name: "libMcRegistry",
+    proprietary: true,
+
+    srcs: [
+        "src/registry_log.cpp",
+        "src/Connection.cpp",
+        "src/Registry.cpp",
+    ],
+
+    shared_libs: [
+        "liblog",
+    ],
+
+    cflags: [
+        "-Werror",
+        "-Wall",
+        "-Wextra",
+        "-DLOG_ANDROID",
+    ],
+
+    export_include_dirs: [
+        "include",
+    ],
+
+    header_libs: [
+        "trustonic-api-headers",
+    ],
+
+    export_header_lib_headers: [
+        "trustonic-api-headers",
+    ]
+}

@@ -1,0 +1,51 @@
+cc_library_shared {
+    name: "libTeeClient",
+
+    srcs: [
+        "jni/*.cpp",
+    ],
+
+    local_include_dirs: [
+        "jni",
+    ],
+
+    shared_libs: [
+        "liblog",
+    ],
+
+    cflags: [
+        "-Werror",
+        "-Wall",
+        "-Wextra",
+        "-fvisibility=hidden",
+        "-DLOG_ANDROID",
+        "-DDYNAMIC_LOG",
+    ],
+
+    header_libs: [
+        "trustonic-api-headers",
+        "jni_headers",
+    ],
+
+    export_header_lib_headers: [
+        "trustonic-api-headers",
+    ],
+}
+
+java_library {
+    name: "TeeClient",
+
+    optimize: {
+        enabled: false,
+    },
+
+    srcs: [
+        "java/**/*.java",
+    ],
+
+    dex_preopt: {
+        enabled: false,
+    },
+
+    platform_apis: true,
+}

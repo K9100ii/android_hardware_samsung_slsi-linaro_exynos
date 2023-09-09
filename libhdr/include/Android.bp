@@ -1,0 +1,10 @@
+cc_library_headers {
+    name: "libhdr_header",
+    proprietary: true,
+    export_include_dirs: ["."],
+}
+cc_library_headers {
+    name: "libhdr_header_test",
+    vendor_available: true,
+    export_include_dirs: ["."],
+}

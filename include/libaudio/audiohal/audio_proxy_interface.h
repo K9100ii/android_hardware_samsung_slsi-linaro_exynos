@@ -59,6 +59,13 @@ enum {
 
 };
 
+/* A-Box Interface Type */
+enum {
+    UAIF0 = 0,
+    UAIF1,
+    UAIF2,
+    UAIF3,
+};
 
 // Audio Capability Check  Utility Functions
 int  get_supported_device_number(void *proxy, int device_type);

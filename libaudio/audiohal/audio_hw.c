@@ -1078,7 +1078,7 @@ bool adev_set_route(void *stream, audio_usage_type usage_type, bool set, force_r
             ** without any relation to audio path routing. So, keep previous path.
             */
             if (new_playback_ausage == AUSAGE_MEDIA &&
-               (new_playback_device == DEVICE_AUX_DIGITAL || new_playback_device == DEVICE_USB_HEADSET)) {
+               (new_playback_device == DEVICE_AUX_DIGITAL)) {
                 ALOGI("%s-%s: keep current route for device(%s) and usage(%s)",
                               stream_table[out->common.stream_type], __func__,
                               device_table[adev->active_playback_device],

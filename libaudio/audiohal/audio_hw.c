@@ -4005,14 +4005,7 @@ static int adev_open_input_stream(
 
         } else {
             /* Case: Normal Recording Stream */
-            if ((devices == AUDIO_DEVICE_IN_USB_ACCESSORY) || (devices == AUDIO_DEVICE_IN_USB_DEVICE) ||
-                (devices == AUDIO_DEVICE_IN_USB_HEADSET)) {
-                /* Case: USB Capture Stream */
-                ALOGI("device-%s: requested to open USB Device capture stream with address (%s)",
-                      __func__, address);
-                in->common.stream_type = ASTREAM_CAPTURE_USB_DEVICE;
-                in->common.stream_usage = AUSAGE_RECORDING;
-            } else if ((devices == AUDIO_DEVICE_IN_DEFAULT) && (source == AUDIO_SOURCE_DEFAULT)) {
+            if ((devices == AUDIO_DEVICE_IN_DEFAULT) && (source == AUDIO_SOURCE_DEFAULT)) {
                 /* Case: No Attributes Capture Stream */
                 ALOGI("device-%s: requested to open No Attribute capture stream", __func__);
                 in->common.stream_type = ASTREAM_CAPTURE_NO_ATTRIBUTE;

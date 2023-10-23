@@ -31,6 +31,7 @@ char * stream_table[ASTREAM_CNT] = {
     [ASTREAM_PLAYBACK_USB_DEVICE]    = "usb_out",
     [ASTREAM_PLAYBACK_AUX_DIGITAL]   = "aux_out",
     [ASTREAM_PLAYBACK_INCALL_MUSIC]  = "incall_music",
+    [ASTREAM_PLAYBACK_DIRECT]        = "direct_out",
 
     [ASTREAM_CAPTURE_NO_ATTRIBUTE]   = "no_attribute_in",
     [ASTREAM_CAPTURE_PRIMARY]        = "primary_in",
@@ -166,6 +167,10 @@ char * device_table[DEVICE_CNT] = {
     [DEVICE_AUX_DIGITAL]            = "aux-digital",
     [DEVICE_LINE_OUT]               = "lineout",
     [DEVICE_SPEAKER_AND_LINEOUT]    = "speaker-lineout",
+    [DEVICE_SPEAKER_AND_USB_HEADSET] = "speaker-usb-headset",
+    [DEVICE_SPEAKER_DEX]            = "dex-speaker",
+    [DEVICE_SPEAKER_DUAL]           = "dual-speaker",
+    [DEVICE_SPEAKER2]               = "speaker2",
 
     // Special Playback Devices
     [DEVICE_CALL_FWD]               = "",
@@ -181,6 +186,7 @@ char * device_table[DEVICE_CNT] = {
     [DEVICE_HANDSET_MIC]            = "handset-mic",
     [DEVICE_SPEAKER_MIC]            = "speaker-mic",
     [DEVICE_HEADPHONE_MIC]          = "headphone-mic",
+    [DEVICE_SPEAKER_DEX_MIC]        = "dex-speaker-mic",
 
     [DEVICE_SUB_MIC]                = "2nd-mic",
     [DEVICE_STEREO_MIC]             = "dualmic",

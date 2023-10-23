@@ -451,7 +451,8 @@ device_type get_indevice_id_from_outdevice(struct audio_device *adev, device_typ
                 }
                 break;
             case DEVICE_USB_HEADSET:
-                if (adev->actual_capture_device != AUDIO_DEVICE_IN_USB_DEVICE)
+                if (adev->actual_capture_device != AUDIO_DEVICE_IN_USB_DEVICE
+                        && adev->actual_capture_device != AUDIO_DEVICE_IN_USB_HEADSET)
                     in = DEVICE_HANDSET_MIC;
                 else
                     in = DEVICE_USB_HEADSET_MIC;
@@ -3386,7 +3387,7 @@ static int adev_set_parameters(struct audio_hw_device *dev, const char *kvpairs)
             adev->previous_capture_device = adev->actual_capture_device;
             adev->actual_capture_device = device;
 
-            if (device & AUDIO_DEVICE_IN_USB_DEVICE) {
+            if (device & (AUDIO_DEVICE_IN_USB_DEVICE | AUDIO_DEVICE_IN_USB_HEADSET)) {
                 voice_set_usb_mic(adev->voice, true);
             }
         } else {
@@ -3407,7 +3408,7 @@ static int adev_set_parameters(struct audio_hw_device *dev, const char *kvpairs)
             adev->actual_capture_device = adev->previous_capture_device;
             adev->previous_capture_device = device;
 
-            if (device & AUDIO_DEVICE_IN_USB_DEVICE) {
+            if (device & (AUDIO_DEVICE_IN_USB_DEVICE | AUDIO_DEVICE_IN_USB_HEADSET)) {
                 voice_set_usb_mic(adev->voice, false);
             }
         } else {

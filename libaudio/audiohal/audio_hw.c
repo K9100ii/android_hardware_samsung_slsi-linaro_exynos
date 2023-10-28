@@ -3960,9 +3960,9 @@ static int adev_open_input_stream(
             in->common.stream_usage = AUSAGE_HOTWORD_RECORD;
             ALOGD("device-%s: Requested to open VTS Record input", __func__);
         }
-    } else if (flags == AUDIO_INPUT_FLAG_NONE)
+    } else if (flags == AUDIO_INPUT_FLAG_NONE || (flags & AUDIO_INPUT_FLAG_VOIP_TX) != 0)
 #else
-    if (flags == AUDIO_INPUT_FLAG_NONE)
+    if (flags == AUDIO_INPUT_FLAG_NONE || (flags & AUDIO_INPUT_FLAG_VOIP_TX) != 0)
 #endif
     {
       if (isCPCallMode(adev) &&

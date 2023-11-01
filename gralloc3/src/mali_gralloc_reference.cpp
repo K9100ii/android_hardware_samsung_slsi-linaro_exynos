@@ -146,6 +146,17 @@ int mali_gralloc_reference_release(mali_gralloc_module const *module, buffer_han
 				AERR("Unregistering/Releasing unknown buffer is not supported. Flags = %d", hnd->flags);
 			}
 
+#if GRALLOC_USE_ASHMEM_METADATA == 1
+			/*
+			 * Close shared attribute region file descriptor. It might seem strange to "free"
+			 * this here since this can happen in a client process, but free here is nothing
+			 * but unmapping and closing the duplicated file descriptor. The original ashmem
+			 * fd instance is still open until alloc_device_free() is called. Even sharing
+			 * of gralloc buffers within the same process should have fds dup:ed.
+			 */
+			gralloc_buffer_attr_free(hnd);
+#endif
+
 			hnd->base = 0;
 		}
 	}

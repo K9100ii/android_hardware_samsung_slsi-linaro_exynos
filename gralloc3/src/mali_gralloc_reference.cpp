@@ -44,8 +44,6 @@ int mali_gralloc_reference_retain(mali_gralloc_module const *module, buffer_hand
 
 	private_handle_t *hnd = (private_handle_t *)handle;
 
-	hnd->bases[0] = hnd->bases[1] = hnd->bases[2] = 0;
-
 	pthread_mutex_lock(&s_map_lock);
 
 	if (hnd->allocating_pid == getpid() || hnd->remote_pid == getpid())

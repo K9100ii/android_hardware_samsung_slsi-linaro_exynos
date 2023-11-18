@@ -115,7 +115,7 @@ arm_gralloc_core_cc_defaults {
         "ip_info/video_format_manager.cpp",
     ],
     include_dirs: [
-        "hardware/samsung_slsi-linaro/exynos/include",
+        "hardware/samsung_slsi-linaro_13-e850-96/exynos/include",
     ],
     static_libs: [
         "libarect",

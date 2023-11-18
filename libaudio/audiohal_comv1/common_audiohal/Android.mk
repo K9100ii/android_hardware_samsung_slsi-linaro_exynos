@@ -24,7 +24,7 @@ LOCAL_SRC_FILES := \
 	audio_hw.c \
 
 LOCAL_C_INCLUDES += \
-	$(TOP)/hardware/samsung_slsi-linaro/exynos/include/libaudio/audiohal_comv1 \
+	$(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/include/libaudio/audiohal_comv1 \
 	$(call include-path-for, audio-utils)
 
 LOCAL_HEADER_LIBRARIES := libhardware_headers

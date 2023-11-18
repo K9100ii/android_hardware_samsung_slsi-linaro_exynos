@@ -63,8 +63,8 @@ exynosgraphicbuffercore_cc_defaults {
         gralloc_version: {
             three: {
                 include_dirs: [
-                    "hardware/samsung_slsi-linaro/exynos/include",
-                    "hardware/samsung_slsi-linaro/exynos/gralloc3/src",
+                    "hardware/samsung_slsi-linaro_13-e850-96/exynos/include",
+                    "hardware/samsung_slsi-linaro_13-e850-96/exynos/gralloc3/src",
                 ],
 
                 srcs: [
@@ -73,8 +73,8 @@ exynosgraphicbuffercore_cc_defaults {
             },
             four: {
                 include_dirs: [
-                    "hardware/samsung_slsi-linaro/exynos/include",
-                    "hardware/samsung_slsi-linaro/exynos/gralloc4/src",
+                    "hardware/samsung_slsi-linaro_13-e850-96/exynos/include",
+                    "hardware/samsung_slsi-linaro_13-e850-96/exynos/gralloc4/src",
                                 ],
 
                                 srcs: [
@@ -83,8 +83,8 @@ exynosgraphicbuffercore_cc_defaults {
             },
             four_sgr: {
                 include_dirs: [
-                    "hardware/samsung_slsi-linaro/exynos/include",
-                    "hardware/samsung_slsi-linaro/sgpu/sgpu_gralloc/src/interface",
+                    "hardware/samsung_slsi-linaro_13-e850-96/exynos/include",
+                    "hardware/samsung_slsi-linaro_13-e850-96/sgpu/sgpu_gralloc/src/interface",
                 ],
 
                 srcs: [

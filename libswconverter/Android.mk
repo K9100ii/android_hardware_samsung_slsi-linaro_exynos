@@ -36,7 +36,7 @@ endif
 
 LOCAL_C_INCLUDES := \
 	$(LOCAL_PATH)/../include \
-	$(TOP)/hardware/samsung_slsi-linaro/exynos/include
+	$(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/include
 
 LOCAL_MODULE := libswconverter
 

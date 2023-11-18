@@ -46,7 +46,7 @@ exynos_usb_gadget_hal {
 			},
 			default: {
 				include_dirs: [
-				"hardware/samsung_slsi-linaro/exynos/usb/default",
+				"hardware/samsung_slsi-linaro_13-e850-96/exynos/usb/default",
 				],
 			},
 		},

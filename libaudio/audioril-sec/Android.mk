@@ -25,7 +25,7 @@ include $(CLEAR_VARS)
 LOCAL_SRC_FILES := secril_interface.c
 
 LOCAL_C_INCLUDES += \
-	$(TOP)/hardware/samsung_slsi-linaro/exynos/include/libaudio/audiohal
+	$(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/include/libaudio/audiohal
 
 LOCAL_C_INCLUDES += ./include
 

@@ -83,7 +83,7 @@ cc_library_shared {
         ":libgralloc_hidl_common_shared_metadata",
     ],
     include_dirs: [
-        "hardware/samsung_slsi-linaro/exynos/include",
+        "hardware/samsung_slsi-linaro_13-e850-96/exynos/include",
     ],
 }
 
@@ -107,6 +107,6 @@ cc_library_shared {
         ":libgralloc_hidl_common_shared_metadata",
     ],
     include_dirs: [
-        "hardware/samsung_slsi-linaro/exynos/include",
+        "hardware/samsung_slsi-linaro_13-e850-96/exynos/include",
     ],
 }

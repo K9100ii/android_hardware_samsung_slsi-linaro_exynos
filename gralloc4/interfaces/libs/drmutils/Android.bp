@@ -35,7 +35,7 @@ cc_library_static {
     ],
     include_dirs: [
         ".",
-        "hardware/samsung_slsi-linaro/exynos/include",
+        "hardware/samsung_slsi-linaro_13-e850-96/exynos/include",
     ],
     export_include_dirs: [
         ".",

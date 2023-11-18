@@ -22,7 +22,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_C_INCLUDES := \
 	$(LOCAL_PATH)/../include \
-	$(TOP)/hardware/samsung_slsi-linaro/exynos/libexynosutils
+	$(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/libexynosutils
 
 LOCAL_SHARED_LIBRARIES := \
 	liblog \
@@ -35,5 +35,5 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_PROPRIETARY_MODULE := true
 LOCAL_CFLAGS += -Wno-unused-parameter -Wno-unused-function
 
-include $(TOP)/hardware/samsung_slsi-linaro/exynos/BoardConfigCFlags.mk
+include $(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/BoardConfigCFlags.mk
 include $(BUILD_SHARED_LIBRARY)

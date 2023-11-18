@@ -21,7 +21,7 @@ cc_library_shared {
     proprietary: true,
 
     include_dirs: [
-        "hardware/samsung_slsi-linaro/exynos/include",
+        "hardware/samsung_slsi-linaro_13-e850-96/exynos/include",
     ],
 
     static_libs: [

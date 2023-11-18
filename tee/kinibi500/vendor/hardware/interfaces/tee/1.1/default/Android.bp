@@ -20,8 +20,8 @@ cc_library_static {
     ],
 
     include_dirs: [
-        "hardware/samsung_slsi-linaro/exynos/tee/kinibi500/vendor/ClientLib/include",
-        "hardware/samsung_slsi-linaro/exynos/tee/kinibi500/vendor/ClientLib/include/GP",
+        "hardware/samsung_slsi-linaro_13-e850-96/exynos/tee/kinibi500/vendor/ClientLib/include",
+        "hardware/samsung_slsi-linaro_13-e850-96/exynos/tee/kinibi500/vendor/ClientLib/include/GP",
         "system/memory/libion/kernel-headers",
     ],
 
@@ -61,8 +61,8 @@ cc_binary {
     ],
 
     include_dirs: [
-        "hardware/samsung_slsi-linaro/exynos/tee/kinibi500/vendor/ClientLib/include",
-        "hardware/samsung_slsi-linaro/exynos/tee/kinibi500/vendor/ClientLib/include/GP",
+        "hardware/samsung_slsi-linaro_13-e850-96/exynos/tee/kinibi500/vendor/ClientLib/include",
+        "hardware/samsung_slsi-linaro_13-e850-96/exynos/tee/kinibi500/vendor/ClientLib/include/GP",
     ],
 
     cflags: [

@@ -14,7 +14,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_PRELINK_MODULE := true
 LOCAL_PREBUILT_LIBS := lib32/libvdis.so
 
-include $(TOP)/hardware/samsung_slsi-linaro/exynos/BoardConfigCFlags.mk
+include $(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/BoardConfigCFlags.mk
 include $(BUILD_MULTI_PREBUILT)
 
 else
@@ -29,7 +29,7 @@ LOCAL_SRC_FILES_$(TARGET_ARCH) := lib64/$(LOCAL_MODULE)$(LOCAL_MODULE_SUFFIX)
 LOCAL_SRC_FILES_$(TARGET_2ND_ARCH) := lib32/$(LOCAL_MODULE)$(LOCAL_MODULE_SUFFIX)
 LOCAL_MULTILIB := both
 
-include $(TOP)/hardware/samsung_slsi-linaro/exynos/BoardConfigCFlags.mk
+include $(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/BoardConfigCFlags.mk
 include $(BUILD_PREBUILT)
 endif
 
@@ -43,17 +43,17 @@ LOCAL_MODULE := libexynoscamera_vdis_plugin
 
 LOCAL_C_INCLUDES += \
 	$(TOP)/system/core/libcutils/include \
-	$(TOP)/hardware/samsung_slsi-linaro/exynos/include \
-	$(TOP)/hardware/samsung_slsi-linaro/exynos/libcamera3/common_v2/ \
-	$(TOP)/hardware/samsung_slsi-linaro/exynos/libcamera3/common_v2/PlugIn/ \
-	$(TOP)/hardware/samsung_slsi-linaro/exynos/libcamera3/common_v2/PlugIn/include \
-	$(TOP)/hardware/samsung_slsi-linaro/exynos/libcamera3/common_v2/PlugIn/libs/include \
-	$(TOP)/hardware/samsung_slsi-linaro/exynos/libcamera3/common_v2/PlugIn/libs/libVDIS/include
+	$(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/include \
+	$(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/libcamera3/common_v2/ \
+	$(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/libcamera3/common_v2/PlugIn/ \
+	$(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/libcamera3/common_v2/PlugIn/include \
+	$(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/libcamera3/common_v2/PlugIn/libs/include \
+	$(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/libcamera3/common_v2/PlugIn/libs/libVDIS/include
 
 LOCAL_CFLAGS := -Wno-unused-parameter
 LOCAL_CFLAGS += -Wno-error=date-time
 
-include $(TOP)/hardware/samsung_slsi-linaro/exynos/BoardConfigCFlags.mk
+include $(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/BoardConfigCFlags.mk
 include $(BUILD_SHARED_LIBRARY)
 
 # build sources to make builtin vdis lib

@@ -29,8 +29,8 @@ LOCAL_SRC_FILES += \
     voice_manager_sit.c
 
 LOCAL_C_INCLUDES += \
-    $(TOP)/hardware/samsung_slsi-linaro/exynos/libaudio/audioril-sit \
-    $(TOP)/hardware/samsung_slsi-linaro/exynos/libaudio/audioril-sit/include
+    $(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/libaudio/audioril-sit \
+    $(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/libaudio/audioril-sit/include
 
 LOCAL_CFLAGS += -DUSE_SITRIL
 else
@@ -38,12 +38,12 @@ LOCAL_SRC_FILES += \
     voice_manager_sec.c
 
 LOCAL_C_INCLUDES += \
-    $(TOP)/hardware/samsung_slsi-linaro/exynos/libaudio/audioril-sec \
-    $(TOP)/hardware/samsung_slsi-linaro/exynos/libaudio/audioril-sec/include
+    $(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/libaudio/audioril-sec \
+    $(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/libaudio/audioril-sec/include
 endif
 
 LOCAL_C_INCLUDES += \
-	$(TOP)/hardware/samsung_slsi-linaro/exynos/include/libaudio/audiohal
+	$(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/include/libaudio/audiohal
 
 LOCAL_HEADER_LIBRARIES := libhardware_headers
 LOCAL_SHARED_LIBRARIES := liblog libcutils libprocessgroup libaudioproxy

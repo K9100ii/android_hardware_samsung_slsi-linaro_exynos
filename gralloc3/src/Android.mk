@@ -156,7 +156,7 @@ endif
 endif
 
 LOCAL_C_INCLUDES := $(MALI_LOCAL_PATH) $(MALI_DDK_INCLUDES) \
-    $(TOP)/hardware/samsung_slsi-linaro/exynos/include
+    $(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/include
 
 # General compilation flags
 LOCAL_CFLAGS := -Werror -DLOG_TAG=\"gralloc\" -DPLATFORM_SDK_VERSION=$(PLATFORM_SDK_VERSION)
@@ -470,7 +470,7 @@ endif
 endif
 
 LOCAL_C_INCLUDES := $(MALI_LOCAL_PATH) $(MALI_DDK_INCLUDES) \
-    $(TOP)/hardware/samsung_slsi-linaro/exynos/include
+    $(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/include
 
 # General compilation flags
 LOCAL_CFLAGS := -Werror -DLOG_TAG=\"gralloc\" -DPLATFORM_SDK_VERSION=$(PLATFORM_SDK_VERSION)

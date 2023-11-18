@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-ifeq ($(TARGET_SLSI_VARIANT),linaro)
+ifeq ($(TARGET_SLSI_VARIANT),linaro_13-e850-96)
 ifneq ($(filter exynos, $(TARGET_SOC_NAME)),)
 common_exynos_dirs := \
 	libdisplaycolor \

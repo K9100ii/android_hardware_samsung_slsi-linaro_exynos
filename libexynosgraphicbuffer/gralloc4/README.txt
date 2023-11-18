@@ -9,11 +9,11 @@ To use libexynosgraphicbuffer add it as a shared library to your module and
 #include <ExynosGraphicBuffer.h>
 
 Location of header:
-/hardware/samsung_slsi-linaro/exynos/include
+/hardware/samsung_slsi-linaro_13-e850-96/exynos/include
 
 Location of source code:
-/hardware/samsung_slsi-linaro/exynos/gralloc3/libexynosgraphicbuffer
-/hardware/samsung_slsi-linaro/exynos/gralloc4/libexynosgraphicbuffer (will be added with gralloc4)
+/hardware/samsung_slsi-linaro_13-e850-96/exynos/gralloc3/libexynosgraphicbuffer
+/hardware/samsung_slsi-linaro_13-e850-96/exynos/gralloc4/libexynosgraphicbuffer (will be added with gralloc4)
 
 
 

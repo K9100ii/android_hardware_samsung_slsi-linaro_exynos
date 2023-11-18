@@ -26,8 +26,8 @@ LOCAL_HEADER_LIBRARIES := libhardware_headers
 
 LOCAL_C_INCLUDES := \
 	$(LOCAL_PATH)/../include \
-	$(TOP)/hardware/samsung_slsi-linaro/exynos/include \
-	$(TOP)/hardware/samsung_slsi-linaro/exynos5/include \
+	$(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/include \
+	$(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos5/include \
 	$(TOP)/system/core/libsync/include
 
 LOCAL_SRC_FILES := 	\
@@ -81,8 +81,8 @@ LOCAL_SHARED_LIBRARIES := liblog libcutils libion_exynos libutils android.hardwa
 
 LOCAL_C_INCLUDES := \
 	$(LOCAL_PATH)/../include \
-	$(TOP)/hardware/samsung_slsi-linaro/exynos/include \
-	$(TOP)/hardware/samsung_slsi-linaro/exynos5/include \
+	$(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos/include \
+	$(TOP)/hardware/samsung_slsi-linaro_13-e850-96/exynos5/include \
 	$(TOP)/system/core/libsync/include
 
 LOCAL_SRC_FILES := 	\

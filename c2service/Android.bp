@@ -30,6 +30,9 @@
 // vendor.cpp also needs to be updated because it needs the absolute path to the
 // seccomp policy file on the device.
 soong_namespace {
+    imports: [
+        "hardware/samsung_slsi-linaro_13-e850-96/graphics"
+    ],
 }
 
 package {

@@ -23,6 +23,7 @@ aidl_interface {
         "arm/graphics/*.aidl",
     ],
     stability: "vintf",
+    owner: "arm",
     backend: {
         java: {
             enabled: false,

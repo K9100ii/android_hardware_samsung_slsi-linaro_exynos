@@ -1,3 +1,11 @@
+soong_namespace {
+    imports:[
+        "hardware/samsung_slsi-linaro/graphics",
+        "hardware/samsung_slsi-linaro/interfaces",
+        "hardware/samsung_slsi-linaro/openmax"
+    ],
+}
+
 soong_config_module_type {
     name: "libexynos_headers_c2_cc_defaults",
     module_type: "cc_defaults",
